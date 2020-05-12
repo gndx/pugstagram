@@ -1,0 +1,44 @@
+body {
+  background-color: #fafafa;
+  color: rgba(38,38,38,0.7);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  background-color: white;
+}
+
+.Header-container {
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+  border-bottom: 1px solid rgba(38,38,38,0.7);
+}
+
+.Header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.Header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header li {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+.Header h1 {
+  color: black;
+}

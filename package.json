@@ -1,0 +1,15 @@
+{
+  "name": "pugstagram",
+  "version": "1.0.0",
+  "description": "pugstagram a simple html site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Oscar Barajas <oscar@platzi.com>",
+  "license": "MIT"
+}
