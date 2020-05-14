@@ -42,3 +42,65 @@ h1 {
 .Header h1 {
   color: black;
 }
+.main_content
+{
+  background-color: rgba(var(--b3f,250,250,250),1);
+}
+.layout
+{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.left_content
+{
+  display: flex;
+  border: 1px solid red;
+  margin-right: 30px;
+}
+.container_stories
+{
+background: #fff;
+background: rgba(var(--d87,255,255,255),1);
+border: 1px solid #dbdbdb;
+border: 1px solid rgba(var(--b6a,219,219,219),1);
+border-radius: 3px;
+margin-bottom: 24px;
+margin-top: 0;
+padding: 16px 0;
+}
+.upper_content{
+display: flex;
+border: 1px solid red;
+}
+.right_content
+{
+display: flex;
+}
+ul
+{
+  list-style: none;
+}
+.list
+{
+  display: flex;
+}
+.container_button
+{
+  height: 122px;
+  padding: 0 4px;
+  width: 80px;
+  -webkit-tap-highlight-color: transparent;
+}
+.bottom_content
+{
+  width: 300px;
+  height: 700px;
+  border: 1px solid red;
+}
+.right_content
+{
+  width: 300px;
+  height: 500px;
+  border: 1px solid red;
+}
