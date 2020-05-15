@@ -32,25 +32,18 @@
               <ul class="list">
                 <li>
                   <div class="container_button">
-                    <button>
-                      <div class="story">
+                    <button class="_button">
+                        <div class="container_button2" class="story">
+                          <canvas  id="myCanvas" class="my_canvas" height="66" style="position: absolute; top: -5px; left: -5px; width: 66px; height: 66px;" width="66"></canvas>
+                          <span class="span" style="width: 56px; height:56px;">
+                          <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="" class="foto_story">
+                          </span>
                       </div>
                       <div class="name_story">
                       </div>
                     </button>
                   </div>
                 </li>
-                <li>
-                  <div class="container_button">
-                    <button>
-                      <div class="story">
-                      </div>
-                      <div class="name_story">
-                      </div>
-                    </button>
-                  </div>
-                </li>
-                <li>
               </ul>
             </div>
           </div>
@@ -61,11 +54,18 @@
       <div class="right_content">
       </div>
     </section>
-
     </div>
   </main>
+
   <footer>
   </footer>
 </body>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(33, 33, 32, 0, 2 * Math.PI);
+  ctx.stroke();
+  </script> 
 
 </html>
