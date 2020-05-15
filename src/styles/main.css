@@ -50,18 +50,17 @@ h1 {
   padding: 2em 0;
   width: 950px;
   margin: 0 0 2em 500px;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
 }
 
 .card-header {
   height: 60px;
   width: inherit;
-  border: 1px solid gray;
   margin-top: 0px;
 }
 
 .section-post {
-  border: 1px solid #383838;
+  border: 1px solid rgba(219, 219, 219, 1);
   border-radius: 5px;
   width: 100%;
 }
@@ -111,11 +110,63 @@ h1 {
   margin-top: 10px;
 }
 
+.fa-heart{
+  margin-left: 15px;
+}
+
 .fa-paper-plane {
   margin: 0 15px;
 }
 
 .fa-bookmark {
   display: inline-flex;
-  margin-left: 37em; 
+  margin-left: 36em; 
+}
+
+.post-description h2{
+  font-size: 1em;
+  margin: 10px;
+  color: black;
+}
+
+.post-description span {
+  font-size: .8em;
+  display: block;
+  color: #383838;
+  font-weight: 100;
+}
+
+.comment {
+  display: block;
+  margin: 20px 5px;
+  padding: 0;
+  color: black;
+}
+
+.comment h3 {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.comment span {
+  color: #383838;
+  font-weight: 100;
+}
+
+.add-comment {
+  border-top: 1px solid rgba(219, 219, 219, 1);
+}
+
+.in-comment {
+  width: 90%;
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.comment-submit {
+  height: 50px;
+  border: none;
+  color: #0095f6;
+  background-color: transparent;
 }
