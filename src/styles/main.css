@@ -42,3 +42,64 @@ h1 {
 .Header h1 {
   color: black;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+  padding: 2em 0;
+  width: 950px;
+  margin: 0 0 2em 500px;
+  border: 1px solid grey;
+}
+
+.card-header {
+  height: 60px;
+  width: inherit;
+  border: 1px solid gray;
+  margin-top: 0px;
+}
+
+.section-post {
+  border: 1px solid #383838;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.user i {
+  
+}
+
+.user span{
+  display: block;
+  color: #383838;
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.user h2{
+  font-size: 1em;
+  color: black;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.user img {
+  margin: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.user-post img {
+  margin: 10px 0;
+  width: 100%;
+  height: 100%;
+}
