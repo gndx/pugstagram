@@ -72,8 +72,10 @@ h1 {
     justify-content: flex-start;
 }
 
-.user i {
-  
+.fa, 
+.fas{
+  display: inline-flex;
+  margin-left: 500px;
 }
 
 .user span{
@@ -102,4 +104,18 @@ h1 {
   margin: 10px 0;
   width: 100%;
   height: 100%;
+}
+
+.far, 
+.fas {
+  margin-top: 10px;
+}
+
+.fa-paper-plane {
+  margin: 0 15px;
+}
+
+.fa-bookmark {
+  display: inline-flex;
+  margin-left: 37em; 
 }
