@@ -55,7 +55,7 @@ h1 {
   grid-gap: 2em;
   padding: 2em 0;
   width: 950px;
-  margin: 0 0 2em 500px;
+  margin: 0 auto;
   /*border: 1px solid grey;*/
 }
 
