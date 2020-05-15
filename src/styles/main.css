@@ -42,3 +42,233 @@ h1 {
 .Header h1 {
   color: black;
 }
+
+.Header-logo{
+  font-size: 15px;
+  font-family: "Pacifico", cursive;
+}
+
+.card-container {
+  font-family: Lato, sans-serif;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+  padding: 2em 0;
+  width: 950px;
+  margin: 0 auto;
+  /*border: 1px solid grey;*/
+}
+
+.card-header {
+  height: 60px;
+  width: inherit;
+  margin-top: 0px;
+}
+
+.section-post {
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fa, 
+.fas{
+  display: inline-flex;
+  margin-left: 490px;
+}
+
+.user span{
+  display: block;
+  color: #383838;
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.user h2{
+  font-size: 1em;
+  color: black;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.user img {
+  margin: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.user-post img {
+  margin: 10px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.far, 
+.fas {
+  margin-top: 10px;
+}
+
+.fa-heart{
+  margin-left: 15px;
+}
+
+.fa-paper-plane {
+  margin: 0 15px;
+}
+
+.fa-bookmark {
+  display: inline-flex;
+  margin-left: 36em; 
+}
+
+.fa-user {
+  margin: 0;
+}
+
+.post-description h2{
+  font-size: 1em;
+  margin: 10px;
+  color: black;
+}
+
+.post-description span {
+  font-size: .8em;
+  display: block;
+  color: #383838;
+  font-weight: 100;
+}
+
+.comment {
+  display: block;
+  margin: 20px 5px;
+  padding: 0;
+  color: black;
+}
+
+.comment h3 {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.comment span {
+  color: #383838;
+  font-weight: 100;
+}
+
+.add-comment {
+  border-top: 1px solid rgba(219, 219, 219, 1);
+}
+
+.in-comment {
+  width: 90%;
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.comment-submit {
+  height: 50px;
+  border: none;
+  color: #0095f6;
+  background-color: transparent;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: flex-start;
+  height: 300px;
+  border: 1px solid rgba(219, 219, 219, 1);
+}
+
+.user-profile img {
+  display: inline-block;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-link{
+  margin: -50px 0 0 50px;
+}
+
+.user-link h2{
+  display: inline-block;
+  justify-content: space-around;
+  font-size: 1em;
+  margin: 0 15px;
+  padding: 0;
+  color: black;
+}
+
+.user-link span{
+  display: block;
+  margin-top: 5px;
+  font-size: .8em;
+  color: #383838;
+  font-weight: 100;
+}
+
+.story-profile {
+  background-color: white;
+  margin: 30px 0;
+  height: 250px;
+  border: 1px solid rgba(219, 219, 219, 1);
+}
+
+.story-content img {
+  margin: 5px 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: double 2px transparent;
+  background-image: linear-gradient(#fff, #fff), radial-gradient(circle at top left, #f09433, #bc1888);
+  background-clip: content-box, border-box;
+}
+
+.story-description {
+  margin: -50px 0 20px 60px;
+}
+
+.story-content  h3{
+  display: inline-block;
+  color: black;
+  font-size: 1em;
+  margin: 0 5px;
+}
+
+.story-content  span{
+  display: block;
+  color: #383838;
+  font-size: .8em;
+  font-weight: 100;
+}
+
+.main-story{
+  margin: 0 20px;
+}
+
+.main-story h3{
+  font-size: .9em;
+  display: inline-block;
+}
+
+.main-story span {
+  font-size: .8em;
+  margin: 0 0 0 90px;
+}
+
+footer {
+  font-size: .7em;
+  font-weight: 100;
+  color: #c7c7c7;
+}
