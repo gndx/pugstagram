@@ -1,9 +1,12 @@
 body {
   background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif
+  color: rgba(var(--i1d,38,38,38),1);
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
+
 
 h1 {
   margin: 0;
@@ -27,6 +30,31 @@ h1 {
   justify-content: space-between;
   padding: 1em;
 }
+
+.container-buscar  {
+   
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 100px;
+    width: 215px;
+     height: 20px;
+}
+.content-buscar{
+
+    background: #fafafa;
+    background: rgba(var(--b3f,250,250,250),1);
+    border: solid 1px #dbdbdb;
+    border: solid 1px rgba(var(--b6a,219,219,219),1);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+
+}
+
 
 .Header ul {
   list-style: none;
