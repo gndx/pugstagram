@@ -32,14 +32,12 @@ h1 {
 }
 
 .container-buscar  {
-   
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     min-width: 100px;
     width: 215px;
-     height: 20px;
 }
 .content-buscar{
 
@@ -51,8 +49,6 @@ h1 {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-
-
 }
 
 
