@@ -80,6 +80,11 @@ border: 1px solid red;
 }
 .my_canvas
 {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 66px;
+  height: 66px;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -160,7 +165,30 @@ ul
 }
 div
 {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  padding: 0;
+  position: relative;
 }
 .container_button2
 {
