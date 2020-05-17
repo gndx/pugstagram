@@ -26,6 +26,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 1em;
+  flex-direction: row;
 }
 
 .Header ul {
@@ -298,6 +299,58 @@ div
   padding-bottom: 1000px;
   padding-top: 0px;
   border: 1px solid red;
+}
+.post_owner
+{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 60px;
+  padding: 16px;
+}
+.container_photo_owner
+{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.my_canvas2
+{
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  user-select: none;
+}
+.image2
+{
+  height: 100%;
+  width: 100%;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
 .right_content
 {
