@@ -1,0 +1,144 @@
+body {
+  background-color: #f0ecec;
+  color: rgba(38,38,38,0.7);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pacifico', cursive;
+ 
+}
+
+.Header {
+  background-color: white;
+  /*display: flex;*/
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+}
+
+.Header-container {
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+  border-bottom: 1px solid rgba(38,38,38,0.7);
+}
+
+.Header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.Header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header li {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  text-decoration: none;
+}
+
+.Header h1 {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+.Header h1:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, orange, red, purple);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circular--square {
+  width: 50px; 
+  height: 50px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+.separator{
+  height: 30px;
+}
+.folow {
+  padding: 20px;
+}
+.profile {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+.pugstagram {
+  width: 570px;
+  border: 0,5px solid gray;
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail-follow {
+  /*border: 1px solid gray;*/
+  background-color: white;
+  width: 550px;
+}
+.detail-follow ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pugstagram li {
+  width: 50px;
+
+  text-align: center;
+  display: inline-block;
+
+}
+.foto {
+  width: 510px;
+  display: block;
+
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+.image-follow {
+width: 550px;
+height: 400px;
+}
+.comments {
+margin: 10px;
+width: 320px;
+background-color: white;
+margin-bottom: 5px;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
