@@ -1,6 +1,6 @@
 body {
   background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
 }
@@ -18,7 +18,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(38, 38, 38, 0.7);
 }
 
 .Header-content {
@@ -41,4 +41,61 @@ h1 {
 
 .Header h1 {
   color: black;
+}
+
+.card-publication {
+  width: 630px;
+  height: 1000px;
+  margin: 30px 220px 20px;
+  display: flex;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  vertical-align: baseline;
+  border-radius: 3px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.header-card-publication {
+  display: grid;
+  grid-template-columns: minmax(auto, 630px);
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
+
+
+}
+
+.container-header-publication {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7em;
+  margin-left: -5px;
+  margin-right: 7px;
+}
+
+.img-card-publication img {
+  object-fit: cover;
+}
+.div-comments{
+  border: 1px solid red;
+  height: 301px;
+  background-color: white;
+  margin-top: -4px;
+  margin-right: 12.5px;
+}
+.section-comments-container {
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+
+}
+
+.section-view-comments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.5em;
 }
