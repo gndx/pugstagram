@@ -42,3 +42,52 @@ h1 {
 .Header h1 {
   color: black;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.feed {
+  margin: 50px;
+  border: 1px solid black;
+  width: 600px;
+}
+
+.feed-account {
+  height: 70px;
+  border: 1px solid black;
+  display: flex;
+  align-items: stretch;
+}
+
+.feed-account div p {
+margin-top: -15px;
+}
+
+.feed-option {
+  flex-grow: 8;
+}
+
+.feed-option  a {
+  position: absolute;
+  right: 420px;
+  margin: 25px 10px;
+}
+
+.image-account {
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  margin: 10px 10px;
+}
+
+.image {
+  width: 600px;
+}
+
+.feed-interaction {
+  padding: 1em;
+  display: flex;
+  align-items: stretch;
+}
