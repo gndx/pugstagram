@@ -2,8 +2,9 @@
   "name": "pugstagram",
   "version": "1.0.0",
   "description": "pugstagram a simple html site",
-  "main": "index.js",
+  "main": "src/index.html",
   "scripts": {
+    "dev" : "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +12,16 @@
     "css"
   ],
   "author": "Oscar Barajas <oscar@platzi.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejoavilag/pugstagram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alejoavilag/pugstagram/issues"
+  },
+  "homepage": "https://github.com/alejoavilag/pugstagram#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
