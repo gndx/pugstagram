@@ -8,6 +8,7 @@ body {
 h1 {
   margin: 0;
   padding: 0;
+  font-family: 'Pacifico', cursive;
 }
 
 .Header {
@@ -18,14 +19,14 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(201, 200, 200, 0.9);
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 3px;
 }
 
 .Header ul {
@@ -40,5 +41,21 @@ h1 {
 }
 
 .Header h1 {
-  color: black;
+  font-size: 30px;
+  margin-bottom: 3px;
+  background: -webkit-linear-gradient(left top, #f4ba19,#e40028, #b81d8a);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+}
+
+.iconos_menu{
+  font-size: 22px;
+}
+
+.fotos{
+  width: 70%;
+  background: white;
+  border: 1px solid rgba(201, 200, 200, 0.9);
+  padding:  10px 0;
+  margin: 20px 0;
 }
