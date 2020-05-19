@@ -12,20 +12,22 @@ h1 {
 
 .Header {
   background-color: white;
+  position: fixed;
+
 }
 
 .Header-container {
   display: grid;
-  grid-template-columns: minmax(auto, 936px);
+  grid-template-columns: minmax(auto, 1350px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38, 38, 38, 0.7);
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: .5em;
 }
 
 .Header ul {
@@ -43,26 +45,35 @@ h1 {
   color: black;
 }
 
-.card-publication {
-  width: 630px;
-  height: 1000px;
-  margin: 30px 220px 20px;
+.div-container-section-ppal {
   display: flex;
-  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-  vertical-align: baseline;
-  border-radius: 3px;
+  align-items: flex-start;
   box-sizing: border-box;
   overflow: hidden;
+}
 
+.card-publication {
+  width: 610px;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  margin: 70px 0 30px 205px;
+
+}
+
+.card-container-publication {
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  width: 610px;
+  overflow: hidden;
 }
 
 .header-card-publication {
   display: grid;
-  grid-template-columns: minmax(auto, 630px);
+  grid-template-columns: minmax(auto, 610px);
   justify-content: center;
-  border-bottom: 1px solid #dbdbdb;
   background-color: white;
-
 
 }
 
@@ -71,23 +82,22 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 1.7em;
-  margin-left: -5px;
-  margin-right: 7px;
+
 }
 
 .img-card-publication img {
   object-fit: cover;
+  width: 610px;
 }
-.div-comments{
-  border: 1px solid red;
-  height: 301px;
+
+.div-comments {
+  height: 270px;
   background-color: white;
-  margin-top: -4px;
-  margin-right: 12.5px;
 }
+
 .section-comments-container {
   display: grid;
-  grid-template-columns: minmax(auto, 936px);
+  grid-template-columns: minmax(auto, 610px);
   justify-content: center;
   border-bottom: 1px solid #dbdbdb;
 
@@ -95,7 +105,137 @@ h1 {
 
 .section-view-comments {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 7.5em;
+  flex-direction: column;
+  padding: 0;
 }
+.section-view-comments a{
+color: #262626;
+text-decoration: none;
+}
+.action-icon {
+  display: flex;
+  width: 610px;
+  height: 40px;
+  border: 1px solid green;
+}
+
+.div-likes {
+  display: flex;
+  align-items: center;
+  width: 610px;
+  height: 24px;
+  margin: 0px 0px 8px;
+  border: 1px solid yellow;
+}
+
+.div-list-comment {
+  display: flex;
+  width: 610px;
+  height: 106px;
+  margin: 0px 0px 8px;
+  border: 1px solid gray;
+}
+.time-comments {
+  display: flex;
+  height: 19px;
+  width: 610px;
+  margin: 4px 0px 0px;
+  border: 1px solid purple;
+
+}
+.div-container-Suggestions {
+  display: block;
+  height: auto;
+  padding: 0;
+  margin-left: 845px;
+  margin-top: 6.5em;
+  position: fixed;
+  max-width: 293px;
+  width: 100%;
+
+}
+
+.div-info-profile {
+  width: inherit;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.div-container-info-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.div-photo-profile {
+  margin-left: 5px;
+  overflow: hidden;
+
+}
+
+.div-photo-profile img {
+  border-radius: 50px;
+}
+
+.div-container-username {
+  display: block;
+  margin-left: 15px;
+  margin: auto auto auto 20px;
+}
+
+.username {
+  font-weight: bold;
+
+}
+
+.name {
+  font-weight: normal;
+}
+
+.div-suggestions {
+  width: 293px;
+  height: auto;
+  overflow: hidden;
+}
+
+.container-suggestions-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.see-all a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.div-list-suggestions {
+  width: inherit;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ab {
+  width: inherit;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.content-list-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.div-follow a {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
