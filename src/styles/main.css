@@ -37,10 +37,13 @@ h1 {
 .Header li {
   display: inline-block;
   margin: 0 0 0 1em;
+  font-size: 23px;
 }
 
 .Header h1 {
   color: black;
+  font-family: "Pacifico";
+  font-weight: bold;
 }
 
 .container {
@@ -50,19 +53,28 @@ h1 {
 
 .feed {
   margin: 50px;
-  border: 1px solid black;
+  box-shadow: gray 0 0 3px;
   width: 600px;
 }
 
 .feed-account {
-  height: 70px;
-  border: 1px solid black;
+  height: 60px;
   display: flex;
   align-items: stretch;
 }
 
+.feed-account div h4 {
+  margin-top: 13px;
+  color: black;
+  font-family: sans-serif;
+}
+
 .feed-account div p {
-margin-top: -15px;
+margin-top: -20px;
+margin-left: 2px;
+font-family: sans-serif;
+color: black;
+font-size: 13px;
 }
 
 .feed-option {
@@ -72,14 +84,14 @@ margin-top: -15px;
 .feed-option  a {
   position: absolute;
   right: 420px;
-  margin: 25px 10px;
+  margin: 22px 10px;
 }
 
 .image-account {
   display: inline-block;
   border-radius: 50%;
   height: 50px;
-  margin: 10px 10px;
+  margin: 5px 10px;
 }
 
 .image {
@@ -90,4 +102,29 @@ margin-top: -15px;
   padding: 1em;
   display: flex;
   align-items: stretch;
+  height: 70px;;
 }
+
+.like-post {
+  font-size: 20px;
+}
+
+.send-post {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.save-post {
+  position: absolute;
+  right: 420px;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+.feed-interaction div p {
+  margin-top: 5px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
