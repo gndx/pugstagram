@@ -5,6 +5,23 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Billabong';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Billabong'), url('../fonts/Billabong.woff') format('woff');
+  }
+
+.Header-title {
+  color: #383838;
+  font-family:'Billabong';
+  font-weight: normal;
+  font-size: 30px;
+  background: linear-gradient(to right, #F99B15, #8103A6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -15,17 +32,18 @@ h1 {
 }
 
 .Header-container {
+  height: 60px;
   display: grid;
-  grid-template-columns: minmax(auto, 936px);
+  grid-template-columns: minmax(auto, 1250px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(145, 145, 145, 0.7);
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 10px;
 }
 
 .Header ul {
@@ -41,4 +59,13 @@ h1 {
 
 .Header h1 {
   color: black;
+}
+
+.link a{
+	text-decoration: none;
+}
+
+.link img {
+  height: 30px;
+  width: 30px;
 }
