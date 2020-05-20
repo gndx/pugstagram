@@ -3,11 +3,24 @@ body {
   color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
+  z-index: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+}
+h4{
+  cursor: pointer;
 }
 
 .Header {
@@ -15,19 +28,19 @@ h1 {
   position: fixed;
 
 }
-
 .Header-container {
   display: grid;
   grid-template-columns: minmax(auto, 1350px);
   justify-content: center;
   border-bottom: 1px solid #dbdbdb;
+
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .5em;
+  padding: 1.3em;
 }
 
 .Header ul {
@@ -108,10 +121,16 @@ h1 {
   flex-direction: column;
   padding: 0;
 }
-.section-view-comments a{
-color: #262626;
-text-decoration: none;
+
+.section-view-comments a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 .action-icon {
   display: flex;
   width: 610px;
@@ -122,27 +141,75 @@ text-decoration: none;
 .div-likes {
   display: flex;
   align-items: center;
-  width: 610px;
-  height: 24px;
-  margin: 0px 0px 8px;
-  border: 1px solid yellow;
+  margin: 0px 0px 4px;
 }
 
 .div-list-comment {
   display: flex;
-  width: 610px;
-  height: 106px;
-  margin: 0px 0px 8px;
-  border: 1px solid gray;
+  flex-direction: column;
+  margin: 0px 0px 4px;
 }
+
+.div-list-comment div {
+  margin-left: 12px;
+  line-height: 20px;
+  margin-right: 40px;
+}
+
 .time-comments {
   display: flex;
-  height: 19px;
+  padding-bottom: 8px;
+  margin-left: 10px
+}
+
+.make-container {
+  display: flex;
+  height: 60px;
   width: 610px;
-  margin: 4px 0px 0px;
-  border: 1px solid purple;
+}
+
+.form-make-comment {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 1;
+  position: relative;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.txtarea-make-comment {
+  margin-left: 10px;
+  border: 0;
+  background: 0 0;
+  flex-grow: 1;
+  height: 18px;
+  max-height: 80px;
+  padding: 0;
+  width: 0;
+  outline: 0;
+  resize: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+
 
 }
+
+.btn-make-comment {
+  margin-right: 20px;
+  color: #0095f6;
+  border: 0;
+  padding: 0;
+  display: inline;
+  position: relative;
+  background: 0 0;
+  font-weight: 600;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
 .div-container-Suggestions {
   display: block;
   height: auto;
@@ -206,11 +273,28 @@ text-decoration: none;
   margin-top: 20px;
 }
 
+.name {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8e8e8e;
+}
+
+.username {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #262626;
+  font-weight: 600;
+}
+
 .see-all a {
   text-decoration: none;
-  color: black;
-  font-size: 13px;
-  font-weight: bold;
+  color: #262626;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .div-list-suggestions {
@@ -234,8 +318,8 @@ text-decoration: none;
 }
 
 .div-follow a {
-  font-size: 13px;
+  color: #0095f6;
+  font-size: 12px;
   text-decoration: none;
   font-weight: bold;
 }
-
