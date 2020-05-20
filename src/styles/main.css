@@ -16,6 +16,7 @@ h1 {
 .header {
   background-color: white;
   height: 54px;
+  /* position: fixed; */
 }
 
 .header-logo{
