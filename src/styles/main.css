@@ -19,7 +19,8 @@ h1 {
   margin: 0;
   padding: 0;
 }
-h4{
+
+h4 {
   cursor: pointer;
 }
 
@@ -28,6 +29,7 @@ h4{
   position: fixed;
 
 }
+
 .Header-container {
   display: grid;
   grid-template-columns: minmax(auto, 1350px);
@@ -322,4 +324,50 @@ h4{
   font-size: 12px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.div-elements-info {
+  display: block;
+  margin: 0;
+  position: relative;
+  padding-top: 20px;
+}
+
+.nav-elements-info {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.list-elements-info {
+  flex-grow: 1;
+  margin-bottom: 3px;
+}
+
+.div-elements-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+}
+
+.div-elements-info a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.info {
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: none;
+  display: inline-block;
+  font-weight: 400;
+
+}
+.div-copyright-pugstagram{
+  text-transform: uppercase;
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
 }
