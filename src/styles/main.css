@@ -10,6 +10,10 @@ h1 {
   padding: 0;
 }
 
+p{
+  margin: 0;
+}
+
   /* ================================================================== */
  /*                           HEADER                                   */
 /* ================================================================== */
@@ -132,3 +136,84 @@ h1 {
   /* ================================================================== */
  /*                           MAIN - SECTIONS                          */
 /* ================================================================== */
+.main{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main-container{
+  width: 76%;
+  background-color: darkgoldenrod;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* ==================== SECTION 1 ====================== */
+.users-container{
+  background-color: rgb(118, 170, 65);
+  width: 65%;
+}
+
+.friends-container{
+  border-radius: 3px;
+  width: 100%;
+  height: 82px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid rgba(38,38,38,0.7);
+}
+
+.friends{
+  width: 68px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.friends-image{
+  width: 57px;
+  height: 57px;
+  border: 2px solid red;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-one{
+  width: 51px;
+  height: 51px;
+  background-image: url('../../images/candy.jpg');
+  background-size: 56px 56px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.image-two{
+  width: 51px;
+  height: 51px;
+  background-image: url('../../images/gora.jpg');
+  background-size: 56px 56px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.image-three{
+  width: 51px;
+  height: 51px;
+  background-image: url('../../images/elmo1.jpg');
+  background-size: 56px 56px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+
+
+/* ==================== SECTION 2 ====================== */
+.profile-container{
+  background-color: mediumorchid;
+  width: 31%;
+  
+}
