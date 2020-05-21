@@ -2,9 +2,10 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Huskytagram</title>
+  <link href="styles/main.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="Images/fa-instagram.png" />
 </head>
 
 <body>
@@ -12,21 +13,162 @@
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <h1>Huskytagram</h1>
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li>
+              <a href="#"> <img src="Images/fa-liked.png" alt="icon-liked" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="Images/fa-message.png" alt="icon-message" /> </a>
+            </li>
+            <li>
+              <a href="#"> <img src="Images/fa-user.png" alt="icon-user" /></a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
+  <section class="main">
+    <div class="main-container">
+      <div class="Timeline">
+        <div class="Timeline-container">
+          <div class="Card-post1">
+            <div class="Card-header">
+              <div class="card-user">
+                <img src="Images/Profile-user.jpg" alt="photo-profile">
+                <h2>
+                  I feel Happy
+                  <span>
+                    Bogotá, Colombia
+                  </span>
+                </h2>
+              </div>
+            </div>
+            <div class="post">
+              <figure><img src="Images/Post1.jpg" alt="Post1" id="post1"></figure>
+            </div>
+            <div class="icon-post">
+              <div class="left-icons ">
+                <i><img src="Images/icon-message-card.png" alt=""></i>
+                <i><img src="Images/icon-card.png" alt=""></i>
+              </div>
+              <div class="right-icon">
+                <i><img src="Images/bookmark-icon-card.png" alt=""></i>
+              </div>
+            </div>
+          </div>
+          <div class="Card-post1">
+            <div class="Card-header">
+              <div class="card-user">
+                <img src="Images/Profile-user.jpg" alt="photo-profile">
+                <h2>
+                  My firts photo
+                  <span>
+                    Bogotá, Colombia
+                  </span>
+                </h2>
+              </div>
+            </div>
+            <div class="post">
+              <figure><img src="Images/post2.1.jpg" alt="Post2" id="post2"></figure>
+            </div>
+            <div class="icon-post">
+              <div class="left-icons ">
+                <i><img src="Images/icon-message-card.png" alt=""></i>
+                <i><img src="Images/icon-card.png" alt=""></i>
+              </div>
+              <div class="right-icon">
+                <i><img src="Images/bookmark-icon-card.png" alt=""></i>
+              </div>
+            </div>
+          </div>
+          <div class="Card-post1">
+            <div class="Card-header">
+              <div class="card-user">
+                <img src="Images/Profile-user.jpg" alt="photo-profile">
+                <h2>
+                  My firts travel in pool
+                  <span>
+                    Melgar, Tolima
+                  </span>
+                </h2>
+              </div>
+            </div>
+            <div class="post3">
+              <figure><img src="Images/post3.jpg" alt="Post3" id="post3" ></figure>
+            </div>
+            <div class="icon-post">
+              <div class="left-icons ">
+                <i><img src="Images/icon-message-card.png" alt=""></i>
+                <i><img src="Images/icon-card.png" alt=""></i>
+              </div>
+              <div class="right-icon">
+                <i><img src="Images/bookmark-icon-card.png" alt=""></i>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="Sideuser">
+        <div class="Sideuser-container">
+          <div class="Profile">
+            <div class="Profile-contet">
+              <div class="avatar">
+                <img src="Images/Profile-user.jpg">
+              </div>
+              <div class="info-profile">
+                <h2 class="info-description">
+                  JacoJean
+                  <span> Jean Murcia</span>
+                </h2>
+              </div>
+            </div>          
+          </div>
+          <div class="stories">
+            <div class="stories-container">
+              <div class="Head-stories">
+                <h2>
+                  Stories
+                  <span> Ver todas</span>
+                </h2>
+              </div>
+              <div class="Stories-item">
+                <div class="stories-item-box">
+                 <a href="#post1">
+                  <img src="Images/Profile-user.jpg" alt="post1">
+                 </a> 
+                  <h2>
+                    Nickname
+                    <span>10 horas antes</span>
+                  </h2>
+                  <div class="stories-item-box">
+                    <a href="#post2">
+                      <img src="Images/Profile-user.jpg" alt="post2">
+                    </a>                    
+                    <h2>
+                      Nickname
+                      <span>10 horas antes</span>
+                    </h2>
+                    <div class="stories-item-box">
+                     <a href="#post3">
+                      <img src="Images/Profile-user.jpg" alt="post3">
+                     </a>                       
+                      <h2>
+                        Nickname
+                        <span>10 horas antes</span>
+                      </h2>     
+                </div>       
+              </div>         
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <footer></footer>
 </body>
 
 </html>
