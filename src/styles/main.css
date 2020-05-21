@@ -29,6 +29,10 @@ h1 {
 
 .Header {
   background-color: white;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
 
 .Header-container {
@@ -68,4 +72,91 @@ h1 {
 .link img {
   height: 30px;
   width: 30px;
+}
+
+.main-container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.timeline {
+  border: 1px solid red;
+  
+  
+}
+
+.timeline-container {
+  border: 1px solid blue;
+  
+  width: 650px;
+  height: 650px;
+  margin-bottom: 50px;
+}
+
+.timeline-stories {
+  background-color: green;
+  border: 1px solid maroon;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  border: 1px solid red;
+ padding: 20px;
+  width: 300px;
+  height: 500px;
+  justify-content: center;
+  margin-left: 20px;
+  position: fixed;
+  right: 220px;
+}
+
+.sidebar-container {
+ border: 1px solid blue; 
+  width: 280px;
+  height: 450px;  
+  justify-content: center; 
+  right: 350px; 
+  padding: 5px;
+}
+
+.stories-container {
+  background-color: white;
+  border: 1px solid maroon;
+  border-radius: 5px;
+  width: 180px;
+  height: 190px;
+  padding: 8px 16px;
+  margin: 16px 0;
+}
+
+.images {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 150px;
+  /* border: 1px solid blue; */
+}
+
+.sidebar-perfil {
+  padding: 0px;
+  margin: 0;
+}
+
+.container {
+  /* border: 1px solid red; */
+  width: 1100px;
+  margin: 0 auto; /* Centrar el contenedor */
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.footer {
+  background-color: gray;
+  height: 50px;
 }
