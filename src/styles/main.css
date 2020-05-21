@@ -6,10 +6,7 @@ body {
   z-index: 0;
   font-size: 14px;
   line-height: 18px;
-  font-family: -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
+  font-family: "Segoe UI",
     Helvetica,
     Arial,
     sans-serif;
@@ -42,18 +39,31 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.3em;
+  padding: 1em;
 }
 
 .Header ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding: 0 15em 0 0;
 }
 
 .Header li {
   display: inline-block;
   margin: 0 0 0 1em;
+}
+
+.ancla-icon-like-header {
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.icon-like-header {
+  display: block;
+  position: relative;
 }
 
 .Header h1 {
@@ -135,9 +145,30 @@ h4 {
 
 .action-icon {
   display: flex;
-  width: 610px;
-  height: 40px;
-  border: 1px solid green;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons-left-post {
+  display: inline-flex;
+  padding-left: 7px;
+}
+
+.icons-right-post {
+  padding-right: 9px;
+}
+.svg-action{
+  cursor: pointer;
+}
+
+.btn-action {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  background: 0 0;
+  justify-content: center;
+  padding: 8px;
 }
 
 .div-likes {
@@ -150,6 +181,9 @@ h4 {
   display: flex;
   flex-direction: column;
   margin: 0px 0px 4px;
+}
+.div-list-comment span{
+  color: #262626;
 }
 
 .div-list-comment div {
@@ -167,7 +201,6 @@ h4 {
 .make-container {
   display: flex;
   height: 60px;
-  width: 610px;
 }
 
 .form-make-comment {
@@ -364,7 +397,8 @@ h4 {
   font-weight: 400;
 
 }
-.div-copyright-pugstagram{
+
+.div-copyright-pugstagram {
   text-transform: uppercase;
   color: #c7c7c7;
   font-size: 11px;
