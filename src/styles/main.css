@@ -139,19 +139,16 @@ p{
 .main{
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
 .main-container{
   width: 76%;
-  background-color: darkgoldenrod;
   margin: 30px auto 0;
   display: flex;
   justify-content: space-between;
 }
 /* ==================== SECTION 1 ====================== */
 .users-container{
-  background-color: rgb(118, 170, 65);
   width: 65%;
 }
 
@@ -209,7 +206,51 @@ p{
   border-radius: 50%;
 }
 
+/* ======================================= */
+.container-user{
+  background-color: cornflowerblue;
+  margin-top: 30px;
+  border: 1px solid rgba(38,38,38,0.7);
+  border-radius: 3px;
+}
 
+.user-data{
+  width: 100%;
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.user-data-img{
+  width: 42px;
+  height: 42px;
+  background-image: url('../../images/elmo1.jpg');
+  background-size: 42px 42px;
+  border-radius: 50%;
+}
+
+.user-data-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+}
+
+.user-data-options p{
+  margin-left: 17px;
+}
+
+.user-data-options .menu{
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/menu.svg');
+  background-size: 30px 30px;
+}
 
 /* ==================== SECTION 2 ====================== */
 .profile-container{
