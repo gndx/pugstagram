@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: #fafafa;
   color: rgba(38,38,38,0.7);
@@ -42,3 +46,60 @@ h1 {
 .Header h1 {
   color: black;
 }
+main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.publication{
+  width: 500px;
+  height: 750px;
+  margin: 20px;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 0;
+}
+
+.publication-image img{
+  width: 100%;
+}
+.publication-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.publication-header p{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.publication-PerfilUser{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.publication-PerfilUser img{
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.publication-PerfilUser h3{
+  color: black;
+  font-size: 18px;
+}
+.publication-reactions{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: black;
+  margin-top: 10px;
+}
+.publication-reactionsMain .far{
+  margin-left: 10px;
+}
+.publications-reactionsSave{
+  margin-right: 10px;
+}
+
+
+
+

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Pugstagram</title>
   <link href="styles/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b778b1c697.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,16 +15,51 @@
         <div class="Header-logo">
           <h1>Pugstagram</h1>
         </div>
+        <div class="header-search">
+          <input type="text">
+        </div>
         <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+          <i class="fas fa-home"></i>
+          <i class="far fa-paper-plane"></i>
+          <i class="far fa-compass"></i>
+          <i class="far fa-heart"></i>
         </div>
       </div>
     </div>
   </header>
   <main>
+    <section class="publication">
+      <div class="publication-header">
+        <div class="publication-PerfilUser">
+          <picture>
+            <img src="image/perfil.jpg" alt="user-perfil" width="30px" height="30px">
+          </picture>
+          <p>user</p>
+        </div>
+        <p> ...</p>
+      </div>
+      <div class="publication-image">
+        <figure>
+          <img src="image/elmo.jpg" alt="photo">
+        </figure>
+      </div>
+      <div class="publication-reactions">
+        <div class="publication-reactionsMain">
+          <i class="far fa-heart"></i>
+          <i class="far fa-comment"></i>
+          <i class="far fa-paper-plane"></i>
+        </div>
+        <div class="publications-reactionsSave">
+          <i class="far fa-bookmark"></i>
+        </div>
+      </div>
+      
+    </section>
+    <section class="recommends">
+      <div><img src="image/perfil.jpg" alt="user-perfil" width="30px" height="30px"></div>
+      <div><img src="image/perfil.jpg" alt="user-perfil" width="30px" height="30px"></div>
+      <div><img src="image/perfil.jpg" alt="user-perfil" width="30px" height="30px"></div>
+    </section>
   </main>
   <footer>
   </footer>
