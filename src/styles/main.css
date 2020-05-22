@@ -208,7 +208,7 @@ p{
 
 /* ======================================= */
 .container-user{
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   margin-top: 30px;
   border: 1px solid rgba(38,38,38,0.7);
   border-radius: 3px;
@@ -225,10 +225,10 @@ p{
 }
 
 .user-data-img{
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background-image: url('../../images/elmo1.jpg');
-  background-size: 42px 42px;
+  background-size: 40px 40px;
   border-radius: 50%;
 }
 
@@ -237,7 +237,7 @@ p{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 95%;
   height: 30px;
 }
 
@@ -249,8 +249,58 @@ p{
   width: 30px;
   height: 30px;
   background-image: url('../../images/menu.svg');
-  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
 }
+
+.user-image{
+  width: 100%;
+  height: 614px;
+  background-image: url('../../images/elmo.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.user-actions{
+  width: 95%;
+  height: 40px;
+  padding: 0 16px;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.action-button{
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+  padding: 8px;
+}
+
+.action-box1{
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: inherit;
+}
+.action-button.one{
+  background-image: url('../../images/heart.svg');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+.action-box2{
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
 
 /* ==================== SECTION 2 ====================== */
 .profile-container{
