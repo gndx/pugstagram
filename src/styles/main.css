@@ -34,6 +34,26 @@ body {
   font-family: 'Grand Hotel', cursive;
 }
 
+.Header-container h1 {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.Header-container h1:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f09433, #bc1888);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .Header-container.Form input {
   padding: 4px;
   font-size: 13px;
@@ -46,4 +66,12 @@ body {
 .Header-container.Form input:focus {
   outline: none;
   border: 1px solid rgba(0,0,0,0.23);
+}
+
+.iconosnav {
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 0 2px;
+  text-decoration: none;
+  color: #252525d1;
 }
