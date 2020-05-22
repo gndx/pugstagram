@@ -52,6 +52,9 @@ h1 {
   padding-top: 30px;
   display: flex;
   justify-content: center;
+  max-width: 935px;
+  margin: 0 auto;
+  width: 100%;
 }
 .left_content
 {
@@ -206,10 +209,6 @@ h1 {
   top: 68px;
   white-space: nowrap;
 }
-.right_content
-{
-display: flex;
-}
 ul
 {
   list-style: none;
@@ -321,7 +320,7 @@ header
 .bottom_content
 {
   flex-direction: column;
-  padding-bottom: 1000px;
+  padding-bottom: 0px;
   padding-top: 0px;
   border-radius: 3px;
   border: 1px solid #dbdbdb;
@@ -329,6 +328,7 @@ header
   background-color: rgba(var(--d87,255,255,255),1);
   margin-left: -1px;
   margin-right: -1px;
+  margin-bottom: 60px;
 }
 .post_owner
 {
@@ -645,9 +645,160 @@ header
   margin: 0;
   padding: 0;
 }
+.interaction2
+{
+  display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-webkit-flex-direction: row;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+-webkit-box-pack: start;
+-webkit-justify-content: flex-start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+white-space: pre;
+}
+.comments, .comment_people
+{
+  flex-direction: column;
+}
+.date
+{
+  padding-left: 16px;
+  margin-bottom: 4px;
+}
+.add_comment
+{
+  padding-left: 16px;
+  padding-right: 16px;
+  border-top: 1px solid #efefef;
+  border-top: 1px solid rgba(var(--ce3,239,239,239),1);
+  color: #8e8e8e;
+  color: rgba(var(--f52,142,142,142),1);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 18px;
+  min-height: 56px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 4px;
+
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid rgb(163, 160, 160);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+.box_comment
+{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  position: relative;
+}
+.insert_comment
+{
+  background: 0 0;
+  border: 0;
+  color: #262626;
+  color: rgba(var(--i1d,38,38,38),1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-size: inherit;
+  height: 18px;
+  max-height: 80px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  width: 0;
+}
+.publish_comment
+{
+  opacity: .3;
+  pointer-events: none;
+  border: 0;
+  color: #0095f6;
+  color: rgba(var(--d69,0,149,246),1);
+  display: inline;
+  padding: 0;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: 0 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .right_content
 {
-  width: 300px;
-  height: 500px;
+  height: 100vh;
+  margin-bottom: 30px;
+  padding: 0;
+  max-width: 293px;
+  right: 0;
+  width: 100%;
   border: 1px solid red;
 }
