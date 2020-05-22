@@ -5,40 +5,45 @@ body {
   padding: 0;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
 .Header {
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid gray;
   background-color: white;
 }
 
-.Header-container {
-  display: grid;
-  grid-template-columns: minmax(auto, 936px);
-  justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
-}
-
-.Header-content {
+.Header-navigator {
+  max-width: 1000px;
+  width: 95%;
+  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  align-items: center;
+  height: 100%;
 }
 
-.Header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.Header-container {
+  width: 170px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Header li {
-  display: inline-block;
-  margin: 0 0 0 1em;
+.Header-container h1 {
+  font-family: 'Grand Hotel', cursive;
 }
 
-.Header h1 {
-  color: black;
+.Header-container.Form input {
+  padding: 4px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.16);
+  color: #00000080;
+}
+
+.Header-container.Form input:focus {
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.23);
 }
