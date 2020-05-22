@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Pugstagram</title>
   <link href="styles/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b778b1c697.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,16 +15,112 @@
         <div class="Header-logo">
           <h1>Pugstagram</h1>
         </div>
+        <div class="Header-search">
+          <input type="text" placeholder="Buscar">
+        </div>
         <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+          <i class="fas fa-home"></i>
+          <i class="far fa-paper-plane"></i>
+          <i class="far fa-compass"></i>
+          <i class="far fa-heart"></i>
+          <img src="image/perfil.jpg" alt="user-profile" width="25px" height="25px">
         </div>
       </div>
     </div>
   </header>
   <main>
+    <section class="publication">
+      <div class="publication-header">
+        <div class="publication-profileUser">
+          <picture>
+            <img src="image/perfil.jpg" alt="user-profile" width="30px" height="30px">
+          </picture>
+          <div class="publication-profileName">
+            <h3>elmo_pug</h3>
+            <p>Bogotá, Colombia</p>
+          </div>
+        </div>
+        <p> ...</p>
+      </div>
+      <div class="publication-image">
+        <figure>
+          <img src="image/elmo.jpg" alt="photo">
+        </figure>
+      </div>
+      <div class="publication-reactions">        
+          <div class="publication-reactionsMain">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="publications-reactionsSave">
+            <i class="far fa-bookmark"></i>
+          </div>
+        </div>      
+        <div class="publication-comments">
+          <h3>elmo_pug</h3>
+          <p>Jugando en la piscina de pelotas...</p>
+        </div>
+        <div class="publication-addComments">
+          <h4>Añade un comentario</h4>
+          <p>Publicar</p>
+        </div>
+    </section>
+    <section class="right">
+      <div class="profile">
+        <picture>
+          <img src="image/perfil.jpg" alt="" width="65px" height="65px">
+        </picture>
+        <div class="profile-user">
+          <h3>smontenegro95</h3>
+          <p>Sergio Montenegro</p>
+        </div>
+      </div>
+      <div class="suggestion">
+        <div class="suggestion-title">
+          <h3>Sugerencias para ti</h3>
+          <p>Ver todo</p>
+        </div>
+        <div class="suggestion-items">
+          <div class="suggestions-profile">
+            <picture>
+              <img src="image/perfil.jpg" alt="user-profile" width="30px" height="30px">
+            </picture>
+            <div class="suggestions-profileAdd">
+              <h3>Juan Martín</h3>
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="suggestions-profile">
+            <picture>
+              <img src="image/perfil.jpg" alt="user-profile" width="30px" height="30px">
+            </picture> 
+            <div class="suggestions-profileAdd">
+              <h3>David Fonseca</h3>
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="suggestions-profile">
+            <picture>
+              <img src="image/perfil.jpg" alt="user-profile" width="30px" height="30px">
+            </picture> 
+            <div class="suggestions-profileAdd">
+              <h3>Mery Contreras</h3>
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="suggestions-profile">
+            <picture>
+              <img src="image/perfil.jpg" alt="user-profile" width="30px" height="30px">
+            </picture> 
+            <div class="suggestions-profileAdd">
+              <h3>Carlos Rodriguez</h3>
+              <p>Seguir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>
