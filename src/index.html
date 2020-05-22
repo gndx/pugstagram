@@ -1,32 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pugstagram</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/main.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/224b3b7dfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
-        </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+  <body>
+    <header class="Header">
+      <div class="Header-container">
+        <div class="Header-content">
+          <div class="Header-logo">
+            <img src="images/pugstagram_logo.svg" alt="" />
+          </div>
+          <div class="Header-search">
+            <i class="fas fa-search"></i>
+            <input type="text" name="search" id="" placeholder="Search" />
+          </div>
+          <div class="Header-nav">
+            <a href="#" class="Header-nav-link">
+              <i class="fas fa-home"></i>
+            </a>
+            <a href="#" class="Header-nav-link">
+              <i class="fa fa-paper-plane-o"></i>
+            </a>
+            <a href="#" class="Header-nav-link">
+              <i class="fa fa-compass"></i>
+            </a>
+            <a href="#" class="Header-nav-link">
+              <i class="fa fa-heart-o"></i>
+            </a>
+            <img src="images/pug_profile.jpg" alt="" class="Header-nav-photo" />
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
-</body>
-
+    </header>
+    <main class="Feed">
+      <section class="Photo">
+        <header class="Photo-header">
+          <div class="Photo-header-column">
+            <img src="images/pug_profile.jpg" alt="" class="Photo-avatar" />
+          </div>
+          <div class="Photo-header-column">
+            <span class="Photo-username">walterwhite</span>
+            <span class="Photo-location">Albuquerque, Nuevo México</span>
+          </div>
+        </header>
+        <div class="Photo-file-container">
+          <img class="Photo-file" src="images/elmo.jpg" />
+        </div>
+        <div class="Photo-info">
+          <div class="Photo-icons">
+            <span class="Photo-icon">
+              <i class="fa fa-heart-o heart fa-lg"></i>
+            </span>
+            <span class="Photo-icon">
+              <i class="fa fa-comment-o fa-lg"></i>
+            </span>
+            <span class="Photo-icon">
+              <i class="fa fa-paper-plane-o fa-lg"></i>
+            </span>
+          </div>
+          <span class="Photo-likes">215 likes</span>
+          <ul class="Photo-comments">
+            <li class="Photo-comment">
+              <span class="Photo-comment-author">walterwhite</span>wow this is
+              great!
+            </li>
+            <li class="Photo-comment">
+              <span class="Photo-comment-author">jessepinkman</span>ohh yeah!
+            </li>
+          </ul>
+          <span class="Photo-time-ago">11 hours ago</span>
+          <div class="Photo-add-comment-container">
+            <textarea
+              placeholder="Add a comment..."
+              class="Photo-add-comment"
+            ></textarea>
+            <a href="#">Post</a>
+          </div>
+        </div>
+      </section>
+      <section class="Photo">
+        <header class="Photo-header">
+          <div class="Photo-header-column">
+            <img src="images/pug_profile.jpg" alt="" class="Photo-avatar" />
+          </div>
+          <div class="Photo-header-column">
+            <span class="Photo-username">walterwhite</span>
+            <span class="Photo-location">New York, NY</span>
+          </div>
+        </header>
+        <div class="Photo-file-container">
+          <img class="Photo-file" src="images/pug_ny.jpg" />
+        </div>
+        <div class="Photo-info">
+          <div class="Photo-icons">
+            <span class="Photo-icon">
+              <i class="fa fa-heart-o heart fa-lg"></i>
+            </span>
+            <span class="Photo-icon">
+              <i class="fa fa-comment-o fa-lg"></i>
+            </span>
+            <span class="Photo-icon">
+              <i class="fa fa-paper-plane-o fa-lg"></i>
+            </span>
+          </div>
+          <span class="Photo-likes">300 likes</span>
+          <ul class="Photo-comments">
+            <li class="Photo-comment">
+              <span class="Photo-comment-author">walterwhite</span>
+              Cold brew @ NY!
+            </li>
+            <li class="Photo-comment">
+              <span class="Photo-comment-author">skylerwhite</span>Hi handsome!
+            </li>
+          </ul>
+          <span class="Photo-time-ago">2 days ago</span>
+          <div class="Photo-add-comment-container">
+            <textarea
+              placeholder="Add a comment..."
+              class="Photo-add-comment"
+            ></textarea>
+            <a href="#">Post</a>
+          </div>
+        </div>
+      </section>
+      <section class="Photo">
+        <header class="Photo-header">
+          <div class="Photo-header-column">
+            <img src="images/pug_profile.jpg" alt="" class="Photo-avatar" />
+          </div>
+          <div class="Photo-header-column">
+            <span class="Photo-username">walterwhite</span>
+            <span class="Photo-location">Downtown</span>
+          </div>
+        </header>
+        <div class="Photo-file-container">
+          <img class="Photo-file" src="images/pug_sunset.jpg" />
+        </div>
+        <div class="Photo-info">
+          <div class="Photo-icons">
+            <span class="Photo-icon">
+              <i class="fa fa-heart-o heart fa-lg"></i>
+            </span>
+            <span class="Photo-icon">
+              <i class="fa fa-comment-o fa-lg"></i>
+            </span>
+            <span class="Photo-icon">
+              <i class="fa fa-paper-plane-o fa-lg"></i>
+            </span>
+          </div>
+          <span class="Photo-likes">338 likes</span>
+          <ul class="Photo-comments">
+            <li class="Photo-comment">
+              <span class="Photo-comment-author">walterwhite</span>
+              Rooftop sunset
+            </li>
+            <li class="Photo-comment">
+              <span class="Photo-comment-author">saulgoodman</span>
+              That's nice buddy!
+            </li>
+          </ul>
+          <span class="Photo-time-ago">5 days ago</span>
+          <div class="Photo-add-comment-container">
+            <textarea
+              placeholder="Add a comment..."
+              class="Photo-add-comment"
+            ></textarea>
+            <a href="#">Post</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
