@@ -7,9 +7,9 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-family: "Segoe UI",
-  Helvetica,
-  Arial,
-  sans-serif;
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 h1 {
@@ -40,8 +40,9 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: .1em;
 }
+
 .Header ul {
   list-style: none;
   margin: 0;
@@ -53,6 +54,7 @@ h4 {
   display: inline-block;
   margin: 0 0 0 1em;
 }
+
 .ancla-icon-like-header {
   border: 0;
   cursor: pointer;
@@ -63,26 +65,24 @@ h4 {
 .icon-like-header {
   display: block;
   position: relative;
+
 }
 
-.Header h1 {
-  font-family: 'Pacifico',
-  cursive;
-  padding-left: 8em;
-  font-size: 24px;
-  font-weight: normal;
-  color: #262626;
+.logo-pugstagram {
+  padding-left: 14.3em;
+  position: relative;
+  cursor: pointer;
 }
 
 .div-container-section-ppal {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
   box-sizing: border-box;
   overflow: hidden;
+  padding-bottom: 90px;
 }
-img{
+
+img {
   object-fit: cover;
 }
-
-
-
