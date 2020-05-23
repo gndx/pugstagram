@@ -18,7 +18,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  box-shadow: 0 0 2px  rgba(38,38,38,0.7);
 }
 
 .Header-content {
@@ -53,7 +53,7 @@ h1 {
 
 .feed {
   margin: 50px;
-  box-shadow: gray 0 0 3px;
+  box-shadow: 0 0 2px rgba(38,38,38,0.7);
   width: 600px;
 }
 
@@ -83,8 +83,9 @@ font-size: 13px;
 
 .feed-option  a {
   position: absolute;
-  right: 420px;
-  margin: 22px 10px;
+  right: 550px;
+  margin: 19px 10px;
+  font-size: 20px;
 }
 
 .image-account {
@@ -116,7 +117,7 @@ font-size: 13px;
 
 .save-post {
   position: absolute;
-  right: 420px;
+  right: 550px;
   margin: 0px 10px;
   font-size: 20px;
 }
@@ -127,4 +128,72 @@ font-size: 13px;
   font-family: sans-serif;
   font-size: 13px;
 }
+
+.feed-post {
+  width: 600px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 10px 10px -15px rgba(38,38,38,0.7);
+}
+
+.sinborde {
+  border: 0;
+  width: 500px;
+  height: 35px;
+  background: #fafafa;
+}
+
+.button {
+  border: 0;
+  width: 92px;
+  height: 35px;
+  background: #fafafa;
+  color: #3fa5e4;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: end;
+}
+
+.comment-post ::placeholder {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+.stories {
+  margin: 50px 20px;
+  width: 230px;
+  height: 500px;
+  
+}
+
+.stories-account {
+  width: 230px;
+  height: 70px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: stretch;
+}
+
+.stories-account div h4 {
+  margin-top: 13px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.stories-account div p {
+  margin-top: -20px;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.stories-followers {
+  box-shadow: 0 0 2px rgba(38,38,38,0.7);
+  width: 230px;
+  height: 300px;
+  background-color: white;
+}
+
 
