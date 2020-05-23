@@ -138,14 +138,13 @@ p{
 /* ================================================================== */
 .main{
   width: 100%;
-  
+  position: relative;
 }
 
 .main-container{
   width: 76%;
   margin: 30px auto 30px auto;
   display: flex;
-  
   justify-content: space-between;
 }
 /* ==================== SECTION 1 ====================== */
@@ -162,6 +161,7 @@ p{
   display: flex;
   justify-content: space-evenly;
   border: 1px solid rgba(38,38,38,0.5);
+  background-color: white;
 }
 
 .friends{
@@ -210,7 +210,7 @@ p{
 
 /* ======================================= */
 .container-user{
-  /* background-color: cornflowerblue; */
+  background-color: white;
   margin-top: 30px;
   border: 1px solid rgba(38,38,38,0.5);
   border-radius: 3px;
@@ -356,7 +356,78 @@ p{
 
 /* ==================== SECTION 2 ====================== */
 .profile-container{
-  background-color: mediumorchid;
+  /* background-color: mediumorchid; */
   width: 31%;
+  box-sizing: border-box;
+}
+.profile-data{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.profile-container-img{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  background-image: url('../../images/lukas.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.profile-suggestion .suggestion-title{
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+.suggestion-view{
   
+  margin-top: 20px;
+}
+
+.view-user{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+}
+.view-container{
+  align-items: center;
+  width: 70%;
+  display: flex;
+}
+
+.view-img{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  background-image: url('../../images/gora.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;   
+}
+
+.view-state{
+  width: 30%;
+  text-align: right;
+  padding-top: 10px;
+  color: blue;
+}
+
+/* ====================================== */
+.footer{
+  margin-top: 50px;
+  line-height: 13px;
+  font-size: 11px;
+}
+
+.footer-content2{
+  margin-top: 20px;
 }
