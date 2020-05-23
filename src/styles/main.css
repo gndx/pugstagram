@@ -5,40 +5,73 @@ body {
   padding: 0;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
 .Header {
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid gray;
   background-color: white;
 }
 
-.Header-container {
-  display: grid;
-  grid-template-columns: minmax(auto, 936px);
-  justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
-}
-
-.Header-content {
+.Header-navigator {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  align-items: center;
+  height: 100%;
 }
 
-.Header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.Header-container {
+  width: 170px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Header li {
+.Header-container h1 {
+  font-family: 'Grand Hotel', cursive;
+}
+
+.Header-container h1 {
   display: inline-block;
-  margin: 0 0 0 1em;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
 }
 
-.Header h1 {
-  color: black;
+.Header-container h1:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f09433, #bc1888);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Header-container.Form input {
+  padding: 4px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.16);
+  color: #00000080;
+}
+
+.Header-container.Form input:focus {
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.23);
+}
+
+.iconosnav {
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 0 2px;
+  text-decoration: none;
+  color: #252525d1;
 }

@@ -1,32 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/feed.css" rel="stylesheet">
 </head>
-
 <body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
+  <header class="Header" id="Header">
+    <nav class="Header-navigator">
+      <div class="Header-container logo">
+        <h1>Pugstagram</h1>
+      </div>
+      <div class="Header-container Form">
+        <form action="" class="Header-formSearch">
+          <input type="search" placeholder="Search">
+        </form>
+      </div>
+      <div class="Header-container nav">
+        <a href="" class="iconosnav icon-home3"></a>
+        <a href="" class="iconosnav icon-compass2"></a>
+        <a href="" class="iconosnav icon-heart"></a>
+        <a href="" class="iconosnav icon-user"></a>
+      </div>
+    </nav>
+  </header>  
+  <div class="contenid">    
+    <div class="container-all-feed">      
+      <div class="container-feed-post">
+        <div class="post-feed">
+          <div class="post-username-feed">
+            <div>
+              <figure class="picture-profile-post">
+                <img src="images/pugs_user.jpg" alt="">
+              </figure>
+              <span> <strong>alejocantillo95</strong> <br> Bogotá, Colombia</span>
+            </div>
+            <div>
+              <figure>
+                <img src="images/puntos.svg" width="20px" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="post-image-feed">
+            <img src="images/public_pugstagram.jpg" alt="">
+          </div>
+          <div class="post-counter-feed">
+            <div class="post-content">
+              <div class="post-iconos">
+                <span class="iconpost icon-heart"></span>
+                <span class="iconpost icon-bubble2"></span>
+                <span class="iconpost icon-share"></span>
+              </div>
+              <div class="post-iconos">
+                <span class="iconpost icon-bookmark"></span>
+              </div>
+            </div>
+            <div class="counter-likes">
+              500 me gusta
+            </div>            
+          </div>
+          <div class="counter-post">
+            <span> <strong>alejocantillo95</strong> <br> Disfrutando de mi piscina</span>
+          </div>
+          <div class="counter-post">
+            <span> <strong>tweetnatty</strong> Hola Alejo!</span>
+          </div>
+          <div class="counter-post">
+            <span> <strong>isa.martinez</strong> Hola </span>
+          </div>
+          <div class="counter-coment">
+            <input type="text" placeholder="Agrega un Comentario">
+            <button>Post</button>
+          </div>
         </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+      </div>      
+      <div class="container-right-feed">
+        <div class="rightside-feed">           
+          <div class="container-info-rightside">
+            <figure class="container-info-rightside-img">
+              <img src="images/pugs_user.jpg" alt="">
+            </figure>
+            <div class="container-txt-name-info">
+              <span> <strong>alejocantillo95</strong></span> <br/>
+              <span>Alejandro Cantillo Guamanga</span>
+            </div>
+          </div>
+          <div class="rightside-histories">            
+            <div class="txt-header--histories">
+              <span>Historias</span>
+              <span>Ver todas</span>
+            </div>            
+            <div class="list-histories">              
+              <div class="container-info-rightside-histories">
+                <figure class="container-info-rightside-img-histories">
+                  <img src="images/pugs_user.jpg" alt="">
+                </figure>
+                <div class="container-txt-name-info">
+                  <span> <strong>alejocantillo95</strong></span> <br/>
+                  <small>Hace 1 minuto</small>
+                </div>
+              </div>              
+              <div class="container-info-rightside-histories">
+                <figure class="container-info-rightside-img-histories">
+                  <img src="images/pugs_user2.jpg" alt="">
+                </figure>
+                <div class="container-txt-name-info">
+                  <span> <strong>tweetnatty</strong></span> <br/>
+                  <small>Hace 15 minutos</small>
+                </div>
+              </div>
+              <div class="container-info-rightside-histories">
+                <figure class="container-info-rightside-img-histories">
+                  <img src="images/pugs_user3.jpg" alt="">
+                </figure>
+                <div class="container-txt-name-info">
+                  <span> <strong>linarodriguez133</strong></span> <br/>
+                  <small>Hace 1 hora</small>
+                </div>
+              </div>
+              <div class="container-info-rightside-histories">
+                <figure class="container-info-rightside-img-histories">
+                  <img src="images/pugs_user4.jpg" alt="">
+                </figure>
+                <div class="container-txt-name-info">
+                  <span> <strong>karolrodriguez.2003</strong></span> <br/>
+                  <small>Hace 7 horas</small>
+                </div>
+              </div>
+              <div class="container-info-rightside-histories">
+                <figure class="container-info-rightside-img-histories">
+                  <img src="images/pugs_user5.jpg" alt="">
+                </figure>
+                <div class="container-txt-name-info">
+                  <span> <strong>isa.martinez</strong></span> <br/>
+                  <small>Hace 23 horas</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <main>
-  </main>
+  </div>   
   <footer>
   </footer>
 </body>
-
 </html>
