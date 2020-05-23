@@ -68,6 +68,11 @@
   background: white;
 }
 
+.post-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .picture-profile-post{
   width: 35px;
   height: 35px;
