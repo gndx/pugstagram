@@ -1,37 +1,53 @@
 body {
   background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
+  z-index: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+
+}
+
+h4 {
+  cursor: pointer;
 }
 
 .Header {
   background-color: white;
+  position: fixed;
+
 }
 
 .Header-container {
   display: grid;
-  grid-template-columns: minmax(auto, 936px);
+  grid-template-columns: minmax(auto, 1350px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid #dbdbdb;
+
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: .1em;
 }
 
 .Header ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding: 0 15em 0 0;
 }
 
 .Header li {
@@ -39,6 +55,34 @@ h1 {
   margin: 0 0 0 1em;
 }
 
-.Header h1 {
-  color: black;
+.ancla-icon-like-header {
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.icon-like-header {
+  display: block;
+  position: relative;
+
+}
+
+.logo-pugstagram {
+  padding-left: 14.3em;
+  position: relative;
+  cursor: pointer;
+}
+
+.div-container-section-ppal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 90px;
+}
+
+img {
+  object-fit: cover;
 }

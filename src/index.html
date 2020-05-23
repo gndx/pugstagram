@@ -3,8 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pugstagram</title>
+  <link rel="icon" type="image/png" href="https://arepa.s3.amazonaws.com/favicon.png">
   <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/card.css" rel="stylesheet">
+  <link href="styles/suggestions.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -12,18 +18,602 @@
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <img src="./image/logo-pugstagram.png" alt="Pugstagram" class="logo-pugstagram" >
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li>
+              <div class="div-icon-like-header">
+                <a class="ancla-icon-like-header" href="#">
+                  <svg aria-label="Activity-feed" class="icon-like-header" fill="#262626" height="22"
+                    viewBox="0 0 48 48" width="22">
+                    <path
+                      d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                    </path>
+
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="div-icon-like-header">
+                <a class="ancla-icon-like-header" href="#">
+                  <img src="./image/photography-of-a-guy-wearing-green-shirt-1222271.jpg" alt="photo profile"
+                    width="22px" height="22px"
+                    style="border-radius: 50px;">
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
   <main>
+    <section class="section-ppal">
+      <div class="div-container-section-ppal">
+        <div class="card-publication">
+          <div class="card-container-publication">
+            <header class="header-card-publication">
+              <div class="container-header-publication">
+                <div class="profile-header-post" style="display: inline-flex;align-items: center; padding-left: 12px;">
+                  <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="imagen profile post" width="32px"
+                    height="32px" style="border-radius: 50px; border: 2.5px solid rgb(218, 157, 25); cursor: pointer;">
+                  <h4 style="padding-left: 11px;color: #262626;">Elmo.pug</h4>
+                </div>
+                <div class="icon-setting" style="height: 24px; width: 24px; margin-right: 8px;cursor: pointer;">
+                  <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" viewBox="0 0 48 48"
+                    width="16">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg></div>
+              </div>
+            </header>
+            <div class="img-card-publication">
+              <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="imagen publicacion">
+            </div>
+            <div class="div-comments">
+              <section class="section-comments">
+                <div class="section-comments-container">
+                  <div class="section-view-comments">
+                    <div class="action-icon">
+                      <div class="icons-left-post">
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="svg-action " class="svg-action " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                              </path>
+                            </svg>
+                            <path
+                              d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                          </button>
+                        </span>
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="Comment" class="svg-action  " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd">
+                              </path>
+                            </svg>
+                          </button>
+                        </span>
+                        <button class="btn-action " type="button">
+                          <svg aria-label="Share Post" class="svg-action  " fill="#262626" height="24"
+                            viewBox="0 0 48 48" width="24">
+                            <path
+                              d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="icons-right-post">
+                        <span class="span-action"><button class="btn-action " type="button"><svg aria-label="Save"
+                              class="svg-action " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                              </path>
+                            </svg></button></span>
+                      </div>
+                    </div>
+                    <div class="div-likes">
+                      <div class="img-likes">
+                        <img src="./image/woman-wearing-black-eyeglasses-1239291.jpg" alt=""
+                          style="width: 20px; height: 20px; border-radius: 50px; margin-left: 15px;">
+                      </div>
+                      <div class="other-likes">
+                        <span>Liked by <a href="#">pedroprz </a>and <a href="#">1000 others</a></span>
+                      </div>
+                    </div>
+                    <div class="div-list-comment">
+                      <div class="first-comment">
+                        <span><a href="#">pedroprz</a> Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.Consequuntur saepe aliquam officia. Rem quaerat atque repudiandae de nulla! Quaerat
+                          adipisci culpa totam quo ipsa, asperiores esse facere. Maxime, quae!</span>
+                      </div>
+                      <div class="second-comment" style="padding-top: 5px">
+                        <span style="color: #8e8e8e;font-weight: 600;cursor: pointer;">View all 77 comments</span>
+                      </div>
+                      <div class="third-comments" style="padding-top: 5px">
+                        <span> <a href="#">oliva637</a> jajjajjajajajajajajaja</span>
+                      </div>
+                    </div>
+                    <div class="time-comments">
+                      <div class="time">
+                        <span style="font-weight: 600;font-size: 10px;">7 HOURS AGO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-make-comments">
+                <div class="make-container">
+                  <form class="form-make-comment">
+                    <textarea aria-label="Add a comment" placeholder="Add a comment..." class="txtarea-make-comment"
+                      style="height: 18px;"></textarea>
+                    <button class="btn-make-comment">Post</button>
+                  </form>
+
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="card-publication">
+          <div class="card-container-publication">
+            <header class="header-card-publication">
+              <div class="container-header-publication">
+                <div class="profile-header-post" style="display: inline-flex;align-items: center; padding-left: 12px;">
+                  <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="imagen profile post" width="32px"
+                    height="32px" style="border-radius: 50px; border: 2.5px solid rgb(218, 157, 25); cursor: pointer;">
+                  <h4 style="padding-left: 11px;color: #262626;">Elmo.pug</h4>
+                </div>
+                <div class="icon-setting" style="height: 24px; width: 24px; margin-right: 8px;cursor: pointer;">
+                  <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" viewBox="0 0 48 48"
+                    width="16">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg></div>
+              </div>
+            </header>
+            <div class="img-card-publication">
+              <img src="https://arepa.s3.amazonaws.com/elmo001.jpeg" alt="imagen publicacion">
+            </div>
+            <div class="div-comments">
+              <section class="section-comments">
+                <div class="section-comments-container">
+                  <div class="section-view-comments">
+                    <div class="action-icon">
+                      <div class="icons-left-post">
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="svg-action " class="svg-action " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                              </path>
+                            </svg>
+                            <path
+                              d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                          </button>
+                        </span>
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="Comment" class="svg-action  " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd">
+                              </path>
+                            </svg>
+                          </button>
+                        </span>
+                        <button class="btn-action " type="button">
+                          <svg aria-label="Share Post" class="svg-action  " fill="#262626" height="24"
+                            viewBox="0 0 48 48" width="24">
+                            <path
+                              d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="icons-right-post">
+                        <span class="span-action"><button class="btn-action " type="button"><svg aria-label="Save"
+                              class="svg-action " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                              </path>
+                            </svg></button></span>
+                      </div>
+                    </div>
+                    <div class="div-likes">
+                      <div class="img-likes">
+                        <img src="./image/woman-wearing-black-eyeglasses-1239291.jpg" alt=""
+                          style="width: 20px; height: 20px; border-radius: 50px; margin-left: 15px;">
+                      </div>
+                      <div class="other-likes">
+                        <span>Liked by <a href="#">sergio </a>and <a href="#">50 others</a></span>
+                      </div>
+                    </div>
+                    <div class="div-list-comment">
+                      <div class="first-comment">
+                        <span><a href="#">Elmo.pug</a> Hola !</span>
+                      </div>
+                      <div class="second-comment" style="padding-top: 5px">
+                        <span style="color: #8e8e8e;font-weight: 600;cursor: pointer;">View all 77 comments</span>
+                      </div>
+                      <div class="third-comments" style="padding-top: 5px">
+                        <span> <a href="#">samuel_co</a> el propio Elmo.pug </span>
+                      </div>
+                    </div>
+                    <div class="time-comments">
+                      <div class="time">
+                        <span style="font-weight: 600;font-size: 10px;">1 HOURS AGO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-make-comments">
+                <div class="make-container">
+                  <form class="form-make-comment">
+                    <textarea aria-label="Add a comment" placeholder="Add a comment..." class="txtarea-make-comment"
+                      style="height: 18px;"></textarea>
+                    <button class="btn-make-comment">Post</button>
+                  </form>
+
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="card-publication">
+          <div class="card-container-publication">
+            <header class="header-card-publication">
+              <div class="container-header-publication">
+                <div class="profile-header-post" style="display: inline-flex;align-items: center; padding-left: 12px;">
+                  <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="imagen profile post" width="32px"
+                    height="32px" style="border-radius: 50px; border: 2.5px solid rgb(218, 157, 25); cursor: pointer;">
+                  <h4 style="padding-left: 11px;color: #262626;">Elmo.pug</h4>
+                </div>
+                <div class="icon-setting" style="height: 24px; width: 24px; margin-right: 8px;cursor: pointer;">
+                  <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" viewBox="0 0 48 48"
+                    width="16">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg></div>
+              </div>
+            </header>
+            <div class="img-card-publication">
+              <img src="https://arepa.s3.amazonaws.com/elmo004.jpg" alt="imagen publicacion">
+            </div>
+            <div class="div-comments">
+              <section class="section-comments">
+                <div class="section-comments-container">
+                  <div class="section-view-comments">
+                    <div class="action-icon">
+                      <div class="icons-left-post">
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="svg-action " class="svg-action " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                              </path>
+                            </svg>
+                            <path
+                              d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                          </button>
+                        </span>
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="Comment" class="svg-action  " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd">
+                              </path>
+                            </svg>
+                          </button>
+                        </span>
+                        <button class="btn-action " type="button">
+                          <svg aria-label="Share Post" class="svg-action  " fill="#262626" height="24"
+                            viewBox="0 0 48 48" width="24">
+                            <path
+                              d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="icons-right-post">
+                        <span class="span-action"><button class="btn-action " type="button"><svg aria-label="Save"
+                              class="svg-action " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                              </path>
+                            </svg></button></span>
+                      </div>
+                    </div>
+                    <div class="div-likes">
+                      <div class="img-likes">
+                        <img src="./image/woman-wearing-black-eyeglasses-1239291.jpg" alt=""
+                          style="width: 20px; height: 20px; border-radius: 50px; margin-left: 15px;">
+                      </div>
+                      <div class="other-likes">
+                        <span>Liked by <a href="#">catalina </a>and <a href="#">259 others</a></span>
+                      </div>
+                    </div>
+                    <div class="div-list-comment">
+                      <div class="first-comment">
+                        <span><a href="#">Elmo.pug</a> Un hueso para la dieta !</span>
+                      </div>
+                      <div class="second-comment" style="padding-top: 5px">
+                        <span style="color: #8e8e8e;font-weight: 600;cursor: pointer;">View all 150 comments</span>
+                      </div>
+                      <div class="third-comments" style="padding-top: 5px">
+                        <span> <a href="#">natalia22</a> disfrutalo ... </span>
+                      </div>
+                    </div>
+                    <div class="time-comments">
+                      <div class="time">
+                        <span style="font-weight: 600;font-size: 10px;">30 MITUTES AGO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-make-comments">
+                <div class="make-container">
+                  <form class="form-make-comment">
+                    <textarea aria-label="Add a comment" placeholder="Add a comment..." class="txtarea-make-comment"
+                      style="height: 18px;"></textarea>
+                    <button class="btn-make-comment">Post</button>
+                  </form>
+
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="card-publication">
+          <div class="card-container-publication">
+            <header class="header-card-publication">
+              <div class="container-header-publication">
+                <div class="profile-header-post" style="display: inline-flex;align-items: center; padding-left: 12px;">
+                  <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="imagen profile post" width="32px"
+                    height="32px" style="border-radius: 50px; border: 2.5px solid rgb(218, 157, 25); cursor: pointer;">
+                  <h4 style="padding-left: 11px;color: #262626;">Elmo.pug</h4>
+                </div>
+                <div class="icon-setting" style="height: 24px; width: 24px; margin-right: 8px;cursor: pointer;">
+                  <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" viewBox="0 0 48 48"
+                    width="16">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg></div>
+              </div>
+            </header>
+            <div class="img-card-publication">
+              <img src="https://arepa.s3.amazonaws.com/elmo008.png" alt="imagen publicacion">
+            </div>
+            <div class="div-comments">
+              <section class="section-comments">
+                <div class="section-comments-container">
+                  <div class="section-view-comments">
+                    <div class="action-icon">
+                      <div class="icons-left-post">
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="svg-action " class="svg-action " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                              </path>
+                            </svg>
+                            <path
+                              d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                          </button>
+                        </span>
+                        <span class="span-action">
+                          <button class="btn-action " type="button">
+                            <svg aria-label="Comment" class="svg-action  " fill="#262626" height="24"
+                              viewBox="0 0 48 48" width="24">
+                              <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd">
+                              </path>
+                            </svg>
+                          </button>
+                        </span>
+                        <button class="btn-action " type="button">
+                          <svg aria-label="Share Post" class="svg-action  " fill="#262626" height="24"
+                            viewBox="0 0 48 48" width="24">
+                            <path
+                              d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="icons-right-post">
+                        <span class="span-action"><button class="btn-action " type="button"><svg aria-label="Save"
+                              class="svg-action " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                              <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                              </path>
+                            </svg></button></span>
+                      </div>
+                    </div>
+                    <div class="div-likes">
+                      <div class="img-likes">
+                        <img src="./image/woman-wearing-black-eyeglasses-1239291.jpg" alt=""
+                          style="width: 20px; height: 20px; border-radius: 50px; margin-left: 15px;">
+                      </div>
+                      <div class="other-likes">
+                        <span>Liked by <a href="#">catalina </a>and <a href="#">259 others</a></span>
+                      </div>
+                    </div>
+                    <div class="div-list-comment">
+                      <div class="first-comment">
+                        <span><a href="#">Elmo.pug</a> Hola ! cómo te llamas? !</span>
+                      </div>
+                      <div class="second-comment" style="padding-top: 5px">
+                        <span style="color: #8e8e8e;font-weight: 600;cursor: pointer;">View all 5 comments</span>
+                      </div>
+                    </div>
+                    <div class="time-comments">
+                      <div class="time">
+                        <span style="font-weight: 600;font-size: 10px;">5 MITUTES AGO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-make-comments">
+                <div class="make-container">
+                  <form class="form-make-comment">
+                    <textarea aria-label="Add a comment" placeholder="Add a comment..." class="txtarea-make-comment"
+                      style="height: 18px;"></textarea>
+                    <button class="btn-make-comment">Post</button>
+                  </form>
+
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="div-container-Suggestions">
+          <div class="div-info-profile">
+            <div class="div-container-info-profile">
+              <div class="div-photo-profile">
+                <img src="./image/photography-of-a-guy-wearing-green-shirt-1222271.jpg"
+                  style="width: 55px; height: 55px;" alt="fotoperfil">
+              </div>
+              <div class="div-container-username">
+                <h4 class="username" style="margin: 0;">pepito_perez</h4>
+                <h5 class="name" style="margin: 0;">Felipe Pérez</h5>
+              </div>
+
+            </div>
+          </div>
+          <div class="div-suggestions">
+            <div class="container-suggestions-user">
+              <div class="tittle-suggestions">
+                <span style="font-weight: 600; color: #8e8e8e; line-height: 18px;">Suggestions For You</span>
+              </div>
+              <div class="see-all">
+                <a href="#">See All</a>
+              </div>
+            </div>
+            <div class="div-list-suggestions" style="flex-direction: column; height: auto; overflow:hidden">
+              <div class="ab">
+                <div class="content-list-profile">
+                  <div class="div-photo-profile">
+                    <img src="./image/adult-beard-boy-casual-220453.jpg" style="width: 30px; height: 30px;"
+                      alt="fotoperfil">
+                  </div>
+                  <div class="div-container-username">
+                    <h4 class="username" style="margin: 0;">victor perez20</h4>
+                    <h5 class="name" style="margin: 0;">Te sigue</h5>
+                  </div>
+
+                </div>
+                <div class="div-follow">
+                  <a href="#">Follow</a>
+                </div>
+              </div>
+              <div class="ab">
+                <div class="content-list-profile">
+                  <div class="div-photo-profile">
+                    <img src="https://i.imgur.com/yDqtWP4.jpg" style="width: 30px; height: 30px;" alt="fotoperfil">
+                  </div>
+                  <div class="div-container-username">
+                    <h4 class="username" style="margin: 0;">anita459</h4>
+                    <h5 class="name" style="margin: 0;">Te sigue</h5>
+                  </div>
+                </div>
+                <div class="div-follow">
+                  <a href="#">Follow</a>
+                </div>
+              </div>
+              <div class="ab">
+                <div class="content-list-profile">
+                  <div class="div-photo-profile">
+                    <img src="./image/man-young-happy-smiling-91227.jpg" style="width: 30px; height: 30px;"
+                      alt="fotoperfil">
+                  </div>
+                  <div class="div-container-username">
+                    <h4 class="username" style="margin: 0;">pedroc5555</h4>
+                    <h5 class="name" style="margin: 0;">Te sigue</h5>
+                  </div>
+                </div>
+                <div class="div-follow">
+                  <a href="#">Follow</a>
+                </div>
+              </div>
+              <div class="ab">
+                <div class="content-list-profile">
+                  <div class="div-photo-profile">
+                    <img src="./image/woman-wearing-black-eyeglasses-1239291.jpg" style="width: 30px; height: 30px;"
+                      alt="fotoperfil">
+                  </div>
+                  <div class="div-container-username">
+                    <h4 class="username" style="margin: 0;">sandratamayo</h4>
+                    <h5 class="name" style="margin: 0;">Te sigue</h5>
+                  </div>
+                </div>
+                <div class="div-follow">
+                  <a href="#">Follow</a>
+                </div>
+              </div>
+              <div class="ab">
+                <div class="content-list-profile">
+                  <div class="div-photo-profile">
+                    <img src="./image/closeup-photo-of-woman-with-brown-coat-and-gray-top-733872.jpg"
+                      style="width: 30px; height: 30px;" alt="fotoperfil">
+                  </div>
+                  <div class="div-container-username">
+                    <h4 class="username" style="margin: 0;">marianita15</h4>
+                    <h5 class="name" style="margin: 0;">Te sigue</h5>
+                  </div>
+                </div>
+                <div class="div-follow">
+                  <a href="#">Follow</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="div-elements-info">
+            <nav class="nav-elements-info">
+              <ul class="list-elements-info">
+                <li class="info"> <a href="#">About.</a></li>
+                <li class="info"><a href="#">Help.</a></li>
+                <li class="info"><a href="#">Press.</a></li>
+                <li class="info"><a href="#">Api.</a></li>
+                <li class="info"><a href="#">Jobs.</a></li>
+                <li class="info"><a href="#">Privacy.</a></li>
+                <li class="info"><a href="#">Terms.</a></li>
+                <li class="info"><a href="#">Locations.</a></li>
+                <li class="info"><a href="#">Top Acounts.</a></li>
+                <li class="info"><a href="#">Hashtags.</a></li>
+                <li class="info"><a href="#">Language</a></li>
+              </ul>
+            </nav>
+            <span class="div-copyright-pugstagram">© 2020 pugstagram from platzi</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>

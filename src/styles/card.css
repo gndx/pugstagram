@@ -1,0 +1,171 @@
+.card-publication {
+  height: auto;
+  width: auto;
+  display: flex;
+  box-sizing: border-box;
+  vertical-align: baseline;
+
+}
+
+.card-container-publication {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  overflow: hidden;
+  width: auto;
+  margin: 90px 0 -40px 205px;
+
+}
+
+.header-card-publication {
+  display: grid;
+  grid-template-columns: minmax(auto, 610px);
+  justify-content: center;
+  background-color: white;
+
+}
+
+.container-header-publication {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.img-card-publication img {
+  width: 610px;
+}
+
+.div-comments {
+  background-color: white;
+  height: auto;
+}
+
+.section-comments-container {
+  display: grid;
+  grid-template-columns: minmax(auto, 610px);
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+
+}
+
+.section-view-comments {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.section-view-comments a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons-left-post {
+  display: inline-flex;
+  padding-left: 7px;
+}
+
+.icons-right-post {
+  padding-right: 9px;
+}
+
+.svg-action {
+  cursor: pointer;
+}
+
+.btn-action {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  background: 0 0;
+  justify-content: center;
+  padding: 8px;
+}
+.other-likes{
+  padding: 0px 0px 5px 0px;
+  margin-left: 7px;
+}
+
+.div-likes {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 4px;
+}
+
+.div-list-comment {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 4px;
+}
+
+.div-list-comment span {
+  color: #262626;
+}
+
+.div-list-comment div {
+  margin-left: 15px;
+  line-height: 20px;
+  margin-right: 40px;
+}
+
+.time-comments {
+  display: flex;
+  padding-bottom: 8px;
+  margin-left: 15px
+}
+
+.make-container {
+  display: flex;
+  height: 60px;
+}
+
+.form-make-comment {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 1;
+  position: relative;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.txtarea-make-comment {
+  margin-left: 15px;
+  border: 0;
+  background: 0 0;
+  height: 18px;
+  max-height: 80px;
+  padding: 0;
+  width: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  resize: none;
+  outline:none;
+  flex-grow: 5;
+
+}
+
+.btn-make-comment {
+  margin-right: 20px;
+  color: #0095f6;
+  border: 0;
+  padding: 0;
+  display: inline;
+  position: relative;
+  background: 0 0;
+  font-weight: 600;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  user-select: none;
+}
