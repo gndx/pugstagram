@@ -42,3 +42,179 @@ h1 {
 .Header h1 {
   color: black;
 }
+
+.main{
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.main-container{
+  display: grid;
+  width: 936px;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+}
+
+.principal{
+  /* border: 1px solid red; */
+}
+
+.principal-container{
+  background: white;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 3px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.principal.histories{
+  
+}
+
+.hist-content ul{
+  display:  flex;
+  padding-left: 20px ;
+}
+
+.hist-content li{
+  border: 1px solid red;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+
+.hist-image{
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin: 0;
+  padding: 0 4px;
+  width: 80px
+}
+
+.hist-image figure{
+  margin: 0;
+}
+
+.hist-image img {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+.hist-name p{
+  margin: 5px 0;
+}
+
+.principal-container1{
+  background: white;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 3px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+
+
+.principal-figure{
+  width: 100%;
+  padding-bottom: 16px ;
+
+}
+
+.enca-principal{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.enca-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enca-image{
+  padding-right: 10px;
+}
+
+.enca-image img{
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+.enca-name p,
+.enca-ubication p{
+  margin: 0px;
+}
+
+.pfigure-image img{
+  width: 100%;
+}
+
+.pfigure-comment{
+  padding: 0 16px;
+}
+
+.pfigure-icons{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 4px 0 0;
+}
+
+.pfigure-icons p{
+  padding: 0 10px;
+}
+
+p.icon-save{
+  padding-left: 400px;
+}
+
+.pfigure-likes{
+  height: 17.7px;
+  padding: 0 10px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.pfigure-likes p{
+  margin: 0;
+}
+
+.pfigure-commentarys{
+  padding: 0 10px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.pfigure-commentarys p{
+  margin: 0;
+}
+
+.pfigure-time{
+  padding: 0 10px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.pfigure-time p{
+  margin: 0;
+}
+
+.pfigure-addcomm{
+  border-top: 1px solid rgba(var(--b6a,219,219,219),1);
+  padding: 0 10px;
+  margin: 0;
+  margin-bottom: 4px;
+}
