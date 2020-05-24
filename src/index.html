@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Pugstagram</title>
   <link href="styles/main.css" rel="stylesheet">
+  <style id="svelte-10udrfy-style">@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");@import url("https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap");</style>
 </head>
 
 <body>
@@ -12,19 +13,68 @@
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <h1 class="title">Pugstagram</h1>
         </div>
-        <div class="Header-nav">
+        <div>
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><img src="styles\images\home.png" alt="home"></li>
+            <li><img src="styles\images\send.png" alt="home"></li>
+            <li><img src="styles\images\favorite.png" alt="home"></li>
+            
+            <li><img src="styles\images\img.jpg" alt="home"></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
   <main>
+     
   </main>
+  <section class="timeLine">
+    <div class="timeLine-container">
+        <div class="user">
+          <div class="userIcon">
+            <img src="styles\images\img.jpg" alt="home">
+          </div>
+          <div class="userInfo">
+            <ul>
+              <li><h4>Elmo.pug</h4></li>
+              <li><h5>Bogotá,Colombia</h5></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeLine-Images">
+          <img src="styles\images\pug.jpeg" alt="home">
+        </div>
+        <div class="timeLine-icon"> 
+          <img src="styles\images\send.png" alt="home">
+          <img src="styles\images\favorite.png" alt="home">
+        </div>
+        <div class="timeLine-description">
+          <h4>Elmo.pug</h4>
+          <span>Disfrutando de mi piscina</span> 
+        </div>
+        <div class="timeLine-comments"> 
+          <div class="timeLine-comments">
+            <ul>
+              <li>        
+                <h4 >Crispeta</h4> 
+                <span >¡Hola!</span>
+              </li>
+              <li>
+                <h4>Dollarsin</h4>
+                <span> Hola Elmo</span>  
+              </li>
+            </ul>  
+          </div> 
+          <div class="timeLine-addcomments">
+            <input type="text"   name="addcomments" value="  Agregar comentario...">
+            <bUtton type="submit">post</bUtton>
+          </div> 
+        </div>
+        
+    </div>
+  </section>
   <footer>
   </footer>
 </body>
