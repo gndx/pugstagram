@@ -10,6 +10,8 @@ h1 {
   padding: 0;
 }
 
+
+
 .Header {
   background-color: white;
 }
@@ -18,7 +20,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
 }
 
 .Header-content {
@@ -38,7 +40,326 @@ h1 {
   display: inline-block;
   margin: 0 0 0 1em;
 }
+.Header li img{
+  width: 22px;
+  height: 22px;
+}
 
 .Header h1 {
-  color: black;
+  background: -webkit-linear-gradient(rgb(255, 238, 0),rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  color: rgb(255, 38, 0);  
+  font-style: italic;
+}
+
+/*trabajo de clase*/
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: Billabong;
+  src: url(Billabong.ttf);
+}
+
+h1{
+  font-family: Billabong;
+  line-height: 0  ;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+}
+
+.main .container{
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+
+.main .container .photos{
+  float: left;
+  width: 68%;
+  border-right: 15px;
+}
+
+.main .container .photos .nickname .nickname-info{
+  border-radius: 3px;
+  border-color: rgba(var(--b6a,219,219,219),1);
+  border-width: .1em;
+  border-style: solid;
+}
+
+.main .container .photos .nickname .nickname-photos img.photo{
+  width: 100%;
+  height: auto;
+}
+
+.main .container .photos .nickname-info .Header-nick img{
+  border-radius: 50%;
+}
+
+.main .container .photos .nickname-info .Header-nick{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: .5em;
+  background: white;
+}
+
+.main .container .photos .nickname-info .Header-nick .nick-info{
+  margin-left: 16px;
+}
+
+.main .container .photos .nickname{
+  padding: 20px 0;
+  /*border: 1px solid #f0f0f0;/*borrar al final*/
+  border-right-width: 20px;
+  margin-bottom: 60px;
+}
+
+/*seccion reacciones*/
+
+
+/*seccion social*/
+.main .container .photos .nickname-info .social{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+  background: white;
+}
+/*seccion reacciones*/
+.main .container .photos .nickname-info .social span img {
+  margin-left: 15px;
+}
+.main .container .photos .nickname-info .social .like img{
+  margin-left: 0;
+}
+.main .container .photos .nickname-info .social .save img{
+ margin-left: 460px;
+ margin-right: 15px;
+} 
+
+.main .container .photos .nickname-info .social-comentarios{
+  padding: 1em;
+  padding-top: 0;
+  background: white;
+}
+.main .container .photos .nickname-info .social-comentarios p{
+  color: #262626;
+  padding-bottom: 5px;
+}
+
+.main .container .photos .nickname-info .add-cometarios{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.4em;
+  background: white;
+  border-color: rgba(var(--b6a,219,219,219),1);
+  border-width: .1em;
+  border-style: solid;
+}
+
+.main .container .photos .nickname-info .add-cometarios .text{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main .container .photos .nickname-info .add-cometarios .boton{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main .container .photos .boton{
+  background-color: #eee;
+  border: 0;
+  color: #0095f6;
+  text-decoration: none;
+}
+.main .container .photos .text{
+  border: none;
+  width: 542px;
+  height: 22px;
+}
+.main .container .photos .cometarios .form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*informacion usuario*/
+
+.main .container .user{
+  float: right;
+  width: 28%;
+}
+
+.main .container .user .user-section{
+  /*position: fixed;*/
+  top: 88px;
+  left: 990px;
+  /*max-width: 293px;*/
+
+}
+
+.main .container .user .user-section .user-info{
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.main .container .user .user-section .user-info .foto-autor img{
+  border-radius: 50%;
+}
+
+.main .container .user .user-section .user-info .info-autor{
+  margin-left: 13px;
+}
+
+.main .container .user .user-section .user-info ul li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main .container .user .user-section .user-info .info-autor .user-name{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  color: #8E8E8E;
+}
+
+/*secion sugerencias amigos*/
+
+.main .container .user .user-section .other{
+  margin: 0 0 12px -16px;
+  width: calc(100% + 32px)
+}
+
+.main .container .user .user-section .other .sugerencias{
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 12px;
+ 
+}
+
+.main .container .user .user-section .other .sugerencias .title{
+  font-size: 14px;
+  font-weight: 600;
+  color: #8E8E8E;
+}
+
+.main .container .user .user-section .other .sugerencias .title ul{
+  align-items: center;
+  justify-content: space-between;
+  padding: .1em;
+  list-style: none;
+}
+
+.main .container .user .user-section .other .sugerencias .title ul li{
+  display: inline-block;
+  text-align: left;
+}
+
+.main .container .user .user-section .other .sugerencias .title ul li a{
+  margin-left: 78px;
+  text-align: right;
+  color: #262626;
+  font-size: 12PX;
+}
+
+/*sugerencias a seguir*/
+
+.main .container .user .user-section .user-sugerencia{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.main .container .user .user-section .user-sugerencia .user-container{
+  float: left;
+  border-right: 15px;
+  display: inline-block;
+}
+
+.main .container .user .user-section .user-sugerencia .user-container .info-sugerencia .photo-s{
+  height: 0;
+}
+.main .container .user .user-section .user-sugerencia .user-container .info-sugerencia .photo-s img{
+  border-radius: 50%;
+}
+.main .container .user .user-section .user-sugerencia .user-container .info-sugerencia .info-s{
+margin-left: 50px;
+}
+
+.main .container .user .user-section .user-sugerencia .user-container .info-sugerencia ul li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main .container .user .user-section .user-sugerencia .follow{
+  float: right;
+}
+.main .container .user .user-section .user-sugerencia .follow a{
+  color: #0095f6;
+  text-decoration: none;
+}
+
+
+
+/*Secion de informacion*/
+
+.main .container .user .user-section .info{
+  padding-top: 0;
+  padding-bottom: 38px;
+}
+.main .container .user .user-section .info ul{
+  /*display: flex;*/
+  align-items: center;
+  justify-content: space-between;
+  padding: .1em;
+  list-style: none;
+  margin-bottom: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+.main .container .user .user-section .info nav{
+  margin-bottom: 16px;
+}
+
+.main .container .user .user-section .info ul li{
+  display: inline-block;
+  /*margin: 0 0 0 1em;*/
+  text-align: left;
+  font-size: 11px;
+}
+
+.main .container .user .user-section .info ul li a{
+  color: #c7c7c7;
+  text-decoration: none;
+}
+
+.main .container .user .user-section .info span{
+  color: #c7c7c7;
+  font-size: 11px;
 }

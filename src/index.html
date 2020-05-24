@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
+  <link rel="icon" type="imgage/svg" href="img/instagram.svg" />
+  <link href="styles/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -16,14 +17,135 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><a href="#"><img src="img/home.svg" alt="" /></a></li>
+            <li><img src="img/like.svg" alt="" /></li><!--Likes-->
+            <li><img src="img/user (2).svg" alt="" /></li><!--Profile-->
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
+    <section class="container">
+      <div class="photos"><!--seccion-->
+        <div class="nickname"><!--fotos subidas-->
+        <article class="nickname-info">
+          <header class="Header-nick">
+            <div class="nickname-photo">
+              <img img src="https://i.ibb.co/CmDxtx5/imagen01.jpg" alt="imagen01" border="0" alt="" width="42px" height="42px">
+            </div>
+            <div class="nick-info">
+              <h3 class="nickname-u"><strong>Elmo</strong></h3>
+            </div>
+          </header>
+          <div class="nickname-photos"><!--contenido foto-->
+            <img class="photo" img src="https://i.ibb.co/CmDxtx5/imagen01.jpg" alt="imagen01" border="0"/>
+          </div>
+          <div class="social"><!--Reaciones-->
+            <span class="like" > <img src="img/like.svg" alt="" width="30px" height="30px"></span>
+            <span> <img src="img/comment.svg" alt="" width="30px" height="30px"><!--comentarios--></span>
+            <span> <img src="img/share (2).svg" alt="" width="30px" height="30px"><!--compartir--> </span>
+            <span class="save" > <img src="img/bookmark.svg"  class="save" alt="" width="30px" height="30px"><!--Guadar--></span>
+          </div>
+          <div class="social-comentarios"><!--comentarios-->
+            <p><strong>154 Me gusta</strong></p><br />
+            <p><strong>Elmo</strong> Venir a q estos juegos es grandioso. </p>
+            <p><strong>Perry</strong> Hay pero que lendo 🥰</p>
+            <p><strong>Akamaru</strong> 🤣 ​​😂</p>
+            <p><strong>Iconos_Realizados_por: </strong><a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a></p>
+          </div>
+          <div class="add-cometarios">
+            <form class="form" action="" method="post">
+              <textarea class="text" placeholder="Agrega un comentario..." ></textarea>
+              <button class="boton">Publicar</button>
+            </form>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="user"><!--Seccion info profile-->
+        <div class="user-section"><!--usuario-->
+          <div class="user-info">
+            <div class="foto-autor">
+              <img src="https://i.ibb.co/ftdBHQk/49735091-10210934728804525-5066101924940480512-o.jpg" alt="49735091-10210934728804525-5066101924940480512-o" border="0" width="56px" height="56px">
+            </div>
+            <div class="info-autor">
+              <ul>
+                <li><strong>Yoan12</strong></li>
+                <li class="user-name">Wilmar Malaver  </li>
+              </ul>
+            </div>
+          </div>
+        
+        <div class="other">
+          <div class="sugerencias">
+            <div class="title">
+              <ul>
+                <li>Sugerencias para ti</li>
+                <li><a><strong>Ver todo</strong></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-sugerencias">
+          <div class="user-sugerencia"><!--Sugerencias-->
+            <div class="user-container">
+              <div class="info-sugerencia">
+                <div class="photo-s">
+                  <img src="img/user (2).svg" alt="" width="32px" height="32px">
+                </div>
+                <div class="info-s">
+                  <ul>
+                    <li><strong>Sergio H</strong></li>
+                    <li class="user-name">@Sergio  </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="follow">
+              <a href="">Seguir</a>
+            </div>
+          </div>
+          <div class="user-sugerencia"><!--Sugerencias-->
+            <div class="user-container">
+              <div class="info-sugerencia">
+                <div class="photo-s">
+                  <img src="img/user (2).svg" alt="" width="32px" height="32px">
+                </div>
+                <div class="info-s">
+                  <ul>
+                    <li><strong>Nozomi Y</strong></li>
+                    <li class="user-name">Yatsumi Nosomi </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="follow">
+              <a href="">Seguir</a>
+            </div>
+          </div>
+        </div>
+        <div class="info"><!--Informacion adicional-->
+          <nav>
+            <ul>
+              <li><a href="#">Informacion</a></li>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Prensa</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Empleo</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Condiciones</a></li>
+              <li><a href="#">Ubicaciones</a></li>
+              <li><a href="#">Cuentas destacadas</a></li>
+              <li><a href="#">Hastags</a></li>
+              <li><a href="#">Idioma</a></li>
+            </ul>
+          </nav>
+          <span> (C) 2020 PUGSTAGRAM FROM YOAN MALAVER</span>
+        </div>
+      </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>
