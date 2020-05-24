@@ -98,6 +98,8 @@ h1 {
 
 #elmo-name {
   font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 #elmo-ubication {
@@ -109,7 +111,8 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0px;
-  margin-top: 11px;
+  margin-top: 15px;
+  line-height: 14px;
 }
 
 .data-user_elmo a {
@@ -187,7 +190,7 @@ h1 {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 14px;
 }
 
@@ -270,4 +273,106 @@ h1 {
 .button-comment a {
   text-decoration: none;
   color: #0095f6;
+}
+
+.aside {
+  width: 280px;
+}
+
+.container-aside {
+  display: flex;
+  margin-top: 30px;
+  width: 270px;
+}
+
+.aside-user_image img{
+  border-radius: 80px;
+  background: gray;
+  margin: 8px 20px 15px 15px;
+}
+
+.aside-user_name {
+  margin-top: 20px;
+}
+
+.aside-user_name a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.aside-user_name {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.container-asidesub {
+  border: 1px solid rgba(38,38,38,0.3);
+  width: 250px;
+  height: auto;
+  padding: 10px 0px 10px 10px;
+  background: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container-asidesub_stories {
+  display: flex;
+  width: auto;
+}
+
+.asidesub-span {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+/* .asidesub-link {
+  width: 100%;
+} */
+
+.asidesub-link a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 130px;
+}
+
+.asidesub-user1 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.asidesub-user1 img {
+  border-radius: 80px;
+  background: gray;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.asidesub-user1_description {
+  margin-top: 10px;
+  line-height: 12px;
+}
+
+.asidesub-user1_description a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+}
+
+.asidesub-user1_description span {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.creator-text {
+  font-size: 12px;
+  font-family: sans-serif;
+  
 }
