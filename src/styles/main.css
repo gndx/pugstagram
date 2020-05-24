@@ -51,7 +51,7 @@ h1 {
   background: linear-gradient(to bottom right, #FFC100, red);
   -webkit-background-clip: text;  
   -webkit-text-fill-color: transparent;
-  font-family: Billabong;
+  font-family: Billabong, 'Engagement', cursive;
   font-style: italic;
   line-height: unset;
 }
