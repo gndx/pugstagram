@@ -3,11 +3,18 @@ body {
   color: rgba(38,38,38,0.7);
   margin: 0;
   padding: 0;
+  /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(216, 213, 216)); */
 }
 
 h1 {
+  font-size: 28px;
   margin: 0;
   padding: 0;
+  font-family: 'Pacifico', cursive;
+  color: transparent;
+  background: linear-gradient(to right, rgb(235, 160, 20), rgb(170, 20, 170));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .Header {
@@ -39,6 +46,17 @@ h1 {
   margin: 0 0 0 1em;
 }
 
+.Header-nav_likes {
+  width: 25px;
+  height: 23px;
+}
+
+.Header-nav_profile {
+  width: 20px;
+  height: 25px;
+}
+
 .Header h1 {
   color: black;
 }
+
