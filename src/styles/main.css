@@ -3,7 +3,7 @@ body {
   color: rgba(38,38,38,0.7);
   margin: 0;
   padding: 0;
-  /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(216, 213, 216)); */
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(216, 213, 216));
 }
 
 h1 {
@@ -327,10 +327,6 @@ h1 {
   font-size: 14px;
   font-family: sans-serif;
 }
-
-/* .asidesub-link {
-  width: 100%;
-} */
 
 .asidesub-link a {
   text-decoration: none;
