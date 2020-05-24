@@ -36,14 +36,18 @@ button img{
 
 
 *{
-  font-family: 'Billabong';
-  font-style: normal;
-    
-  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; */
+
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
 
+}
+
+
+h1{
+  font-family: 'Billabong';
+  font-style: normal;
 }
 
 .Header {
@@ -60,7 +64,7 @@ button img{
 .Header-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1em;
 }
 
@@ -80,7 +84,8 @@ button img{
 }
 
 .frm-search{
-  border-color: black;
+  border: 1px solid darkgray;
+  border-radius: 5px;
 }
 
 .Content-main{
@@ -94,7 +99,6 @@ button img{
   position: relative;
   width: 100%;
   height: 800px;
-  border: 2px solid pink;
 }
 
 .Header-main{
@@ -114,39 +118,30 @@ button img{
   border-radius: 3px;
   margin-bottom: 24px;
   padding: 16px 0;
-  
   overflow-y: hidden;
-
-
   height: 82px;
   width: 100%;
   margin-right: 28px;
   max-width: 600px;
-
   overflow-y: hidden;
   outline: 0;
   float: left;
-
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
- 
-
 }
 
 
 .img_button{
   border: 2px solid red;
   border-radius: 40px 40px 40px 40px;
-
   align-self: center;
   background: 0 0;
   border: 0;
   cursor: pointer;
-
   align-items: center;
   display: flex;
   -webkit-box-orient: vertical;
@@ -158,11 +153,16 @@ button img{
   padding-top: 0;
   text-align: center;
   width: 64px;
-
-
 }
 
-
+.img_button_column{
+  border-radius: 40px 40px 40px 40px;
+  border: 0 ;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+}
 
 .Column-two{
   position: absolute;
@@ -170,13 +170,11 @@ button img{
   height: 350px;
   max-width: 200px;
   width: 180px;
-  padding-top: 1%;
+  padding: 1px;
   display: flex;
   flex-direction: column;
   justify-items: left;
   right: 0;
-  border: solid;
-  border-color: red;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -185,14 +183,12 @@ button img{
 .Content-chat-two{
   margin-top: 140px;
   max-width: 600px;
-  border: 2px solid blue;
 }    
 
 .Header-chat-two{
   Display:Flex;
   Justify-content: space-between;
   align-content: left;
-
   padding: 3%;
   background-color: white;
 
@@ -216,7 +212,6 @@ button img{
   align-content: space-around;
   position: absolute;
   padding: 2%;
-
 }
 
 .icon {
@@ -226,4 +221,13 @@ button img{
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+.Column-block{
+  Display:Flex;
+  font-size: 12px;
+  padding: 2%;
+  align-items: center;
+  justify-content: space-between;
+
 }
