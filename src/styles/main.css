@@ -28,12 +28,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+a {
+  color: #383838;
+  text-decoration: none;
+}
+
 .Header {
   background-color: white;
   width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 1;
 }
 
 .Header-container {
@@ -250,12 +256,11 @@ h1, h2, h3, h4, h5, h6 {
   /* background-color: green; */
   border: 1px solid rgba(219, 219, 219, 1);
   width: 100%;
-  
 }
 
 .sidebar {
   /* border: 1px solid red; */
- padding: 20px;
+  padding: 20px;
   width: 220px;
   height: 500px;
   justify-content: center;
@@ -267,9 +272,9 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-container {
  /* border: 1px solid blue;  */
   width: 215px;
-  height: 450px;  
-  justify-content: center; 
-  right: 350px; 
+  height: 450px;
+  justify-content: center;
+  right: 350px;
   padding: 5px;
 }
 
