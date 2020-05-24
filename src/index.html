@@ -3,7 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pugstagram</title>
+
+  <!-- Font Awasome -->
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <link href="styles/main.css" rel="stylesheet">
 </head>
 
@@ -16,14 +28,81 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><i class="fas fa-heart"></i></li>
+            <li><i class="fas fa-user"></i></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
+    <section class="stories-content">
+      <div class="section-data content">
+        <img src="https://img.milanuncios.com/fg/3017/68/301768654_1.jpg?VersionId=mPUW_XK0MfJz3mx_XKl9QFoi7vT7RzU5" alt="">
+        <p><strong>Brandonlubep</strong> <br>Brandon Beltran</p>
+      </div>
+      <div class="stories">
+        <div class="stories-title">
+          <p>Stories</p>
+          <a href="">Ver todas</a>
+        </div>
+        <ul>
+          <li class="item"><div class="section-data content">
+            <div class="section-img">
+              <img src="https://http2.mlstatic.com/pug-carlino-hembras-D_NQ_NP_902660-MLU28598150204_112018-F.jpg" alt="">
+            </div>
+            <!-- <img src="https://img.milanuncios.com/fg/3017/68/301768654_1.jpg?VersionId=mPUW_XK0MfJz3mx_XKl9QFoi7vT7RzU5" alt=""> -->
+            <p class="data-stories"><strong>sussi</strong> <br>hace 10 horas</p>
+          </div></li>
+          <li class="item"><div class="section-data content">
+            <div class="section-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQK_7dA-at1CCXoeMBgq2Ps1JSTUYHiWmCndqBV_HksQ8Mwk2XQ&usqp=CAU" alt="">
+            </div>            <p class="data-stories"><strong>Firulais</strong> <br>hace 5 minutos</p>
+          </div></li>
+          <li class="item"><div class="section-data content">
+            <div class="section-img">
+              <img src="https://www.mundoanimalia.com/images/foro/7b/e9/5b/2e19155dc6fe707f02d4d3dc88508930/1331708301_IMG1.jpg" alt="">
+            </div>            <p class="data-stories"><strong>Angel</strong> <br>hace 1 hora</p>
+          </div></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-card">
+      <div class="section-content">
+        <div class="section-user">
+          <div class="section-data">
+            <img src="https://img.milanuncios.com/fg/3017/68/301768654_1.jpg?VersionId=mPUW_XK0MfJz3mx_XKl9QFoi7vT7RzU5" alt="">
+            <p><strong>Elmo.pug</strong> <br>Bogota ,Colombia</p>
+          </div>
+          <div class="options">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+          <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="" class="main_img">
+        <div class="section-description">
+          <div class="actions">
+            <div class="actions-like">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <div class="actions-marker"><i class="far fa-bookmark"></i></div>
+          </div>
+          <div class="section-info">
+            <p><strong>Pug name</strong> <br>Disfrutando de mi picina</p>
+          </div>
+        </div>
+        <div class="section-comment">
+          <p><strong>Firulais</strong><br>Hola elmo</p>
+          <p><strong>pug.lady</strong><br>linda foto</p>
+        </div>
+        <div class="form">
+          <form action="">
+          <input type="text" name="comment" class="comment" placeholder="Agregar comentario...">
+          <button class="btn-post">Post</button>
+        </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>
