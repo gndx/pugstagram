@@ -3,22 +3,42 @@ body {
   color: rgba(38,38,38,0.7);
   margin: 0;
   padding: 0;
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
   margin: 0;
-  padding: 0;
+  padding: 1px;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgba(38,38,38,0.7);
+  font-size: 16px;
 }
 
 .Header {
   background-color: white;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 6px 2px rgba(107,107,107,0.40);
+  -moz-box-shadow: 0px 1px 6px 2px rgba(107,107,107,0.40);
+  box-shadow: 0px 1px 6px 2px rgba(107,107,107,0.40);
+}
+.Header .Header-logo h1 {
+  font-family: 'Pacifico', cursive;
+  background: rgb(255,196,0);
+  background: linear-gradient(90deg, rgba(255,196,0,1) 1%, rgba(255,0,125,1) 50%);
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Header-container {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
 }
 
 .Header-content {
@@ -33,12 +53,282 @@ h1 {
   margin: 0;
   padding: 0;
 }
-
+.Header ul {
+  display: flex;
+  justify-content: flex-start;
+}
 .Header li {
-  display: inline-block;
   margin: 0 0 0 1em;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header .Header-nav li .fa-heart-o:hover:before {
+  content: "\f004" !important;
+}
+.Header .Header-nav li i:hover {
+  cursor: pointer;
+}
+.Header .Header-nav li .fa-user-o:hover {
+  content:  "\f007" !important;
+  font-size: 18px;
+}
+.Header .Header-nav li .fa-user-o:hover:before {
+  content:  "\f007" !important;
 }
 
 .Header h1 {
   color: black;
 }
+
+.Main {
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+  padding-top: 25px;
+  background-color: rgb(241, 241, 241);
+}
+
+.Main-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 25px;
+  align-items: flex-start;
+}
+.Left-container{
+  position: relative;
+}
+.Posts-container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.Post{
+  position: relative;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(107,107,107,0.41);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(107,107,107,0.41);
+  box-shadow: 0px 0px 4px 1px rgba(107,107,107,0.41);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.Post-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.Post-header .User-pic {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Post-header .User-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.Post-header .User-data {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Post-header .User-data .User-name {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.Post-header .User-data .User-location {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.Post-header .User-setings {
+  margin-left: auto;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Post .Post-pic img {
+  width: 100%;
+  max-height: 400px;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+.Img-responsive{
+  width: 100%;
+  max-width: 100%;
+}
+.Interactive-opts{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(38,38,38,0.7);
+  border-bottom: 0.9px solid rgb(216, 216, 216);
+}
+.Interactive-opts .Like-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Interactive-opts .Share-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Interactive-opts .Save-button {
+  margin-left: auto;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Like-button .fa-heart-o:hover:before {
+  content: "\f004" !important;
+}
+.Like-button .Header-nav li i:hover {
+  cursor: pointer;
+}
+
+.Share-button .fa-paper-plane-o:hover:before {
+  content:  "\f1d8" !important;
+}
+
+.Save-button .fa-bookmark-o:hover:before {
+  content:  "\f02e" !important;
+} 
+
+.Post-comments{
+  padding: 16px;
+}
+.Post-comments .Content-comment{
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.Post-comments .Content-comment:first-child{
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Post-comments .Content-comment .User-name{
+  margin: 0 5px 0 0;
+  font-size: 14px;
+}
+
+.Post-comments .Content-comment .Comment{
+  margin: 0;
+  font-size: 12px;
+}
+
+.Make-comment{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(38,38,38,0.7);
+  border-top: 0.9px solid rgb(216, 216, 216);
+}
+
+.Make-comment .Write-comment {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 12px;
+}
+
+.Make-comment .Post-comment{
+  margin-left: auto;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Make-comment .Post-comment a{
+  font-size: 12px;
+  color: #036cce;
+  text-decoration: none;
+}
+
+.Rigth-container{
+  position: relative;
+  width: auto;
+}
+.Stories-container {
+  padding: 0 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(107,107,107,0.41);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(107,107,107,0.41);
+  box-shadow: 0px 0px 4px 1px rgba(107,107,107,0.41);
+}
+.Stories-container .Stories-content{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Stories-opts{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(38,38,38,0.7);
+}
+.Stories-opts .Stories{
+  width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 16px;
+    font-size: 12px;
+}
+
+.Stories-opts .Stories-all{
+  margin-left: auto;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Stories-opts .Stories-all a{
+  font-size: 12px;
+    color: #036cce;
+    text-decoration: none;
+}
+
+.Stories-content .User-pic img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+

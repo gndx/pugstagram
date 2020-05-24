@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="styles/main.css" rel="stylesheet">
 </head>
 
@@ -16,14 +18,242 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-user-o" aria-hidden="true"></i></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="Main">
+    <section class="Main-container">
+      <div class="Left-container">
+        <div class="Posts-container">
+          <div class="Post">
+            <div class="Post-header">
+              <div class="User-pic">
+                <img src="https://via.placeholder.com/60" alt="User Avatar">
+              </div>
+              <div class="User-data">
+                <h3 class="User-name">
+                  Lorem Ipsum
+                </h3>
+                <p class="User-location">
+                  Bogotá - Colombia
+                </p>
+              </div>
+              <div class="User-setings">
+                <button>
+                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="Post-pic">
+              <img class="Img-responsive" src="img/Pug-selfie.jpg" alt="My selfie in Hollywood">
+            </div>
+            <div class="Interactive-opts">
+              <div class="Like-button">
+                <button>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="Share-button">
+                <button>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="Save-button">
+                <button>
+                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="Post-comments">
+              <div class="Content-comment">
+                <h3 class="User-name">
+                  Elmo Pug
+                </h3>
+                <p class="Comment">
+                  Disfrutando de mi piscina!!
+                </p>
+              </div>
+              <div  class="Content-comment">
+                <h3 class="User-name">
+                  Crispeta
+                </h3>
+                <p class="Comment">
+                  Hola Elmo
+                </p>
+              </div>
+              <div  class="Content-comment">
+                <h3 class="User-name">
+                  Dolarsin
+                </h3>
+                <p class="Comment">
+                  ¡Hola!
+                </p>
+              </div>
+            </div>
+            <div class="Make-comment">
+              <div class="Write-comment">
+                <p>
+                  Agrega un comentario
+                </p> 
+              </div>
+              <div class="Post-comment">
+                <a href="#">Post</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="Post">
+            <div class="Post-header">
+              <div class="User-pic">
+                <img src="https://via.placeholder.com/60" alt="User Avatar">
+              </div>
+              <div class="User-data">
+                <h3 class="User-name">
+                  Lorem Ipsum
+                </h3>
+                <p class="User-location">
+                  Bogotá - Colombia
+                </p>
+              </div>
+              <div class="User-setings">
+                <button>
+                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="Post-pic">
+              <img class="Img-responsive" src="img/Pug-selfie.jpg" alt="My selfie in Hollywood">
+            </div>
+            <div class="Interactive-opts">
+              <div class="Like-button">
+                <button>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="Share-button">
+                <button>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="Save-button">
+                <button>
+                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="Post-comments">
+              <div class="Content-comment">
+                <h3 class="User-name">
+                  Elmo Pug
+                </h3>
+                <p class="Comment">
+                  Disfrutando de mi piscina!!
+                </p>
+              </div>
+              <div  class="Content-comment">
+                <h3 class="User-name">
+                  Crispeta
+                </h3>
+                <p class="Comment">
+                  Hola Elmo
+                </p>
+              </div>
+              <div  class="Content-comment">
+                <h3 class="User-name">
+                  Dolarsin
+                </h3>
+                <p class="Comment">
+                  ¡Hola!
+                </p>
+              </div>
+            </div>
+            <div class="Make-comment">
+              <div class="Write-comment">
+                <p>
+                  Agrega un comentario
+                </p> 
+              </div>
+              <div class="Post-comment">
+                <a href="#">Post</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="Rigth-container">
+        <div class="Post-header">
+          <div class="User-pic">
+            <img src="https://via.placeholder.com/60" alt="User Avatar">
+          </div>
+          <div class="User-data">
+            <h3 class="User-name">
+              Fabio Fuentes
+            </h3>
+            <p class="User-location">
+              Bogotá - Colombia
+            </p>
+          </div>
+        </div>
+        <div class="Stories-container">
+          <div class="Stories-opts">
+            <div class="Stories">
+              <p>
+                Stories
+              </p> 
+            </div>
+            <div class="Stories-all">
+              <a href="#">Ver todas</a>
+            </div>
+          </div>
+          <div class="Stories-content">
+            <div class="Post-header">
+              <div class="User-pic">
+                <img src="https://via.placeholder.com/60" alt="User Avatar">
+              </div>
+              <div class="User-data">
+                <h3 class="User-name">
+                  Fabio Fuentes
+                </h3>
+                <p class="User-location">
+                  Bogotá - Colombia
+                </p>
+              </div>
+            </div>
+            <div class="Post-header">
+              <div class="User-pic">
+                <img src="https://via.placeholder.com/60" alt="User Avatar">
+              </div>
+              <div class="User-data">
+                <h3 class="User-name">
+                  Fabio Fuentes
+                </h3>
+                <p class="User-location">
+                  Bogotá - Colombia
+                </p>
+              </div>
+            </div> 
+            <div class="Post-header">
+              <div class="User-pic">
+                <img src="https://via.placeholder.com/60" alt="User Avatar">
+              </div>
+              <div class="User-data">
+                <h3 class="User-name">
+                  Fabio Fuentes
+                </h3>
+                <p class="User-location">
+                  Bogotá - Colombia
+                </p>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>
