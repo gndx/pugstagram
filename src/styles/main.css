@@ -34,6 +34,7 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-style: ;
 }
 
 .Header li {
@@ -45,11 +46,14 @@ h1 {
   height: 22px;
 }
 
-.Header h1 {
-  background: -webkit-linear-gradient(rgb(255, 238, 0),rgb(255, 0, 0));
-  -webkit-background-clip: text;
-  color: rgb(255, 38, 0);  
+.Header h1 { 
+  background: -webkit-linear-gradient(left top, yellow, red);
+  background: linear-gradient(to bottom right, #FFC100, red);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  font-family: Billabong;
   font-style: italic;
+  line-height: unset;
 }
 
 /*trabajo de clase*/
