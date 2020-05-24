@@ -1,32 +1,151 @@
-<!DOCTYPE html>
-<html lang="es">
+      <!DOCTYPE html>
+      <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
+      <head>
+        <meta charset="UTF-8">
+        <title>Pugstagram</title>
+        <link href="styles/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a347188542.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <header class="Header">
+          <div class="Header-container">
+            <div class="Header-content">
+              <div class="Header-logo">
+                <h1>Pugstagram</h1>
+              </div>
+              <div class="menu_search">
+                <i class="fa fa-search"></i>
+                <input type="text"  placeholder="Search" >
+              </div>
+              <div class="Header-nav">
+                <ul>
+                  <li class="menu_list">
+                    <a href="#" class="menu_list-link">
+                      <i class="fas fa-home"></i>
+                    </a>
+                    <li class="menu_list">
+                      <a href="#" class="menu_list-link">
+                        <li class="menu_list">
+                          <a href="#" class="menu_list-link">
+                           <i class="fas fa-paper-plane"></i>
+                       </a>
+                  <li class="menu_list">
+                    <a href="#" class="menu_list-link">
+                      <i class="fa fa-compass fa-lg"></i>
+                    </a>
+                  </li>
+                  <li class="menu_list"> 
+                    <a href="#" class="menu_list-link">
+                      <i class="fa fa-heart-o fa-lg"></i>
+                    </a>
+                  </li>
+                  <li class="menu_list">
+                  <a href="#" class="menu_list-link">
+                    <i class="fa fa-user-o fa-lg"></i>
+                  </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="principal">
+          <div class="photo">
+              <header class="photo_header">
+                <div class="photo_user-container">
+                  <img src="images/marcela.jpg" class="photo_marcela"  height="150px" alt="">
+                    <div class="photo_user-info">
+                      <span class="photo_name-user">marce6217</span>
+                      <span class="photo_location-user">Bogota Colombia</span>
+                    </div>
+                  </div>
+                  <span class="photo_icons">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </span>
+              </header>
+              <img src="images/pug.jpg" width="100%"  alt="">
+          <div class="photo_icons-container">
+            <div class="photo_icons">
+              <span class="photo_icons">
+                <i class="fa fa-heart-o fa-lg"></i>
+              </span>
+              <span class="photo_icons">
+              <i class="fa fa-comment-o fa-lg"></i>
+              </span>
+              <span class="photo_icons">
+                <i class="fas fa-paper-plane"></i>
+              </span>
+          </div>
+            <span class="photo_icons"  >
+              <i class="far fa-bookmark"></i>
+            </span>
         </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
-        </div>
+        <div class="photos_container-comment">
+          <span class="photo_likes">50 likes</span>
+            <ul class="photo_comments">
+              <li class="photo_comment">
+                <span class="photo-comment">Elmo.pug</span> Disfrutando de mi pisciona
+              </li>
+              <li class="photo_comment">
+                <span class="photo-comment">Crispeta</span> Hola elmo
+              </li>
+              <li class="photo_comment">
+                <span class="photo-comment">Dollasin</span> !Hola!
+             </li>
+            </ul>
+      <div class="photo_addcomment">
+        <form action="#" class="form" method="post">
+          <textarea name=""  placeholder="add comment... "></textarea>
+          <button class="button-post"   type="submit">Post</button>
+        </form>
       </div>
     </div>
-  </header>
-  <main>
+  </div>
+    <div class="suggestions_container">
+      <div class="stories-container">
+        <div class="photo_user-container">
+          <img src="images/marcela.jpg" class="photo_marcel"  height="150px" alt="">
+            <div class="photo_user-info">
+              <span class="photo_name-user">marce6217</span>
+              <span class="photo_location-user">Bogota Colombia</span>
+            </div>
+          </div>
+      </div>
+          <div class="stories-container">
+            <div class="photo_user-container">
+              <img src="images/marcela.jpg" class="photo_marcela"  height="150px" alt="">
+                <div class="photo_user-info">
+                  <span class="photo_name-user">marce6217</span>
+                  <span class="photo_location-user">Bogota Colombia</span>
+                </div>
+            </div>
+                <button  class="photo_button" type="button">follow me</button>
+          </div>
+          <div class="stories-container">
+            <div class="photo_user-container">
+              <img src="images/marcela.jpg" class="photo_marcela"  height="150px" alt="">
+                <div class="photo_user-info">
+                  <span class="photo_name-user">marce6217</span>
+                  <span class="photo_location-user">Bogota Colombia</span>
+                </div>
+            </div>
+                <button  class="photo_button" type="button">follow me</button>
+          </div>
+          <div class="stories-container">
+            <div class="photo_user-container">
+              <img src="images/marcela.jpg" class="photo_marcela"  height="150px" alt="">
+                <div class="photo_user-info">
+                  <span class="photo_name-user">marce6217</span>
+                  <span class="photo_location-user">Bogota Colombia</span>
+                </div>
+            </div>
+                <button  class="photo_button" type="button">follow me</button>
+          </div>
+    </div>
   </main>
-  <footer>
-  </footer>
 </body>
-
-</html>
+<footer>
+</footer>
+  </html>
