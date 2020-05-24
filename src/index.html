@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
+      <link href="styles/main.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"crossorigin="anonymous"/>
 </head>
 
 <body>
@@ -16,14 +18,123 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><a href="http://"><i class="fas fa-heart"></i></a></li>
+            <li><a href=""><i class="fas fa-user"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
   <main>
+    <div class="main-container">
+      <div class="timeline">
+      <div class="timeline-container">
+        <div class="card">
+          <div class="card-container">
+            <div class="card-header">
+              <div class="card-user">
+                <img src='https://i.postimg.cc/L516yQHB/elmo.jpg' alt='elmo'/>
+                <h2>Elmo.pug <span>Bogotá, Colombia</span></h2>
+              </div>
+              <div class="card-settings">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class="card-photo">
+              <figure class="pic">
+                <img src='https://i.postimg.cc/L516yQHB/elmo.jpg' alt='elmo'/>
+              </figure>
+            </div>
+            <div class="card-icons">
+              <div class="card-icons-first">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              <div class="card-icons-second">
+                <i class="fas fa-bookmark"></i>
+              </div>
+            </div>
+            <div class="card-description">
+              <h3>Elmo.pug <span>Disfrutando de mi piscina</span>
+              </h3>
+            </div>
+            <div class="comments">
+              <div class="comments-content">
+                <div class="comments-users">
+                  <h3>Crispeta<span>Elmo</span></h3>
+                </div>
+                <div class="comments-users">
+                  <h3>Dollarsin<span>¡Hola!</span></h3>
+                </div>
+              </div>
+              <div class="comments-add">
+                <form>
+                  <label for="text">Comments</label>
+                  <input type="text" placeholder="Agregar comentario..." id="text">
+                  <button type="submit">Post</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-container">
+          <div class="profile">
+            <div class="profile-content">
+              <div class="profile-avatar">
+                <a href="https://platzi.com/@ardila_adri/" target="_blank">
+                <img src='https://i.postimg.cc/43zVfhds/foto1.jpg' border='0' alt='foto1'/></a>
+              </div>
+              <div class="profile-info">
+                <h2>Ardila_adri<span>Adriana Ardila</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="stories">
+            <div class="stories-container">
+              <div class="stories-head">
+                <h2>Stories<span>Ver todas</span></h2>
+              </div>
+              <div class="stories-items">
+                <div class="stories-item">
+                <div class="stories-item-box">
+                  <img src='https://i.postimg.cc/Dw2Yzrr6/IMG-20200202-135226.jpg' border='0' alt='IMG-20200202-135226'/>
+                </div>
+                <div class="stories-item-text">
+                  <h2>Fabian A.<span>2 hours ago</span></h2>
+                </div>   
+              </div>
+              <div class="stories-item">
+                <div class="stories-item-box">
+                  <img src='https://i.postimg.cc/43zVfhds/foto1.jpg' border='0' alt class='foto'/>
+                </div>
+                <div class="stories-item-text">
+                  <h2>Adriana A.<span>10 hours ago</span></h2>
+                </div>   
+              </div>
+              <div class="stories-item">
+                <div class="stories-item-box">
+                  <img src='https://i.postimg.cc/fLWPgxLk/webcam-toy-foto7.jpg' border='0' alt='webcam-toy-foto7'/>
+                </div>
+                <div class="stories-item-text">
+                  <h2>Lucia A.<span>18 horas antes</span></h2>
+                </div>   
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-container">
+              <div class="footer-copy">
+                <p>&copy; 2020 PUGSTAGRAM FROM PLATZI <br> BY &#64;Ardila_adri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
   </footer>
