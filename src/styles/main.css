@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
 .Header {
+
+  width: 100%;
   background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
 }
 
 .Header-container {
@@ -41,4 +41,170 @@ h1 {
 
 .Header h1 {
   color: black;
+  background: linear-gradient(#f09433,#bc1888);
+  font-family: pacifico;
+  -webkit-background-clip: text;
+  color: transparent; 
+  margin: 0;
+  padding: 0;
+}
+.photo
+{
+    border:1px solid #e6e6e6;
+    background-color:white;
+    border-radius: 3px;
+    width: 600px;
+    margin:30px 0 0 70px;    
+}
+.photo_header
+{
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .photo_marcela
+{
+    margin:20px 0 20px;
+    border-radius: 50%;
+    width: 35px;
+    height: 30px;
+}
+.photo_user-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photo_user-info
+{
+  display: block;
+  margin-left: 10px;
+}
+.photo_name-user
+{
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+}
+.photo_location-user
+{
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.photo_icons
+{
+  font-size: 115%;
+  margin:10px 14px 0;
+  
+  
+}
+.photo_icons-container{
+  justify-content: space-between;
+  display: flex;
+    margin:0 10px 0 10px;
+}
+
+.photo_likes,
+.photo-comment
+{
+  font-weight: 600;
+}
+.photo_comment
+{
+  margin-bottom: 10px;
+  list-style: none;
+  
+}
+.photo_comments
+{
+  padding: 0px;
+}
+
+.photo_addcomment 
+{
+  border-top: 1px solid #e6e6e6;
+}
+.photo_addcomment textarea
+{
+margin:10px;
+resize: none;
+width: 90%;
+border:0px;
+
+}
+.button-post{
+color: rgb(178, 223, 252);
+  border:0px;
+  background-color: transparent;
+  font-weight: 600;
+}
+.form
+{
+  display: flex;
+  justify-content: space-between;
+}
+.photos_container-comment
+{
+  margin-left:10px;
+}
+.menu_search
+{
+  position: relative;
+  padding: 5px 20px;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  border-radius: 2px;
+}
+.menu_search input
+{
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  border:0px;
+  font-size: 16px;
+  text-align: center;
+}
+.menu_search input:focus
+ {
+  outline: none;
+  border:none;
+}
+.menu_list-link
+{
+  color: black;
+}
+.suggestions_container
+{
+  width: 400px;
+  position: fixed;
+  right: 5px;
+
+}
+.principal
+{
+
+  margin-top: 6em;
+  display: flex;
+}
+.stories-container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.photo_marcel
+{
+    margin-left:20px ;
+    border-radius: 50%;
+    width: 60px;
+    height: 55px;
+}
+.photo_button
+{
+  color: #0F9BF6;
+  border:0px;
+  background-color: transparent;
+  margin-right: 50px;
+  font: weight 600;
 }
