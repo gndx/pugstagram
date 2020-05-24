@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
 </head>
 
@@ -16,14 +17,159 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><img src="./img/like.png" width="25" height="22"></li>
+            <li><img src="./img/Profile.png" width="25" height="22"></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="container">
+    <div class="content">
+      <article class="publication">
+        <header class="publication-title">
+          <div class="publication-logo">
+            <img src="./img/Profile.png" width="36px" height="32px" alt="">
+
+          </div>
+          <div>
+            <div class="container-tp">
+              <div class="tittle">
+                <h3>El_pug</h3>
+              </div>
+              <div class="place">
+                <h5>Bogotá, Colombia</h5>
+              </div>
+            </div>
+            <div class="options-container">
+              <button class="option">
+                <img src="./img/option.png" width="32px" height="26px" alt="">
+              </button>
+            </div>
+          </div>
+
+        </header>
+        <div class="image">
+          <img src="./img/pugs.jpg" width="614px" alt="">
+        </div>
+        <div class="foot">
+          <section class="interaction">
+            <span class="like-container">
+              <button class="like" type="button"><img src="./img/Like2.png" width="25" height="22" alt=""></button>
+            </span>
+            <span class="share-container">
+              <button class="share" type="button"><img src="./img/share.png" width="24" height="22" alt=""></button>
+            </span>
+            <span class="save-container">
+              <button class="save" type="button"><img src="./img/save.png" width="20" height="22" alt=""></button>
+            </span>
+          </section>
+          <section class="likes-container">
+            <!--<div class="likes">
+              <button>
+                <span>10</span>
+                Me gusta
+              </button>
+            </div>-->
+          </section>
+          <section class="coments">
+            <div class="com">
+
+            </div>
+          </section>
+          <div class="description">
+            <div class="container-p">
+              <div class="tittle">
+                <h3>Elmo Pug</h3>
+              </div>
+              <div class="place">
+                <h4>Paseando </h4>
+              </div>
+            </div>
+          </div>
+          <div class="update-time">
+            <a href="">
+            </a>
+          </div>
+          <section class="comment-form">
+            <form class="comment-f">
+              <textarea aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." autocomplete="off"
+                autocorrect="off" class="textarea"></textarea>
+              <button class="publish" disabled type="submit">Publicar</button>
+            </form>
+          </section>
+        </div>
+      </article>
+      <div class="perfil-container">
+        <div class="perfil">
+          <div class="publication-logo">
+            <img src="./img/Profile.png" width="36px" height="32px" alt="">
+          </div>
+          <div class="container-p">
+            <div class="tittle">
+              <h3>Mi Perfil</h3>
+            </div>
+            <div class="place">
+              <h5>Mi Nombre</h5>
+            </div>
+          </div>
+        </div>
+        <div class="stories-container">
+          <div class="storie-tittle">
+            <div class="tittle-st">
+              <h4>Stories</h4>
+            </div>
+            <div class="look">
+              <h4>Ver todo</h4>
+            </div>
+          </div>
+          <div class="">
+            <div style="height: auto;">
+              <div class="perfil">
+                <div class="publication-logo">
+                  <img src="./img/Profile.png" width="36px" height="32px" alt="">
+                </div>
+                <div class="container-p">
+                  <div class="tittle">
+                    <h3>Mi Perfil</h3>
+                  </div>
+                  <div class="place">
+                    <h5>Mi Nombre</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="perfil">
+                <div class="publication-logo">
+                  <img src="./img/Profile.png" width="36px" height="32px" alt="">
+                </div>
+                <div class="container-p">
+                  <div class="tittle">
+                    <h3>Mi Perfil</h3>
+                  </div>
+                  <div class="place">
+                    <h5>Mi Nombre</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="perfil">
+                <div class="publication-logo">
+                  <img src="./img/Profile.png" width="36px" height="32px" alt="">
+                </div>
+                <div class="container-p">
+                  <div class="tittle">
+                    <h3>Mi Perfil</h3>
+                  </div>
+                  <div class="place">
+                    <h5>Mi Nombre</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="footer">© 2020 Pugstagram for Pug</span>
+        </div>
   </main>
   <footer>
   </footer>
