@@ -4,29 +4,236 @@
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
+  <link rel="icon" type="image/icon" href="../images/favicon.ico">
   <link href="styles/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
+
+  <!-- ============================================================ -->
+  <!--                            HEADER                            -->
+  <!-- ============================================================ -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-content">
+        <div class="header-logo">
+          <!-- TILULO DEL SITIO -->
+          <!-- <img class="logo" src="../images/logo.png" alt="logoInstagram"> -->
+          <p class="header-fuente">Pugstagram </p>
         </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+        <!-- BUSCADOR -->
+        <div class="header-search">
+          <span><img src="../images/search.svg" alt="buscar"></span>
+          <span>Buscar</span>
+        </div>
+        <!-- MENU -->
+        <div class="header-nav">
+          <div class="nav-button">
+            <a href="#" class="home"></a>
+            <a href="#" class="compass"></a>
+            <a href="#" class="heart"></a>
+            <a href="#" class="profile"></a>
+          </div>
         </div>
       </div>
     </div>
   </header>
-  <main>
+
+  <!-- ============================================================ -->
+  <!--                        MAIN - SECTIONS                       -->
+  <!-- ============================================================ -->
+  <main class="main">
+    <div class="main-container">
+      <!-- ==================== SECTION 1 ====================== -->
+      <section class="users-container">
+        <div class="friends-container">
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-one"></div>
+            </div>
+            <div class="friends-name">
+              <p>Candy</p>
+            </div>
+          </div>
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-two"></div>
+            </div>
+            <div class="friends-name">
+              <p>Gora</p>
+            </div>
+          </div>
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-three"></div>
+            </div>
+            <div class="friends-name">
+              <p>Elmo</p>
+            </div>
+          </div>
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-one"></div>
+            </div>
+            <div class="friends-name">
+              <p>Candy</p>
+            </div>
+          </div>
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-two"></div>
+            </div>
+            <div class="friends-name">
+              <p>Gora</p>
+            </div>
+          </div>
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-three"></div>
+            </div>
+            <div class="friends-name">
+              <p>Elmo</p>
+            </div>
+          </div>
+          <div class="friends">
+            <div class="friends-image">
+              <div class="image-one"></div>
+            </div>
+            <div class="friends-name">
+              <p>Candy</p>
+            </div>
+          </div>
+        </div>
+        <!-- ========================================== -->
+        <div class="container-user">
+          <div class="user-data">
+            <div class="user-data-img"></div>
+            <div class="user-data-options">
+              <p>Elmo</p>
+              <span class="menu"></span>
+            </div>
+          </div>
+          <figure class="user-image"></figure>
+          <div class="user-actions">
+            <div class="action-box1">
+              <div class="action-button one"></div>
+              <div class="action-button two"></div>
+              <div class="action-button three"></div>
+            </div>
+            <div class="action-box2">
+              <div class="action-button four"></div>
+            </div>
+          </div>
+          <div class="counter">
+            <p><strong>8,847 Me gusta </strong></p>
+          </div>
+          <div class="user-information">
+            <div class="information-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa sit doloribus, deserunt
+                ratione ducimus aspernatur, neque accusamus rem obcaecati aut, veniam rerum corrupti porro excepturi
+                modi repellat recusandae dolorem.</p>
+            </div>
+            <div class="information-more">
+              <p>Ver los 171 comentarios</p>
+            </div>
+            <div class="information-users">
+              <div class="commentary">
+                <p class="name"><strong>Candy</strong></p>
+                <p class="message">guau que foto</p>
+              </div>
+              <div class="commentary">
+                <p class="name"><strong>Elmo</strong></p>
+                <p class="message">me gusto tambien!</p>
+              </div>
+            </div>
+          </div>
+          <div class="user-commentary">
+            <p>Agrega un comentario...</p>
+            <span>
+              <p class="publicar">Publicar</p>
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== SECTION 2 ====================== -->
+      <section class="profile-container">
+        <div class="profile-data">
+          <div class="profile-container-img"></div>
+          <p><strong>Lukarioo</strong> <br> Lukas Diaz</p>
+        </div>
+
+        <div class="profile-suggestion">
+          <div class="suggestion-title">
+            <p>Sugerencias para ti</p>
+            <p>Ver todo</p>
+          </div>
+        </div>
+
+        <div class="suggestion-view">
+          <div class="view-user">
+            <div class="view-container">
+              <div class="view-img"></div>
+              <p><strong>TonyDog</strong> <br> Te sigue</p>
+            </div>
+            <div class="view-state">
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="view-user">
+            <div class="view-container">
+              <div class="view-img"></div>
+              <p><strong>Kiara50</strong> <br> Nuevo en instagram</p>
+            </div>
+            <div class="view-state">
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="view-user">
+            <div class="view-container">
+              <div class="view-img"></div>
+              <p><strong>Logann</strong> <br> Amigos en Facebook</p>
+            </div>
+            <div class="view-state">
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="view-user">
+            <div class="view-container">
+              <div class="view-img"></div>
+              <p><strong>Lunita</strong> <br> Amigos en Facebook</p>
+            </div>
+            <div class="view-state">
+              <p>Seguir</p>
+            </div>
+          </div>
+          <div class="view-user">
+            <div class="view-container">
+              <div class="view-img"></div>
+              <p><strong>Rex</strong> <br> Te sigue</p>
+            </div>
+            <div class="view-state">
+              <p>Seguir</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!--                            FOOTER                            -->
+        <!-- ============================================================ -->
+        <footer class="footer">
+          <div class="footer-content1">
+            <p>Información - Ayuda - Prensa - API - Empleo - Privacidad - Condiciones - Ubicaciones - Cuentas destacadas - Hashtags - Idioma</p>
+          </div>
+          <div class="footer-content2">
+            <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
+          </div>
+        </footer>
+      </section>
+    </div>
   </main>
-  <footer>
-  </footer>
+
+
+
 </body>
 
 </html>
