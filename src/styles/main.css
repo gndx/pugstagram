@@ -18,14 +18,14 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(124, 122, 122, 0.411);
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.2em 0 0 0;
 }
 
 .Header ul {
@@ -39,6 +39,16 @@ h1 {
   margin: 0 0 0 1em;
 }
 
-.Header h1 {
-  color: black;
+.Header-search input{
+  background-color: rgba(187, 187, 187, 0.089);
+  border: 1px;
+  border-color: rgba(124, 122, 122, 0.295);
+  border-style: solid;
+  border-radius: 5px;
+  padding: 4px 20px 4px 25px;
+  background-image: url(../images/Search.png);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
 }
