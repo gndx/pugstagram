@@ -218,6 +218,7 @@ align-items: center;
   display: flex;
   padding: 1em;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 .comments-add form button{
@@ -234,6 +235,7 @@ align-items: center;
   position: relative;
   padding: 4.5 0 0 0;
   font-family: Lato-Regular, sans-serif;
+  display: block;
 }
 
 .sidebar-container {
@@ -275,6 +277,8 @@ align-items: center;
   margin: 1em 0;
   padding: 0.5em 1em;
   background-color: white;
+  width: 180.77px;
+  height: auto;
 }
 
 .stories-head {
@@ -286,7 +290,7 @@ align-items: center;
 
 .stories-head h2 {
   font-size: 12px;
-  color: black;
+  color: rgba(38,38,38,0.7);
   margin: 0;
   padding: 0;
 }
@@ -294,7 +298,8 @@ align-items: center;
 .stories-head h2 span{
   font-size: 12px;
   font-weight: normal;
-  color: rgba(38,38,38,0.7);
+  color: black;
+  padding: 0 0 0 7.5em;
 }
 
 .stories-items{
@@ -320,6 +325,11 @@ align-items: center;
   height: 32px;
   border-radius: 50%;
 }
+.stories-item-box img:hover{
+  filter: opacity(.5);
+  cursor: pointer;
+}
+
 .stories-item-text h2{
   font-size: 14px;
   color: black;
