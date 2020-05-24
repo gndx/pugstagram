@@ -29,6 +29,9 @@ h1 {
 .Header {
   background-color: white;
   width: 100%;
+  position: fixed;
+  top: 0;
+  width:100%;
 }
 
 .Header-container {
@@ -62,6 +65,7 @@ h1 {
 }
 
 main {
+  padding-top: 63px;
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
