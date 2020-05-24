@@ -18,14 +18,15 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .Header ul {
@@ -42,3 +43,50 @@ h1 {
 .Header h1 {
   color: black;
 }
+.Main {
+  padding: 30px;
+}
+.main-container {
+  display: grid;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 3px;
+  margin: 0px 0 0 190px;
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+
+  
+}
+.header-publicacion{
+  display: flex;
+  align-items: center;
+  color: #262626;
+  font-size:12px;
+}
+.img-publicada{
+  width:601px;
+  height:600px;
+ 
+}
+.footer-publicacion{
+  background-color: #fafafa;
+  color: rgba(38,38,38,0.7);
+  padding: 15px;
+  font-size: 25px;
+
+}
+i{
+  margin-right: 15px;
+}
+.container{
+
+}
+.div1{   
+  float: left; 
+}
+.div2{
+  float: right; 
+}
+
