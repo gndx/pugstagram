@@ -59,6 +59,7 @@ h1 {
   display: flex;
   background: -webkit-linear-gradient(yellow,rgb(194, 24, 152));
   border-radius: 10px;
+
 }
 
 .title-imagen{
@@ -72,12 +73,14 @@ h1 {
 
 .user-icon-container{
   border: 1px solid  rgb(170, 164, 164);
+  display: flex;
 
 }  
 
  
 .user-icon-container img {
   float: left;
+  object-fit: contain;
 }
 
 .imagen-container{
@@ -93,6 +96,13 @@ h1 {
 .user {
   width: 250px;
   margin-left: 50px;
+  text-align: center
+}
+
+.select-stories h3 {
+  padding: 0  0 0px;
+  margin: auto;
+  
 }
 
 .content-user {
@@ -103,6 +113,8 @@ h1 {
 
 .content-user img {
   float: left;
+  object-fit: contain;
+
 }
 
 
