@@ -1,0 +1,183 @@
+body {
+  background-color:#FAFAFA;
+  color: rgba(38,38,38,0.7);
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  background-color:#ffffff;
+}
+
+.Header-container {
+  height:54px ;
+  display: grid;
+  grid-template-columns: minmax(auto, 936px);
+  justify-content: center;
+  border-bottom: 1px solid rgba(38,38,38,0.7);
+  padding-right: 60px;
+}
+
+.Header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px 20px 10px;
+
+}
+
+.Header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header li {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+.Header h1 {
+  color: black;
+}
+.Header-Buscar-Img{
+  padding: 5px;
+  border: 2px solid #FAFAFA ;
+  background-color:#FAFAFA;
+  align-items: center;
+}
+
+.Header-nav-Img{
+
+  padding-left: 1px;
+  
+  width:30px;
+  height:30px;
+  border-radius:160px;
+}
+
+
+.container{
+  width: 1200px;
+  /* border : 1px  solid black; */
+  display: flex;
+  justify-content: center;
+  margin:40px 80px;
+  
+  
+}
+
+.mostrario{
+  /* border : 1px  solid green; */
+  width: 1000px;
+  height: 1040px;
+  margin: 10px 0px 10px 0px;
+  display: flex;
+ 
+}
+
+
+.content-History{
+  /* border: 1px solid #666; */
+  width: 600px;
+  height: 1040px;
+  display: flex;
+  flex-direction: column;
+}
+.Content-History-header{
+  border:0.1px solid #6d6d6d;
+  background-color: #ffffff;
+  width: inherit;
+  height: 60px;
+  display:inherit;
+ 
+  
+ 
+}
+
+.Content-History-header-Puntos{
+  margin-left:430px;
+
+}
+
+
+
+.Content-History-header-Img {
+  padding:  10px 10px 10px 10px;
+  
+  width:40px;
+  height:40px;
+  border-radius:160px;
+  /* border:3px solid #666; */
+}
+
+
+.content-History-Figure{
+
+  width: inherit;
+  height: 750px;
+  display: inherit ;
+  margin: 0;
+  
+
+
+
+}
+
+.content-History-Figure-Img{
+  width: inherit;
+  height: inherit;
+
+}
+
+ .content-History-Footer{
+ 
+   width: inherit ;
+  
+
+   
+ }
+
+ .content-History-Footer-Img{
+          width:inherit;
+
+        }
+
+.Carters{
+
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  
+ 
+
+
+}
+
+.Carters-Header{
+
+  height: 80px;
+  display: inherit;
+  flex-direction: inherit;
+}
+
+.Carters-Header-Img{
+ 
+  margin:  10px 10px 10px 50px;
+  
+  width:60px;
+  height:60px;
+  border-radius:160px;
+
+}
+
+.negrita{
+  font-weight: bold;
+}
