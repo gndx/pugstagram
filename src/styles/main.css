@@ -164,8 +164,7 @@ font-size: 13px;
 .stories {
   margin: 50px 20px;
   width: 230px;
-  height: 500px;
-  
+  height: 290px;  
 }
 
 .stories-account {
@@ -174,6 +173,35 @@ font-size: 13px;
   margin-bottom: 5px;
   display: flex;
   align-items: stretch;
+}
+
+.container-stories {
+  box-shadow: 0 0 2px rgba(38,38,38,0.7);
+  width: 230px;
+  height: 260px;
+  background-color: white;
+}
+
+.option {
+  width: 230px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option li {
+  display: inline-block;
+  margin: 0 2.5em  0 1em;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #3fa5e4;
 }
 
 .stories-account div h4 {
@@ -190,10 +218,22 @@ font-size: 13px;
 }
 
 .stories-followers {
-  box-shadow: 0 0 2px rgba(38,38,38,0.7);
-  width: 230px;
-  height: 300px;
+  display: flex;
+  align-items: stretch;
   background-color: white;
+}
+
+.stories-followers div h4 {
+  margin-top: 13px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.stories-followers div p {
+  margin-top: -20px;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 15px;
 }
 
 
