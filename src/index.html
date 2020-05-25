@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Pugstagram</title>
+  <link rel="icon" type="imagen.ico" href="../src/images/logo.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
 </head>
-
 <body>
-  <header class="Header">
+  <header class="Header" id="header">
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
@@ -16,17 +17,143 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li>
+              <figure class="logo">
+                <img src="../src/images/logo5.png" width="30" height="30" alt="Logo de http://AlexanderGuaman.com">
+              </figure>
+            Likes</li>
+            <li>
+              <figure class="logo">
+                <img src="../src/images/imagenperfil.png" width="30" height="30" alt="Logo de http://AlexanderGuaman.com">
+              </figure> 
+            Profile</li>         
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
+  <div class="content-container">
+    <main class="main">
+      <section class="main-stories">
+        <div class="main-stories-container">
+          <div class="stories-storie">
+            <div class="storie-header">
+              <a href="#ElmoPug">
+                <div class="storie-header-user">
+                  <img src="../src/images/perros.jpg" alt="perfilUser">
+                  <p><strong>Elmo Pug</strong> <br>Bogota Colombia</br></p>
+                </div>
+              </a>
+                <div class="storie-header-plus">
+                  <svg aria-label="More options" fill="#262626" height="16" viewBox="0 0 48 48" width="16">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg>
+                </div>
+            </div>
+            <div class="storie-main">
+              <img src="https://i.imgur.com/hI7D2Hc.jpg" alt="gndx">
+            </div>
+            <div class="storie-actions">
+              <div class="storie-actions-icons">
+                <div class="storie-actions-icons-feedback">
+                  <a href="#like">
+                    <img src="../src/images/logo3.png" alt="like"  height="30" width="30">
+                  </a>
+                  <a href="#share">
+                    <img src="../src/images/logo6.png" alt="share"  height="30" width="30">
+                  </a>
+                </div>
+                <div class="storie-actions-icon-save">
+                  <a href="#save">
+                    <img src="../src/images/logo4.png" alt="save"  height="30" width="30">
+                  </a>
+                </div>
+              </div>
+              <div class="strorie-actions-likes">
+                <p>10 Likes</p>
+              </div>
+            </div>
+            <div class="storie-description">
+              <h4>Elmo pug
+              <p> Description Storie</p>
+              </h4>
+            </div>
+            <div class="storie-comments">
+              <input type="text" placeholder="Add a comment...">
+              <a href="#comment">
+                <button>Post</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="Footer">
+      <div class="footer-container">
+        <div class="footer-user">
+          <img src="../src/images/portada.jpg" alt="userProfile">
+          <div class="footer-user-name">
+            <h4>@alexander.guaman.cruz</h4>
+            <p>ALEXANDER GUAMAN CRUZ</p>
+        </div>
+      </div>
+      <div class="footer-suggestions">
+        <div class="footer-suggestions-title">
+          <h3>Suggestions For You</h3>
+          <button>See All</button>
+        </div>
+        <div class="footer-suggestions-details">
+          <div class="footer-suggestions-details-user">
+            <div class="user-info-container">
+              <img src="../src/images/perfil2.png" alt="imgUser">
+              <div class="user-info">
+                <h4>name User</h4>
+                <p>Follows you</p>
+              </div>
+            </div>
+            <button>Follow</button>
+          </div>
+          <div class="footer-suggestions-details-user">
+            <div class="user-info-container">
+              <img src="../src/images/perfil3.png" alt="imgUser">
+              <div class="user-info">
+                <h4>name User</h4>
+                <p>Follows youk</p>
+              </div>
+            </div>
+            <button>Follow</button>
+          </div>
+          <div class="footer-suggestions-details-user">
+            <div class="user-info-container">
+              <img src="../src/images/perfil6.png" alt="imgUser">
+              <div class="user-info">
+                <h4>name User</h4>
+                <p>Follows youk</p>
+              </div>
+            </div>
+            <button>Follow</button>
+          </div>
+          <div class="footer-suggestions-details-user">
+            <div class="user-info-container">
+              <img src="../src/images/perfil4.png" alt="imgUser">
+              <div class="user-info">
+                <h4>name User</h4>
+                <p>Follows you</p>
+              </div>
+            </div>
+            <button>Follow</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <h4>© 2020 PUGSTAGRAM FROM PLATZI</h4>
+      </div>
+    </div>
+  
+    </footer>
+  </div>  
 </body>
 
 </html>
