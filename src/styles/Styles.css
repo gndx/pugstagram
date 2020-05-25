@@ -1,0 +1,326 @@
+*
+{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Father 
+{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.Header 
+{
+    background: white;
+    border-bottom: 1px #DCDCDC solid;
+    display:flex;
+    align-content: space-between;
+    padding-left: 140px;
+
+}
+.Nav 
+{
+    background: #DCDCDC;
+    border-bottom:1px solid #DCDCDC;
+}
+
+.Section 
+{
+    background: white;
+    border: 1px #DCDCDC solid;
+    display:flex;
+    flex-flow: column;
+    flex-direction: column;
+    height: 850px;
+    width: 650px;
+    margin-left: 300px;
+   /* margin: 20px 200px 20px 170px;*/
+
+}
+
+.Commentary 
+{
+    border: 1px #DCDCDC solid;
+    padding:1px;
+    background: white;
+    margin-top: 40px;
+    color: grey;
+    height: 580px;
+    font-size: 15px;
+}
+
+.Look
+{
+    background: #fafafa;
+    color: #DCDCDC;
+    border:1px solid #DCDCDC;  
+    width:175px;
+    height: 30px;
+    align-content: center;
+   
+}
+
+.Article 
+{
+    background: white;
+    border-right: 1px #DCDCDC solid;
+    flex-flow:row wrap;
+    padding: 30px;
+    width: 650px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+ 
+}
+
+.Social 
+{
+   /* border: 1px #DCDCDC solid; */
+    flex: 1 1 auto;
+    align-content: space-between;
+    /*width:30px;*/
+}
+.Menu 
+{
+    margin-left: 170px;
+    display:flex;
+    flex-flow: row nowrap;
+    height: 50px;
+    width: 1025px;
+    align-items: center;
+    align-content: space-between;
+}
+
+.Logo 
+{
+    width: 400px;
+    height: 50px;
+    font-family: 'Grand Hotel', cursive;
+}
+
+.IconSpace
+{
+    padding-left:300px;
+}
+.Suggestions 
+{
+    border: 1px #fafafa;
+    display:flex;
+    padding: 10px; 
+    flex: 2 1 auto;
+
+}
+
+.Text-Main 
+{
+    border: 1px #DCDCDC solid;
+    background: white;
+    margin: 20px 0px 20px 300px;
+    height: 100px;
+    padding: 10px;
+    width: 650px;
+    box-sizing: border-box;
+}
+
+.Circle 
+{
+    border-left: 2px solid #FF7C14;
+    border-top: 2px solid #D01486;
+    border-right: 2px solid #E81313;
+    border-bottom: 2px solid #FF4121;
+    width: 66px;
+    height: 66px;
+    -moz-border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    border-width: 3px;
+    border-radius: 90%;
+    margin-right: 10px;
+    padding:2px;
+    margin-left:6px;
+}
+
+.Circle1
+{
+    padding-top: 30px;
+    margin-left:2px;
+    width:645px;
+    height: 680px;
+}
+
+.Aside 
+{
+    /*border: 1px #DCDCDC solid;*/
+    flex: 1 1 auto;
+    margin: 30px 153px 10px 130px;
+    height: 200px;
+    width: 300px;
+    height: 930px;
+}
+
+.Profile 
+{
+    border: 1px #DCDCDC solid;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.Navegation 
+{
+    /*border: 1px blue solid;*/
+    flex-direction: column;
+    height: 56px;
+
+    
+}
+
+.Perfil
+{
+   font-family: Arial, Helvetica, sans-serif;
+   color: grey;
+   font-size: 15px;
+   display:flex;
+   padding:20px;
+   height: 800px;
+   border: #fafafa; 
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.Box-CircleBlackpug
+ {
+    border-left: 2px solid #FF7C14;
+    border-top: 2px solid #D01486;
+    border-right: 2px solid #E81313;
+    border-bottom: 2px solid #FF4121;
+    width: 52px;
+    height: 52px;
+    border-radius: 90%;
+    margin-left: 1px;
+    margin-top: 1px;
+    padding: 2px;
+    float: left;
+  
+ }
+
+ .Names
+ {
+   
+     font-family: Arial, Helvetica, sans-serif;
+     color: grey;
+     font-size: 15px;
+     justify-content: center;
+     padding:2px;
+     margin-left:36px;   
+ }
+
+ .Icons1
+ {  
+     margin-top: 2px;
+     margin-right: 10px;
+ }
+
+ .Icon-Save
+ {
+    margin-left: 260px;  
+ }
+
+ .IconsP
+ {
+    margin-left: 220px;  
+ }
+ 
+ .Ic
+ {
+    padding-left: 10px;
+ }
+ .CircleP 
+{
+    width: 66px;
+    height: 66px;
+    -moz-border-radius: 50% ;
+    margin-left:20px;
+    -webkit-border-radius: 50% ;
+    border-width: 3px;
+    border-radius: 90%;
+    margin-right: 10px;
+    padding:2px;
+    float:left;
+}
+
+.Text_Aside
+{
+margin-left:20px;    
+font-family: Helvetica;
+color: black;
+font-size: 16px;
+}
+
+.PerfilP{
+font-family: Arial, Helvetica, sans-serif;
+color: grey;
+font-size: 16px;
+}
+
+.Box2
+{
+    margin-top:50px;  
+}
+
+.Box1
+{
+    margin-top:70px;  
+}
+
+.CirclePQ 
+{
+    width: 55px;
+    height: 55px;
+    -moz-border-radius: 50% ;
+    margin-left:20px;
+    -webkit-border-radius: 50% ;
+    border-width: 3px;
+    border-radius: 90%;
+    margin-right: 10px;
+    padding:2px;
+    float:left;
+}
+
+.Text_Aside3
+{
+    font-family: Helvetica;
+    color: lightseagreen;
+    font-size: 15px;
+    padding-left: 300px;  
+    margin-top:1px;
+}
+
+.Text_Aside1
+{
+margin-left:20px;  
+font-family: Helvetica;
+color: grey;
+font-size: 15px;
+padding-left: 0px;
+}
+
+.Text_Aside4
+{
+margin-left:20px;  
+font-family: Helvetica;
+color: grey;
+font-size: 15px;
+padding-left: 0px;
+}
+
+.Text_Aside5
+{
+margin-left:20px;    
+font-family: Helvetica;
+color: black;
+font-size: 16px;
+padding-left:30px;
+}
