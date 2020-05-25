@@ -3,30 +3,166 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pugstagram</title>
+  <link rel="icon" type="image/png" href="images/instagram.png"/>
   <link href="styles/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+  
 </head>
 
 <body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
-        </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <header class="header">
+    <h1 class="header-title">Pugstagram</h1>
+    <nav class="menu">
+      <ol>
+          <li>
+            <a class="link.home" href="#Home"><img src="images/home_filled.svg" alt=""></a>
+          </li>
+          <li>
+              <a class="link-inbox" href="#Inbox"><img src="images/paperplane.svg" alt=""></a>
+          </li>
+          <li>
+              <a class="link-explore" href="#Explore"><img src="images/compass.svg" alt=""></a>
+          </li>
+          <li>
+              <a class="link-likes" href="#Likes"><img src="images/heart.svg" alt=""></a>
+          </li>
+          <li>
+              <a class="link-profile" href="#Profile"><img class="miniphoto" src="images/foto_perfil.jpg" alt="Perfil"></a>
+          </li>
+      </ol>            
+  </nav>
   </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
+      <section class="hero">
+          <article class="project">
+            <div class="project-details">
+              <figure class="project-miniphoto">
+                <img class="miniphoto" src="images/foto_perfil.jpg" alt="Perfil">
+              </figure>
+              <div class="miniphoto-details">
+                <h3 class="miniphoto-name">Elmo.pug</h3>
+                <p class="miniphoto-location">Bogotá, Colombia</p>
+              </div>
+              <a class="miniphoto-link" href="#linkphoto"><img src="images/flir.png" alt=""></a>
+            </div>
+            <figure class="projetc-main-photo">
+              <img class="pug-photo" src="images/pug.jpg" alt="Foto Pug">
+            </figure>
+          </article>
+
+          <article class="project-submenu">
+            <div class="submenu">
+              <a class="submenu-likes" href=""><img src="images/heart2.svg" alt=""></a>
+              <a class="submenu-comments" href=""><img src="images/bubble.svg" alt=""></a>
+              <a class="submenu-location" href=""><img src="images/paperplane.svg" alt=""></a>
+              <a class="submenu-explore" href=""><img src="images/bookmark.svg" alt=""></a>
+            </div>  
+
+           <div class="project-description">
+              <h4 class="texto1">Elmo.pug</h4>
+              <p class="texto2">Disfrutando de mi piscina</p>
+              <h4 class="texto3"> Crispeta </h4>
+              <p class="texto4">Hola Elmo</p>
+              <h4 class="texto5"> Dollarsin </h4>
+              <p class="texto6">¡Hola!</p>
+            </div>         
+           </article>
+           
+      </section>
+    </section>
+   
+    <footer class="footer">
+      <form action="/comment/" class="form-comment">
+        <input class="text-footer" type="text" placeholder="Agrega comentario..." id="email">
+        <button class="boton-footer" disabled type="submit">Post</button>
+      </form>
+    </footer> 
+
+    <article class="event-list">
+      <div class="event-perfil">
+        <figure class="event-photo-perfil">
+          <img class="event-miniphoto-perfil" src="images/foto_perfil.jpg" alt="Perfil">
+        </figure>
+        <div class="event-perfil-details">
+          <h3 class="event-name-avatar">altair871024</h3>
+          <p class="event-perfil-name">Felipe Andres Morales</p>
+        </div>
+
+      </div>
+
+      <div class="list-contacts">
+        <h4 class="list-title">Sugerencias para ti</h34>
+        <a class="list-title-link" href="#linkphoto">Ver todo<img src="" alt=""></a>
+        </div>
+      <div>
+        <ol>
+          <li>
+            <div class="list-profile">
+            <figure class="list-perfil-photo">
+               <img class="photo-perfil" src="images/foto_perfil.jpg" alt="Perfil">
+            </figure>
+                <div class="list-perfil-details">
+                  <h3 class="list-name-avatar">mipatikodiaz</h3>
+                  <p class="list-perfil-name">Amigos en Facebook</p>
+                  <a class="list-photo-link" href="#linkphoto">Seguir<img src="" alt=""></a>
+                </div>    
+           </div>
+          </li> 
+          <li>
+            <div class="list-profile">
+            <figure class="list-perfil-photo">
+               <img class="photo-perfil" src="images/foto_perfil.jpg" alt="Perfil">
+            </figure>
+                <div class="list-perfil-details">
+                  <h3 class="list-name-avatar">mipatikodiaz</h3>
+                  <p class="list-perfil-name">Amigos en Facebook</p>
+                  <a class="list-photo-link" href="#linkphoto">Seguir<img src="" alt=""></a>
+                </div>    
+           </div>
+          </li> 
+          <li>
+            <div class="list-profile">
+            <figure class="list-perfil-photo">
+               <img class="photo-perfil" src="images/foto_perfil.jpg" alt="Perfil">
+            </figure>
+                <div class="list-perfil-details">
+                  <h3 class="list-name-avatar">mipatikodiaz</h3>
+                  <p class="list-perfil-name">Amigos en Facebook</p>
+                  <a class="list-photo-link" href="#linkphoto">Seguir<img src="" alt=""></a>
+                </div>    
+           </div>
+          </li> 
+          <li>
+            <div class="list-profile">
+            <figure class="list-perfil-photo">
+               <img class="photo-perfil" src="images/foto_perfil.jpg" alt="Perfil">
+            </figure>
+                <div class="list-perfil-details">
+                  <h3 class="list-name-avatar">mipatikodiaz</h3>
+                  <p class="list-perfil-name">Amigos en Facebook</p>
+                  <a class="list-photo-link" href="#linkphoto">Seguir<img src="" alt=""></a>
+                </div>    
+           </div>
+          </li> 
+          <li>
+            <div class="list-profile">
+            <figure class="list-perfil-photo">
+               <img class="photo-perfil" src="images/foto_perfil.jpg" alt="Perfil">
+            </figure>
+                <div class="list-perfil-details">
+                  <h3 class="list-name-avatar">mipatikodiaz</h3>
+                  <p class="list-perfil-name">Amigos en Facebook</p>
+                  <a class="list-photo-link" href="#linkphoto">Seguir<img src="" alt=""></a>
+                </div>    
+           </div>
+          </li> 
+      </ol>    
+      </div>
+     <div>
+      <p class="end-title">Designed with by <a class="link-end-title" href="https://twitter.com/FeloMo87">@FeloMo87</a></p>
+     </div>
+    </arcticle>
 </body>
 
 </html>
