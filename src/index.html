@@ -1,32 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
-        </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pugstagram</title>
+    <link rel="icon" type="image/png" href="../images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="Header" id="header">
+      <div class="Header-container">
+        <div class="Header-content">
+          <div class="Header-logo">
+            <h1 id="porfin">Pugstagram</h1>
+          </div>
+          <div class="Header-nav">
+            <ul>
+              <li>
+                <figure class="logo">
+                  <img src="../images/like.png" width="30" height="30" alt="Logo de coraz&oacute;n">
+                </figure>
+              </li>
+              <li>
+                <figure class="logo">
+                  <img src="../images/perfil.png" width="30" height="30" alt="Logo perfil">
+                </figure> 
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
-</body>
-
+    </header>
+    <div class="content-container">
+      <main class="main">
+        <section class="main-stories">
+          <div class="main-stories-container">
+            <div class="stories-storie">
+              <div class="storie-header">
+                <a href="#ElmoPug">
+                  <div class="storie-header-user">
+                    <img src="../images/Elmo.jpg" alt="perfilUser">
+                    <p><strong>Elmo Sito</strong> <br>Bogot&aacute; Colombia</br></p>
+                  </div>
+                </a>
+                  <div class="storie-header-plus">
+                    <svg aria-label="More options" fill="#262626" height="16" viewBox="0 0 48 48" width="16">
+                      <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                      <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                      <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    </svg>
+                  </div>
+              </div>
+              <div class="storie-main">
+                <img src="../images/elmo002.jpg" alt="Don Elmo con sus pelotas">
+              </div>
+              <div class="storie-actions">
+                <div class="storie-actions-icons">
+                  <div class="storie-actions-icons-feedback">
+                    <a href="#like">
+                      <img src="../images/like.png" alt="like"  height="30" width="30">
+                    </a>
+                    <a href="#share">
+                      <img src="../images/flecha.png" alt="share"  height="30" width="30">
+                    </a>
+                  </div>
+                  <div class="storie-actions-icon-save">
+                    <a href="#save">
+                      <img src="../images/adj.png" alt="save"  height="30" width="30">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="storie-description">
+                <h4>Elmo pug esta en el parque de pets
+                <p> Una tarde de pelotas y juegos</p> <br/>
+                <br/>
+                <p><small><strong>Carla:</strong>Como estas Elmo?</small></p>
+                <p><small><strong>Elmo:</strong>Bien y tu Carla?</small></p>
+              </h4>
+              </div>
+              <div class="storie-comments">
+                <input type="text" placeholder="Add a comment...">
+                <a href="#comment">
+                  <button>Post</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="Footer">
+        <div class="footer-container">
+          <div class="footer-user">
+            <img src="../images/init.jpg" alt="userProfile">
+            <div class="footer-user-name">
+              <h4>@niko_duw</h4>
+              <p>Nicol&aacute;s Duss&aacute;n</p>
+          </div>
+        </div>
+        <div class="footer-suggestions">
+          <div class="footer-suggestions-title">
+            <h3>Suggestions For You</h3>
+            <button>See All</button>
+          </div>
+          <div class="footer-suggestions-details">
+            <div class="footer-suggestions-details-user">
+              <div class="user-info-container">
+                <img src="../images/profile1.jpg" alt="imgUser">
+                <div class="user-info">
+                  <h4>ChistinDog</h4>
+                  <p>New to Instagram</p>
+                </div>
+              </div>
+              <button><strong>Follow</strong></button>
+            </div>
+            <div class="footer-suggestions-details-user">
+              <div class="user-info-container">
+                <img src="../images/profile2.jpg" alt="imgUser">
+                <div class="user-info">
+                  <h4>EltonDog</h4>
+                  <p>New to Instagram</p>
+                </div>
+              </div>
+              <button><strong>Follow</strong></button>
+            </div>
+            <div class="footer-suggestions-details-user">
+              <div class="user-info-container">
+                <img src="../images/profile3.jpg" alt="imgUser">
+                <div class="user-info">
+                  <h4>TheDoctorDog</h4>
+                  <p>New to Instagram</p>
+                </div>
+              </div>
+              <button><strong>Follow</strong></button>
+            </div>
+            <div class="footer-suggestions-details-user">
+              <div class="user-info-container">
+                <img src="../images/profile4.jpg" alt="imgUser">
+                <div class="user-info">
+                  <h4>ElonMuskerDog</h4>
+                  <p>New to Instagram</p>
+                </div>
+              </div>
+              <button><strong>Follow</strong></button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <h4 id="derechos">© 2020 PUGSTAGRAM FROM PLATZI</h4>
+        </div>
+      </div>    
+      </footer>
+    </div>  
+  </body>
 </html>
