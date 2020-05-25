@@ -1,34 +1,100 @@
 body {
-  background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  background-color: #ffffff;
+  color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
+  font-size: 14px;
   
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Pacifico', cursive;
+h2 {
+  display: flex;
+  margin-left: 70px;
+  font-size: 13px;
+} 
+
+.event-historias{
+  justify-content: center;
+  display: flex;
+  /* background-position-x: -100px; */
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* width: 1000px; */
+  margin-right: 50px;
+  text-align: left;
 }
 
-p{
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
-  font-size: 14px;
-  line-height: 15px;
+.event{
+  display: flex;
+  /* vertical-align: baseline; */
+  /* border-top: 1px solid rgba(201, 200, 200, 0.9); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-size: 12px;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  background-position-y: 250px;
+
 }
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.he-container{
+  padding: 0;
+  letter-spacing: 0em;
+  margin-top: 10px;
+  
+} 
+
+.hero{
+  margin-block-end: 0em;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.rows {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .Header {
   background-color: white;
-  position: sticky;
-  top: 0;
+  font-family: 'Lobster', cursive;  
+  margin-left: 100px;
+}
+
+.hero-image{
+  margin-left: 90px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .Header-container {
-  display: grid;
+  display: flex;
   grid-template-columns: minmax(auto, 936px);
-  justify-content: center;
-  border-bottom: 1px solid rgba(201, 200, 200, 0.9);
+  justify-content: center; */
+  border-bottom: 1rborder-radiusx 10px solid rgba(38,38,38,0.7);
+}
+h1{
+  font-size: 20px;
+  letter-spacing: normal;
+  margin-top: 0;
+}
+
+.container{
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: inherit;
+    flex-wrap: wrap;
+    margin-left: center;
+    display: flex;
 }
 
 .Header-content {
@@ -36,9 +102,8 @@ p{
   align-items: center;
   justify-content: space-between;
   padding: 3px;
-}
-
-.Header ul {
+} 
+ .Header ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,7 +112,6 @@ p{
 .Header li {
   display: inline-block;
   margin: 0 0 0 1em;
-  cursor: pointer;
 }
 
 .Header h1 {
@@ -58,139 +122,8 @@ p{
   -webkit-text-fill-color: transparent; 
 }
 
-.iconos_menu{
-  font-size: 22px;
-}
-
-.section-container {
-  display: grid;
-  grid-template-columns: minmax(auto, 936px);
-  justify-content: center;
-}
-
-.section-content {
-  display: flex;
-  justify-content: center;
-}
-.fotos{
-  width: 600px;
-  border: 1px solid rgba(201, 200, 200, 0.9);
-  background: #ffffff;
-  margin: 20px 0;
-}
-
-img{
-  width: 600px;
-}
-
-.userpick{
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin:  5px 16px 5px 15px;
-  cursor: pointer;
-}
-.user_info{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.datos{
-  display: flex;
-  align-items: center;
- 
-}
-
-.puntos{
-  font-size: 5px;
-  margin-right: 15px;
-  color: grey;
-}
-
-.perfil{
-  width: 296px;
-  margin: 20px 0;
-  padding: 0 0 0 40px;
-}
-.btns{
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 5px 0 5px;
-  padding: 0;
-}
-.sugerencias{
-  font-weight: bold;
-  color: #8e8e8e;
-}
-.ver{
-  color: #000000;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.userpick2{
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
-  margin:  5px 16px 5px 0px;
-  cursor: pointer;
-}
-
-.notificaciones{
-  border: 1px solid rgba(201, 200, 200, 0.9);
-  background: #ffffff;
-  margin: 10px 0;
-}
-
-.calltoaction {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.call-content ul{
-  list-style: none;
-  padding: 0;
-  display: inline-flex;
-}
-
-.call-content ul li{
-  cursor: pointer;
-  font-size: 22px;
-  margin: 0 15px;
-}
-.comentarios{
-  margin-left: 15px;
-}
-
-.form{
-  vertical-align: baseline;
-  border-top: 1px solid rgba(201, 200, 200, 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-.agregar{
-  height: 18px; 
-  border: none;
-  resize: none;
-}
-
-.btn_publicar{
-  background: none;
-  border: none;
-  font-weight: bold;
-  color: #8e8e8e;
-}
-
 .footer{
-  margin: 35px 0 0 0;
-  color: #a0a0a0;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 13px;
+  color: black;
+  font-size: 15px;
+  margin-left: 100px;
 }
