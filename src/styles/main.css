@@ -391,6 +391,12 @@ h1 {
   padding: 0;
 }
 
+.profile-name a,
+.profile-username p{
+  text-decoration: none;
+  color: #262626;
+}
+
 .profile-name{
   padding: 0 0 5px 0;
   font-weight: bold;

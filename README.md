@@ -1,9 +1,9 @@
-# pugstagram
+# Pugstagram
 
-#By jhair Vargas
+Hello!!!
 
 Site: https://jhavargashe.github.io/pugstagram/src/index.html
 
 Enjoy my fisrt page
 
-Jhair Vargas
+# By Jhair Vargas
