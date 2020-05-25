@@ -1,34 +1,109 @@
 body {
-  background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  background-color: #ffffff;
+  color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+h2 {
+  display: flex;
+  margin-left: 70px;
+  font-size: 13px;
+} 
+
+.event-historias{
+  justify-content: center;
+  display: flex;
+  /* background-position-x: -100px; */
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* width: 1000px; */
+  margin-right: 50px;
+  text-align: left;
 }
+
+.event{
+  display: flex;
+  /* vertical-align: baseline; */
+  /* border-top: 1px solid rgba(201, 200, 200, 0.9); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-size: 12px;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  background-position-y: 250px;
+
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.he-container{
+  padding: 0;
+  letter-spacing: 0em;
+  margin-top: 10px;
+  
+} 
+
+.hero{
+  margin-block-end: 0em;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.rows {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .Header {
   background-color: white;
+  font-family: 'Lobster', cursive;  
+  margin-left: 100px;
+}
+
+.hero-image{
+  margin-left: 90px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .Header-container {
-  display: grid;
+  display: flex;
   grid-template-columns: minmax(auto, 936px);
-  justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  justify-content: center; */
+  border-bottom: 1rborder-radiusx 10px solid rgba(38,38,38,0.7);
+}
+h1{
+  font-size: 20px;
+  letter-spacing: normal;
+  margin-top: 0;
+}
+
+.container{
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: inherit;
+    flex-wrap: wrap;
+    margin-left: center;
+    display: flex;
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
-}
-
-.Header ul {
+  padding: 3px;
+} 
+ .Header ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -40,5 +115,15 @@ h1 {
 }
 
 .Header h1 {
+  font-size: 30px;
+  margin-bottom: 3px;
+  background: -webkit-linear-gradient(left top, #f4ba19,#e40028, #b81d8a);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+}
+
+.footer{
   color: black;
+  font-size: 15px;
+  margin-left: 100px;
 }
