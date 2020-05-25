@@ -1,7 +1,7 @@
 body {
   background-color: #fafafa;
   color: rgba(38,38,38,0.7);
-  margin: 0;
+  margin: 5em;
   padding: 0;
 }
 
@@ -12,20 +12,25 @@ h1 {
 
 .Header {
   background-color: white;
+  height: 50;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
 }
 
 .Header-container {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(124, 122, 122, 0.411);
 }
 
 .Header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.2em 0 0 0;
 }
 
 .Header ul {
@@ -39,6 +44,87 @@ h1 {
   margin: 0 0 0 1em;
 }
 
-.Header h1 {
+.Header-search input {
+  background-color: rgba(187, 187, 187, 0.089);
+  border: 1px;
+  border-color: rgba(124, 122, 122, 0.295);
+  border-style: solid;
+  border-radius: 5px;
+  padding: 4px 20px 4px 25px;
+  background-image: url(../images/Search.png);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
+.header-pub {
+  display: inline-block;
+  background-color: white;
+  border: 1px;
+  border-color: rgba(124, 122, 122, 0.295);
+  border-style: solid;
+  margin: 0em 15em 0 10em;
+  padding: 0.3em 23.5em 0.3em 0.3em;
+  align-items: center;
+}
+
+.header-pub-info {
+  display: inline-block;
   color: black;
+}
+
+.user ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user li {
+  display: block;
+  margin: 0 0 0 1em;
+  text-decoration: none;
+}
+
+main{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-pub {
+  margin: 0em 22em 0 10em;
+  padding: 0;
+}
+
+.footer-publication {
+  display: inline-block;
+  background-color: white;
+  border: 1px;
+  border-color: rgba(124, 122, 122, 0.295);
+  border-style: solid;
+  margin: 0 0 0 10em;
+  padding: 1em 15em 0.5em 0.5em;
+}
+
+.interacciones ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.interacciones li {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+.comentario {
+  color: black;
+  line-height: 1px;
+}
+
+.comentario input {
+  margin: 0;
+  border: 0.5px;
+  border-color: rgba(124, 122, 122, 0.295);
+  border-style: solid;
+  background-position-x: right;
 }
