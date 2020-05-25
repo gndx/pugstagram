@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Pugstagram</title>
   <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&family=Source+Serif+Pro&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -14,19 +17,116 @@
         <div class="Header-logo">
           <h1>Pugstagram</h1>
         </div>
+        <div class="search">
+          <form class="comment-post">
+            <i class="fas fa-search"></i>
+            <input type="text" class="sinborde" placeholder="search">
+        </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><i class="fas fa-heart"></i></li>
+            <li><i class="fas fa-user"></i></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
-  </main>
+  <section class="container">
+    <section class="feed">
+      <article>
+        <header class="feed-account">
+          <img class="image-account" src="images/publicacion.jpeg" alt="">
+          <div>
+            <h4>
+              Camilito.pug
+            </h4>
+            <p>Bogota,Colombia</p>
+          </div>
+          <div class="feed-option">
+            <a>
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </div>
+        </header>
+        </div>
+        <div class="feed-images">
+          <img class="image" src="images/publicacion.jpeg">
+        </div>
+        <article class="feed-interaction">
+          <div>
+            <a class="like-post">
+              <i class="far fa-heart"></i></i>
+            </a>
+            <a class="send-post">
+              <i class="far fa-paper-plane"></i>
+            </a>
+            <a class="save-post">
+              <i class="far fa-bookmark"></i>
+            </a>
+            <p> <strong>Camilito.pug</strong> !Miauw!</p>
+            <p> <strong>Buitraguito.pug</strong> !Guauw :D!</p>
+          </div>
+        </article>
+        <div class="feed-post">
+          <form class="comment-post">
+              <input type="text" class="sinborde" placeholder="Add comment...">
+              <input type="submit" class="button" value="Post">
+          </form>
+        </div>
+      </article>
+    </section>
+    <section class="stories">
+      <article>
+        <div class="stories-account">
+          <img class="image-account" src="images/publicacion.jpeg" alt="">
+          <div>
+            <h4>
+              Camilito.pug
+            </h4>
+            <p>Camilo</p>
+          </div>
+        </div>
+        <div class="container-stories">
+          <div class="option">
+            <ul>
+              <li>Stories</li>
+              <li>View all</li>
+            </ul>
+          </div>
+            <div class="stories-followers">
+              <img class="image-account" src="images/buitraguitopug.jpg" alt="">
+              <div>
+                <h4>
+                  Buitraguito.pug
+                </h4>
+                <p>Two hours ago</p>
+              </div>
+            </div>
+            <div class="stories-followers">
+              <img class="image-account" src="images/nullpug.jpg" alt="">
+              <div>
+                <h4>
+                  Null.pug
+                </h4>
+                <p>Ten hours ago</p>
+              </div>
+            </div>
+            <div class="stories-followers">
+              <img class="image-account" src="images/errorpug.jpeg" alt="">
+              <div>
+                <h4>
+                  Error.pug
+                </h4>
+                <p>One hours ago</p>
+              </div>
+        </div>
+          </div>
+      </article>
+    </section>
+  </section>
   <footer>
   </footer>
 </body>
+<script src="js/all.js" type="application/javascript"></script>
 
 </html>
