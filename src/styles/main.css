@@ -21,7 +21,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .Header-content {
@@ -45,6 +45,9 @@ h1 {
 
 .Header h1 {
   color: black;
+  font-family: 'Grand hotel', sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
 }
 .main_content
 {
@@ -160,6 +163,7 @@ h1 {
   flex: 0 0 auto;
   overflow: hidden;
   position: relative;
+  border: 2px solid white;
 }
 ._button
 {
@@ -824,7 +828,7 @@ white-space: pre;
   width: 56px;
   height: 56px;
   overflow: hidden;
-  border: solid;
+  border: 1px solid gray;
   
 }
 .profile_suggestion
