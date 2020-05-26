@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Homemade+Apple&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header class="Header">
     <div class="Header-container">
@@ -16,17 +17,418 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><button class="nav-iconHome"><img src="images/home.svg" alt="home"></button></li>
+            <li><button class="nav-iconSend"><img src="images/send1.svg" alt="send"></button></li>
+            <li><button class="nav-iconLocation"><img src="images/location.svg" alt="location"></button></li>
+            <li><button class="nav-iconLike"><img src="images/like.svg" alt="like1"></button></li>
+            <li><button class="nav-profile"><a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/Me.jpg" alt="profile"></a></button></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
+    <div class="main-container">
+        <section class="principal">
+          <div class="principal-container">
+            <div class="principal-histories">
+              <article class="hist-content">
+                <ul>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                         <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                        <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                        <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                        <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                        <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                        <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="hist-image">
+                      <figure>
+                        <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/otro.jpg" alt="foto perfil" height="56px"></a>
+                      </figure>
+                    </div>
+                    <div class="hist-name">
+                      <p>Jhair Vargas</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div class="principal-container1">
+            <div class="principal-content">
+              <article class="principal-figure">
+                  <div class="enca-principal">
+                    <div class="enca-text">
+                      <div class="enca-image"><img src="images/perfil.jpg" alt="foto perfil principal" height="32px"></div>
+                      <div class="enca-datos">
+                        <div class="enca-name"><p>ElPugDogSo</p></div>
+                        <div class="enca-ubication"><p>Bogota D.C.</p></div>
+                      </div>
+                    </div>
+                    <div class="enca-options"><p>...</p></div>
+                  </div>
+                <div class="pfigure-image">
+                  <img src="images/Main.jpg" alt="Imagen">
+                </div>
+                <div class="pfigure-comment">
+                  <div class="pfigure-icons">
+                    <button><img class="icon-like" src="images/like.svg" alt="like"></button></button>
+                    <button></button><img class="icon-comment" src="images/comment.svg" alt="comment">
+                    <button><img class="icon-send" src="images/send.svg" alt="send"></button>
+                    <button><img class="icon-save" src="images/save.svg" alt="save"></button>
+                  </div>
+                  <div class="pfigure-likes">
+                    <p>1,864 Me gusta</p>
+                  </div>
+                  <div class="pfigure-commentarys">
+                      <p><strong>Peter</strong> Me gusta lo que hace este perro que genial <br> <strong>Angie</strong> #hey que perro tan lindo</p>
+                  </div>
+                  <div class="pfigure-time"><p>Hace 10 min</p></div>
+                </div>
+                <div class="pfigure-addcomm">
+                  <form action="/suscripcion/">
+                    <input type="text" name="nombre" id="commentary" placeholder="Agrega un comentario...">
+                    <button>Publicar</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="principal-container1">
+            <div class="principal-content">
+              <article class="principal-figure">
+                  <div class="enca-principal">
+                    <div class="enca-text">
+                      <div class="enca-image"><img src="images/perfil.jpg" alt="foto perfil principal" height="32px"></div>
+                      <div class="enca-datos">
+                        <div class="enca-name"><p>ElPugDogSo</p></div>
+                        <div class="enca-ubication"><p>Bogota D.C.</p></div>
+                      </div>
+                    </div>
+                    <div class="enca-options"><p>...</p></div>
+                  </div>
+                <div class="pfigure-image">
+                  <img src="images/Main.jpg" alt="Imagen">
+                </div>
+                <div class="pfigure-comment">
+                  <div class="pfigure-icons">
+                    <button><img class="icon-like" src="images/like.svg" alt="like"></button></button>
+                    <button></button><img class="icon-comment" src="images/comment.svg" alt="comment">
+                    <button><img class="icon-send" src="images/send.svg" alt="send"></button>
+                    <button><img class="icon-save" src="images/save.svg" alt="save"></button>
+                  </div>
+                  <div class="pfigure-likes">
+                    <p>1,864 Me gusta</p>
+                  </div>
+                  <div class="pfigure-commentarys">
+                      <p><strong>Peter</strong> Me gusta lo que hace este perro que genial <br> <strong>Angie</strong> #hey que perro tan lindo</p>
+                  </div>
+                  <div class="pfigure-time"><p>Hace 10 min</p></div>
+                </div>
+                <div class="pfigure-addcomm">
+                  <form action="/suscripcion/">
+                    <input type="text" name="nombre" id="commentary" placeholder="Agrega un comentario...">
+                    <button>Publicar</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="principal-container1">
+            <div class="principal-content">
+              <article class="principal-figure">
+                  <div class="enca-principal">
+                    <div class="enca-text">
+                      <div class="enca-image"><img src="images/perfil.jpg" alt="foto perfil principal" height="32px"></div>
+                      <div class="enca-datos">
+                        <div class="enca-name"><p>ElPugDogSo</p></div>
+                        <div class="enca-ubication"><p>Bogota D.C.</p></div>
+                      </div>
+                    </div>
+                    <div class="enca-options"><p>...</p></div>
+                  </div>
+                <div class="pfigure-image">
+                  <img src="images/Main.jpg" alt="Imagen">
+                </div>
+                <div class="pfigure-comment">
+                  <div class="pfigure-icons">
+                    <button><img class="icon-like" src="images/like.svg" alt="like"></button></button>
+                    <button></button><img class="icon-comment" src="images/comment.svg" alt="comment">
+                    <button><img class="icon-send" src="images/send.svg" alt="send"></button>
+                    <button><img class="icon-save" src="images/save.svg" alt="save"></button>
+                  </div>
+                  <div class="pfigure-likes">
+                    <p>1,864 Me gusta</p>
+                  </div>
+                  <div class="pfigure-commentarys">
+                      <p><strong>Peter</strong> Me gusta lo que hace este perro que genial <br> <strong>Angie</strong> #hey que perro tan lindo</p>
+                  </div>
+                  <div class="pfigure-time"><p>Hace 10 min</p></div>
+                </div>
+                <div class="pfigure-addcomm">
+                  <form action="/suscripcion/">
+                    <input type="text" name="nombre" id="commentary" placeholder="Agrega un comentario...">
+                    <button>Publicar</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="principal-container1">
+            <div class="principal-content">
+              <article class="principal-figure">
+                  <div class="enca-principal">
+                    <div class="enca-text">
+                      <div class="enca-image"><img src="images/perfil.jpg" alt="foto perfil principal" height="32px"></div>
+                      <div class="enca-datos">
+                        <div class="enca-name"><p>ElPugDogSo</p></div>
+                        <div class="enca-ubication"><p>Bogota D.C.</p></div>
+                      </div>
+                    </div>
+                    <div class="enca-options"><p>...</p></div>
+                  </div>
+                <div class="pfigure-image">
+                  <img src="images/Main.jpg" alt="Imagen">
+                </div>
+                <div class="pfigure-comment">
+                  <div class="pfigure-icons">
+                    <button><img class="icon-like" src="images/like.svg" alt="like"></button></button>
+                    <button></button><img class="icon-comment" src="images/comment.svg" alt="comment">
+                    <button><img class="icon-send" src="images/send.svg" alt="send"></button>
+                    <button><img class="icon-save" src="images/save.svg" alt="save"></button>
+                  </div>
+                  <div class="pfigure-likes">
+                    <p>1,864 Me gusta</p>
+                  </div>
+                  <div class="pfigure-commentarys">
+                      <p><strong>Peter</strong> Me gusta lo que hace este perro que genial <br> <strong>Angie</strong> #hey que perro tan lindo</p>
+                  </div>
+                  <div class="pfigure-time"><p>Hace 10 min</p></div>
+                </div>
+                <div class="pfigure-addcomm">
+                  <form action="/suscripcion/">
+                    <input type="text" name="nombre" id="commentary" placeholder="Agrega un comentario...">
+                    <button>Publicar</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="principal-container1">
+            <div class="principal-content">
+              <article class="principal-figure">
+                  <div class="enca-principal">
+                    <div class="enca-text">
+                      <div class="enca-image"><img src="images/perfil.jpg" alt="foto perfil principal" height="32px"></div>
+                      <div class="enca-datos">
+                        <div class="enca-name"><p>ElPugDogSo</p></div>
+                        <div class="enca-ubication"><p>Bogota D.C.</p></div>
+                      </div>
+                    </div>
+                    <div class="enca-options"><p>...</p></div>
+                  </div>
+                <div class="pfigure-image">
+                  <img src="images/Main.jpg" alt="Imagen">
+                </div>
+                <div class="pfigure-comment">
+                  <div class="pfigure-icons">
+                    <button><img class="icon-like" src="images/like.svg" alt="like"></button></button>
+                    <button></button><img class="icon-comment" src="images/comment.svg" alt="comment">
+                    <button><img class="icon-send" src="images/send.svg" alt="send"></button>
+                    <button><img class="icon-save" src="images/save.svg" alt="save"></button>
+                  </div>
+                  <div class="pfigure-likes">
+                    <p>1,864 Me gusta</p>
+                  </div>
+                  <div class="pfigure-commentarys">
+                      <p><strong>Peter</strong> Me gusta lo que hace este perro que genial <br> <strong>Angie</strong> #hey que perro tan lindo</p>
+                  </div>
+                  <div class="pfigure-time"><p>Hace 10 min</p></div>
+                </div>
+                <div class="pfigure-addcomm">
+                  <form action="/suscripcion/">
+                    <input type="text" name="nombre" id="commentary" placeholder="Agrega un comentario...">
+                    <button>Publicar</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="principal-container1">
+            <div class="principal-content">
+              <article class="principal-figure">
+                  <div class="enca-principal">
+                    <div class="enca-text">
+                      <div class="enca-image"><img src="images/perfil.jpg" alt="foto perfil principal" height="32px"></div>
+                      <div class="enca-datos">
+                        <div class="enca-name"><p>ElPugDogSo</p></div>
+                        <div class="enca-ubication"><p>Bogota D.C.</p></div>
+                      </div>
+                    </div>
+                    <div class="enca-options"><p>...</p></div>
+                  </div>
+                <div class="pfigure-image">
+                  <img src="images/Main.jpg" alt="Imagen">
+                </div>
+                <div class="pfigure-comment">
+                  <div class="pfigure-icons">
+                    <button><img class="icon-like" src="images/like.svg" alt="like"></button></button>
+                    <button></button><img class="icon-comment" src="images/comment.svg" alt="comment">
+                    <button><img class="icon-send" src="images/send.svg" alt="send"></button>
+                    <button><img class="icon-save" src="images/save.svg" alt="save"></button>
+                  </div>
+                  <div class="pfigure-likes">
+                    <p>1,864 Me gusta</p>
+                  </div>
+                  <div class="pfigure-commentarys">
+                      <p><strong>Peter</strong> Me gusta lo que hace este perro que genial <br> <strong>Angie</strong> #hey que perro tan lindo</p>
+                  </div>
+                  <div class="pfigure-time"><p>Hace 10 min</p></div>
+                </div>
+                <div class="pfigure-addcomm">
+                  <form action="/suscripcion/">
+                    <input type="text" name="nombre" id="commentary" placeholder="Agrega un comentario...">
+                    <button>Publicar</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="secundary">
+          <div class="secundary-container">
+            <article class="profile">
+              <div class="profile-image"> <a href="https://www.instagram.com/jhairvargas/" target="_blank"><img src="images/Me.jpg" alt="" width="56px"></div></a>
+              <div class="profile-text">
+                <div class="profile-name"><a href="https://www.instagram.com/jhairvargas/" target="_blank" rel="noopener noreferrer"><p>jhairvargas</p></a></div>
+                <div class="profile-username"><p>Jhair Vargas</p></div>
+              </div>
+            </article>
+            <article class="suggestion">
+              <div class="sug-header">
+                <div class="sug-title"><p>Sugerencias para ti</p></div>
+                <a href="#"><p>Ver todo</p></a>
+              </div>
+              <div class="sug-main">
+                <ul>
+                  <li>
+                    <img src="images/suggestion.jpg" alt="">
+                    <div class="sug-main-name">
+                      <p class="sug-username">OtroPugDoSo</p>
+                      <p class="sug-followers">jhairvargas y 22 más siguen esta cuenta...</p>
+                    </div>
+                    <button>Seguir</button>
+                  </li>
+                  <li>
+                    <img src="images/suggestion.jpg" alt="">
+                    <div class="sug-main-name">
+                      <p class="sug-username">OtroPugDoSo</p>
+                      <p class="sug-followers">jhairvargas y 22 más siguen esta cuenta...</p>
+                    </div>
+                    <button>Seguir</button>
+                  </li>
+                  <li>
+                    <img src="images/suggestion.jpg" alt="">
+                    <div class="sug-main-name">
+                      <p class="sug-username">OtroPugDoSo</p>
+                      <p class="sug-followers">jhairvargas y 22 más siguen esta cuenta...</p>
+                    </div>
+                    <button>Seguir</button>
+                  </li>
+                  <li>
+                    <img src="images/suggestion.jpg" alt="">
+                    <div class="sug-main-name">
+                      <p class="sug-username">OtroPugDoSo</p>
+                      <p class="sug-followers">jhairvargas y 22 más siguen esta cuenta...</p>
+                    </div>
+                    <button>Seguir</button>
+                  </li>
+                  <li>
+                    <img src="images/suggestion.jpg" alt="">
+                    <div class="sug-main-name">
+                      <p class="sug-username">OtroPugDoSo</p>
+                      <p class="sug-followers">jhairvargas y 22 más siguen esta cuenta...</p>
+                    </div>
+                    <button>Seguir</button>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <footer class="footer">
+              <nav class="footer-information">
+                <ul>
+                  <li><a href="">Information</a></li>
+                  <li><a href="">Ayuda</a></li>
+                  <li><a href="">Prensa</a></li>
+                  <li><a href="">API</a></li>
+                  <li><a href="">Empleo</a></li>
+                  <li><a href="">Privacidad</a></li>
+                  <li><a href="">Condiciones</a></li>
+                  <li><a href="">Ubicaciones</a></li>
+                  <li><a href="">Cuentas destacadas</a></li>
+                  <li><a href="">Hashtags</a></li>
+                  <li><a href="">Idioma</a></li>
+                </ul>
+              </nav>
+              <p>© 2020 Pugstagram from Jhair</p>
+            </footer>
+          </div>
+        </section>
+    </div>
   </main>
-  <footer>
-  </footer>
 </body>
-
 </html>
