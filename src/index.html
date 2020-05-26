@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
   <title>Pugstagram</title>
+  <link rel="icon" type="image/png" href="https://i.imgur.com/tbPiSYW.png">
   <link href="styles/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -16,17 +20,295 @@
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li>
+              <svg height="22px" width="22px" viewBox="0 0 48 48">
+                <path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg height="22px" width="22px" viewBox="0 0 48 48">
+                <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg height="22px" width="22px" viewBox="0 0 48 48">
+                <path d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg height="22px" width="22px" viewBox="0 0 48 48">
+                <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+              </svg>
+            </li>
+            <li>
+              <a href="" style="height: 22px; width: 22px; border-radius: 50%; display: inline-block;">
+                <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="" style="height: 22px; width: 22px; border-radius: 50%;" >
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main_content">
+    <section class="layout">
+      <div class="left_content">
+        <div class="upper_content">
+          <div class="container_stories">
+            <div class="container_stories2">
+              <div class="container_stories3">
+                <div class="stories">
+                  <ul class="list">
+                    <li>
+                      <div class="container_button">
+                        <button class="_button">
+                          <div class="container_button2" class="story">
+                            <canvas  id="myCanvas" class="my_canvas" height="66" width="66"></canvas>
+                            <span class="span_img" style="width: 56px; height:56px;">
+                            <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="" class="foto_story">
+                            </span>
+                          </div>
+                          <div class="name_story">
+                            Pug #1
+                          </div>
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="container_button">
+                        <button class="_button">
+                          <div class="container_button2" class="story">
+                            <canvas  id="myCanvas" class="my_canvas" height="66" width="66"></canvas>
+                            <span class="span_img" style="width: 56px; height:56px;">
+                            <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="" class="foto_story">
+                            </span>
+                          </div>
+                          <div class="name_story">
+                            Pug #1
+                          </div>
+                        </button>
+                      </div>
+                    </li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_content">
+          <header class="post_owner">
+            <div class="container_photo_owner">
+              <canvas class="my_canvas2" width="42" height="42"></canvas>
+              <span class="span_img" style="width:32px; height:32px;">
+                <img class="image2" src="https://i.imgur.com/yDqtWP4.jpg" alt="">
+              </span>
+            </div>
+            <div class="name_owner">
+              <div class="name_owner2">
+                <div class="name_owner3">
+                  <a href="" class="link_name_owner">Pug #1</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="button_options"> 
+                <svg  height="16" viewBox="0 0 48 48" width="16">
+                  <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <div class="photo">
+            <img class="image3" src="https://i.imgur.com/yDqtWP4.jpg" alt="">
+          </div>
+          <div class="container_comments">
+            <section class="section_like">
+              <div class="menu_options">
+                <div class="options">
+                  <span class="span_like">
+                    <button class="button_options">
+                      <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                      </svg>
+                    </button>
+                  </span>
+                  <span class="span_like">
+                    <button class="button_options">
+                      <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </span>
+                  <span class="span_like">
+                    <button class="button_options">
+                      <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                      </svg>
+                    </button>
+                  </span>
+                </div>
+                <div>
+                  <span class="span_like">
+                    <button class="button_options">
+                      <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                      </svg>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </section>
+            <section class="section_interactions">
+              <div class="container_interactions">
+                <span class="span_img" style="width: 20px; height: 20px;">
+                  <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="">
+                </span>
+                <div class="interaction"> les gusta a <a href="" class="link_name_owner">Pug #1</a> y <button class="_button2"><span> 999,999</span> personas más</button>
+                </div>
+              </div>
+            </section>
+            <div class="comments section_interactions">
+              <div class="container_comment_owner container_interactions">
+                <div class="comment_owner ">
+                  <a href="" class="owner">Pug #1 </a><span class="span_comment"><span>Me veo bien... texto largo zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</span><span class="see_more"> ... <button class="button_seemore">más</button></span></span>
+                </div>
+              </div>
+              <div class="comment_people interaction2">
+                <div class="container_comment_owner container_interactions">
+                  <a href="" class="people_comments owner">ver los <span>999,999</span> comentarios</a>
+                </div>
+                <div class="container_comment_people">
+                  <div class="container_comment_owner container_interactions">
+                    <a href="" class="owner">Pug #2</a><span class="span_comment"> hola!</span>
+                  </div>
+                  <span class="span_like">
+                    <button class="button_options">
+                      <svg  fill="#8e8e8e" height="12" viewBox="0 0 48 48" width="12">
+                        <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                      </svg>
+                    </button>
+                  </span>
+                </div>
+                <div class="container_comment_people">
+                  <div class="container_comment_owner container_interactions">
+                    <a href="" class="owner">Pug #2</a><span class="span_comment"> hola!</span>
+                  </div>
+                  <span class="span_like">
+                    <button class="button_options">
+                      <svg  fill="#8e8e8e" height="12" viewBox="0 0 48 48" width="12">
+                        <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                      </svg>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="date">
+              <a href="" class="people_comments owner">Hace poco tiempo</a>
+            </div>
+            <section class="add_comment">
+              <div>
+                <form action="" class="box_comment">
+                  <textarea class="insert_comment" oninput="auto_grow(this)" aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." autocomplete="off" autocorrect="off" style="height: 18px;"></textarea>
+                  <button class="publish_comment" disabled="" type="submit">Publicar</button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="right_content">
+        <div class="photo_suggestion">
+          <a href="" class="link_photo_suggestion">
+            <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="" >
+          </a>
+          <div class="profile_suggestion">
+            <a href="" class="owner">Pug #1</a>
+            <div class="name">Puggy</div>
+          </div>
+        </div>
+        <div class="suggestions">
+          <div class="head_suggestions">
+            <div class="title_suggestions">Sugerencias para ti</div>
+            <a href="" class="link_name_owner">Ver todo</a>
+          </div>
+          <div class="photo_suggestion">
+            <a href="" class="people_suggestion">
+              <img class="image1" src="https://i.imgur.com/yDqtWP4.jpg" alt="" >
+            </a>
+            <div class="profile_suggestion">
+              <a href="" class="owner">Pug #1</a>
+              <div class="name">Amigos en Pugsbook</div>
+            </div>
+            <button class="follow_button" type="submit">Seguir</button>
+          </div>
+        </div>
+        <footer>
+          <nav>
+            <ul class="Information">
+              <li>
+                <a href="">Información</a>
+              </li>
+              <li>
+                <a href="">Ayuda</a>
+              </li>
+              <li>
+                <a href="">Privacidad</a>
+              </li>
+              <li>
+                <a href="">Cuentas destacadas</a>
+              </li>
+              <li>
+                <a href="">Hashtags</a>
+              </li>
+              <li>
+                <a href="">Idioma</a>
+              </li>
+            </ul>
+          </nav>
+          <span>©️ 2020 made by @MariaPerez_G</span>
+        </footer>
+      </div>
+    </section>
   </main>
-  <footer>
-  </footer>
 </body>
+<script>
+  let canvases=document.getElementsByClassName("my_canvas")
+  let contexts = [];
+  for(var i = 0; i < canvases.length; i++) {
+    contexts[i] = canvases[i].getContext('2d');  //initialize each canvas with context.
+    let gradient =contexts[i].createLinearGradient(0, 0, 170, 0);
+    gradient.addColorStop("0", "magenta");
+    gradient.addColorStop("0.5", "blue");
+    // Fill with gradient
+    contexts[i].strokeStyle = gradient;
+    contexts[i].lineWidth = 2;
+    contexts[i].arc(33, 33, 30, 2*Math.PI, 0* Math.PI, false);
+    contexts[i].stroke();
+    
+  }
+  let canvases2=document.getElementsByClassName("my_canvas2")
+  let contexts2 = [];
+  for(var i = 0; i < canvases2.length; i++) {
+    contexts2[i] = canvases2[i].getContext('2d');  //initialize each canvas with context.
+    let gradient =contexts2[i].createLinearGradient(0, 0, 170, 0);
+    gradient.addColorStop("0", "magenta");
+    gradient.addColorStop("0.5", "blue");
+    // Fill with gradient
+    contexts2[i].strokeStyle = gradient;
+    contexts2[i].lineWidth = 2;
+    contexts2[i].arc(21, 21, 18, 2*Math.PI, 0* Math.PI, false);
+    contexts2[i].stroke();
+    
+  }
+</script> 
+<script>
+  function auto_grow(element) {
+    element.style.height = "18px";
+    element.style.height = (element.scrollHeight)+"px";
+	}
+</script>
 
 </html>
