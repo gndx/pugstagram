@@ -102,7 +102,8 @@
 
 .IconSpace
 {
-    padding-left:300px;
+    padding-left:200px;
+    
 }
 .Suggestions 
 {
@@ -152,11 +153,13 @@
 .Aside 
 {
     /*border: 1px #DCDCDC solid;*/
-    flex: 1 1 auto;
-    margin: 30px 153px 10px 130px;
+    flex-direction: column;
+    /*flex: 1 1 auto;*/
+    margin: 20px 110px 10px 130px;
     height: 200px;
-    width: 300px;
+    width: 500px;
     height: 930px;
+    
 }
 
 .Profile 
@@ -211,16 +214,21 @@ body{
    
      font-family: Arial, Helvetica, sans-serif;
      color: grey;
-     font-size: 15px;
+     font-size: 12px;
      justify-content: center;
      padding:2px;
-     margin-left:36px;   
+     margin-left:46px;   
+ }
+ .Icons
+ {
+    padding-left: 10px;
  }
 
  .Icons1
  {  
      margin-top: 2px;
      margin-right: 10px;
+     padding-left: 10px;
  }
 
  .Icon-Save
@@ -230,7 +238,7 @@ body{
 
  .IconsP
  {
-    margin-left: 220px;  
+    margin-left: 200px;  
  }
  
  .Ic
@@ -239,10 +247,30 @@ body{
  }
  .CircleP 
 {
-    width: 66px;
-    height: 66px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
     -moz-border-radius: 50% ;
-    margin-left:20px;
+    -webkit-border-radius: 50% ;
+    border-radius: 90%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding:2px;
+}
+
+.PerfilP{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 16px;
+}
+
+
+.CirclePQ 
+{
+    width: 38px;
+    height: 38px;
+    -moz-border-radius: 50% ;
     -webkit-border-radius: 50% ;
     border-width: 3px;
     border-radius: 90%;
@@ -253,74 +281,80 @@ body{
 
 .Text_Aside
 {
-margin-left:20px;    
-font-family: Helvetica;
-color: black;
-font-size: 16px;
-}
+    margin-left:10px;  
+    font-family: Helvetica;
+    color: black;
+    font-size: 14px;
+    display: inline;
+    padding-left:60px;    
+    }
 
-.PerfilP{
-font-family: Arial, Helvetica, sans-serif;
-color: grey;
-font-size: 16px;
-}
-
-.Box2
+.Text_Aside1
 {
-    margin-top:50px;  
+    margin-left:10px;  
+    font-family: Helvetica;
+    color: grey;
+    font-size: 12px;
+    padding-left: 60px;
+    display:inline;
 }
 
-.Box1
+.Text_Aside2
 {
-    margin-top:70px;  
-}
-
-.CirclePQ 
-{
-    width: 55px;
-    height: 55px;
-    -moz-border-radius: 50% ;
-    margin-left:20px;
-    -webkit-border-radius: 50% ;
-    border-width: 3px;
-    border-radius: 90%;
-    margin-right: 10px;
-    padding:2px;
-    float:left;
+    font-family: Helvetica;
+    color: grey;
+    font-size: 13px;      
+    display:inline-block;
+    text-align: left;    
 }
 
 .Text_Aside3
 {
     font-family: Helvetica;
-    color: lightseagreen;
-    font-size: 15px;
-    padding-left: 300px;  
-    margin-top:1px;
-}
-
-.Text_Aside1
-{
-margin-left:20px;  
-font-family: Helvetica;
-color: grey;
-font-size: 15px;
-padding-left: 0px;
+    color: black;
+    font-size: 13px;  
+    padding-left: 100;    
+    display:inline-block;
+    text-align: right;    
+    padding-inline-start: 70px;
 }
 
 .Text_Aside4
 {
-margin-left:20px;  
-font-family: Helvetica;
-color: grey;
-font-size: 15px;
-padding-left: 0px;
+    font-family: Helvetica;
+    color: grey;
+    font-size: 11px;  
+    padding-left: 80;    
+    display:inline-block;
+    text-align: right;
 }
 
 .Text_Aside5
+{   
+    font-family: Helvetica;
+    color: black;
+    font-size: 13px;
+}
+
+.Text_Aside6
 {
-margin-left:20px;    
-font-family: Helvetica;
-color: black;
-font-size: 16px;
-padding-left:30px;
+    font-family: Helvetica;
+    color: lightskyblue;
+    font-size: 13px;  
+    padding-left: 100;    
+    display:inline-block;
+    text-align: right;    
+    padding-inline-start: 44px;
+}
+
+.Box2
+{
+    margin-top:50px;
+    margin-left: auto; 
+    
+}
+
+.Box3
+{
+    margin-top:20px;      
 }
