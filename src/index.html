@@ -1,32 +1,779 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
-        </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pugstagram</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="Header">
+      <div class="Header-container">
+        <div class="Header-content">
+          <div class="Header-logo">
+            <h1>Pugstagram</h1>
+          </div>
+          <div class="header-seeker-container">
+            <input class="header-placeholder" type="text" autocapitalize="none" placeholder="Buscar" value>
+            <div class="" role="button" tabindex="0">
+              <div class="">
+                <span class="header-placeholder-icon"></span>
+                <span class="header-placeholder-text"></span>
+              </div>
+            </div>
+          </div>
+          <nav class="menu">
+            <ul class="history-section">
+              <li>
+                <figure class="icons-menu">
+                  <img src="../images/home.jpg" height="35" alt="home">
+                </figure>
+              </li>
+              <li>
+                <figure class="icons-menu">
+                  <img src="../images/mensajes.png" height="30" alt="messages">
+                </figure>
+              </li>
+              <li>
+                <figure class="icons-menu">
+                  <img src="../images/explorar.png" height="30" alt="news">
+                </figure>
+              </li>
+              <li>
+                <figure class="icons-menu">
+                  <img src="../images/corazon.svg" height="30" alt="likes">
+                </figure>
+              </li>
+              <li>
+                <figure class="icons-menu">
+                  <img src="../images/profile.svg" height="30" alt="profile">
+                </figure>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
-</body>
-
+    </header>
+    <main class="main-1 main-2" role="main" style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
+      <section class="section-1 section-2 section-3">
+        <div class="div-container-main">
+          <article>
+            <div class="div-histories-2 div-histories-1">
+              <div class="histories-box-1">
+                <div class="histories-box-2">
+                  <div class="histories-box-3">
+                    <div class="histories-box-4">
+                      <ul class="border-histories-box-1">
+                        <li style="transform: translateX(0px); width: 10px;"></li>
+                        <li class="profile-histories" tabindex="0" style="transform: translateX(10px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/pugstagram.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">Pugstagram</div>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="profile-histories" tabindex="-1" style="transform: translateX(90px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/imagen8.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">Ricardo</div>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="profile-histories" tabindex="-1" style="transform: translateX(170px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/imagen7.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">Andres</div>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="profile-histories" tabindex="-1" style="transform: translateX(250px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/imagen6.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">mr_rralonso</div>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="profile-histories" tabindex="-1" style="transform: translateX(330px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/imagen5.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">Djockovic</div>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="profile-histories" tabindex="-1" style="transform: translateX(410px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/imagen4.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">Pugstagram</div>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="profile-histories" tabindex="-1" style="transform: translateX(490px);">
+                          <div class="profile-histories-box">
+                            <button class="histories-button" role="menuitem" tabindex="1">
+                              <div class="histories-button-div  margin-buttons-histories" role="button" tabindex="0">
+                                <canvas height="83" width="83" style="position: absolute;top: -5px;left: -5px;width: 86px;height: 86px;"></canvas>
+                                <span class="profile-box-hi" role="link" tabindex="0" style="width: 56px; height: 56px;">
+                                  <img src="../images/imagen3.jpg" alt="Foto de perfil" class="profil-history">
+                                </span>
+                              </div>
+                              <div class="name-histories-profile-2 name-histories-profile-1">Juanito</div>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div>
+            <div style="flex-direction: column; padding-bottom: auto; padding-top: 0px;">
+              <article class="publication-box-1  publication-box-2 publication-box-3 publication-box-4">
+                <header class="publication-box-5">
+                  <div class="profile-redirect-box-5" role="button" tabindex="0">
+                    <canvas class="canvas-class" height="53" width="53" style="position: absolute; top: 185px; left: 10px; width: 42px; height: 42px;"></canvas>
+                    <a class="profile-box-hi" href="https://platzi.com/" target="_blank" style="top: 1px; width: 32px; height: 32px;">
+                      <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                      ::after
+                    </a>
+                  </div>
+                  <div class="publication-name-user">
+                    <div>
+                      <div class="publication-name-user-2">
+                        <a class="name-post see-follow-suggest see-follow-suggest-2" style="margin: -25px 0 0 30px;" href="https://platzi.com/">Pugstagram Platzi</a>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="image-publication">
+                  <div role="button" tabindex="0" class="image-publication-touch">
+                    <div class="image-publication-content">
+                      <div class="image-publication-view" style="padding-bottom: inherit">
+                        <img alt="Photo Pugstagram" class="img-publication" decoding="auto" style="object-fit: cover;" sizes="614px" src="../images/pugstagram.jpg" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <section class="info-publication">
+                    <span class="info-like">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Me gusta" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <span class="none2_">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Comentar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <button class="info-buttom none2_" type="button">
+                      <svg aria-label="Compartir publicación" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                      </svg>
+                    </button>
+                    <span class="info-save">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Guardar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </section>
+                  <section class="info">
+                    <div class="info-likes-people" style="margin-top: -10px;">
+                      <p style="margin-left: 15px;">Les gusta a </p>
+                      <a class="info-likes-people-style" href="https://www.instagram.com/mr_rralonso/">Ricardo Rojas</a>
+                      <p> y 1000 personas más.</p>
+                    </div>
+                  </section>
+                  <div class="info-time">
+                    <a href="" class="info-time-style">
+                      <time class="info-time-text info-time-text-2" datetime="2020-05-25T23:42:24.000Z" title="25 de mayo de 2020">Hace 2 horas</time>
+                    </a>
+                  </div>
+                  <section class="info-comments info-comments-2">
+                    <div>
+                      <form class="info-comments-box" method="POST" action="">
+                        <textarea aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." class="add-comment" autocomplete="off" autocorrect="off" style="height: 18px;"></textarea>
+                        <button class="info-comments-post see-follow-suggest" disabled type="submit">Publicar</button>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </article>
+              <article class="publication-box-1  publication-box-2 publication-box-3 publication-box-4">
+                <header class="publication-box-5">
+                  <div class="profile-redirect-box-5" role="button" tabindex="0">
+                    <canvas class="canvas-class" height="53" width="53" style="position: absolute; top: 185px; left: 10px; width: 42px; height: 42px;"></canvas>
+                    <a class="profile-box-hi" href="https://platzi.com/" target="_blank" style="top: 1px; width: 32px; height: 32px;">
+                      <img src="../images/imagen8.jpg" class="profile-img-class" alt="Foto de perfil sugerencias">
+                      ::after
+                    </a>
+                  </div>
+                  <div class="publication-name-user">
+                    <div>
+                      <div class="publication-name-user-2">
+                        <a class="name-post see-follow-suggest see-follow-suggest-2" style="margin: -25px 0 0 30px;" href="https://platzi.com/">Valle de Cocora</a>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="image-publication">
+                  <div role="button" tabindex="0" class="image-publication-touch">
+                    <div class="image-publication-content">
+                      <div class="image-publication-view" style="padding-bottom: inherit">
+                        <img alt="Photo Pugstagram" class="img-publication" decoding="auto" style="object-fit: cover;" sizes="614px" src="../images/imagen3.jpg" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <section class="info-publication">
+                    <span class="info-like">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Me gusta" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <span class="none2_">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Comentar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <button class="info-buttom none2_" type="button">
+                      <svg aria-label="Compartir publicación" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                      </svg>
+                    </button>
+                    <span class="info-save">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Guardar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </section>
+                  <section class="info">
+                    <div class="info-likes-people" style="margin-top: -10px;">
+                      <p style="margin-left: 15px;">Les gusta a </p>
+                      <a class="info-likes-people-style" href="https://www.instagram.com/mr_rralonso/">Ricardo Rojas</a>
+                      <p> y 1000 personas más.</p>
+                    </div>
+                  </section>
+                  <div class="info-time">
+                    <a href="" class="info-time-style">
+                      <time class="info-time-text info-time-text-2" datetime="2020-05-25T23:42:24.000Z" title="25 de mayo de 2020">Hace 2 horas</time>
+                    </a>
+                  </div>
+                  <section class="info-comments info-comments-2">
+                    <div>
+                      <form class="info-comments-box" method="POST" action="">
+                        <textarea aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." class="add-comment" autocomplete="off" autocorrect="off" style="height: 18px;"></textarea>
+                        <button class="info-comments-post see-follow-suggest" disabled type="submit">Publicar</button>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </article>
+              <article class="publication-box-1  publication-box-2 publication-box-3 publication-box-4">
+                <header class="publication-box-5">
+                  <div class="profile-redirect-box-5" role="button" tabindex="0">
+                    <canvas class="canvas-class" height="53" width="53" style="position: absolute; top: 185px; left: 10px; width: 42px; height: 42px;"></canvas>
+                    <a class="profile-box-hi" href="https://platzi.com/" target="_blank" style="top: 1px; width: 32px; height: 32px;">
+                      <img src="../images/imagen7.jpg" class="profile-img-class" alt="Foto de perfil sugerencias">
+                      ::after
+                    </a>
+                  </div>
+                  <div class="publication-name-user">
+                    <div>
+                      <div class="publication-name-user-2">
+                        <a class="name-post see-follow-suggest see-follow-suggest-2" style="margin: -25px 0 0 30px;" href="https://platzi.com/">Coyoacán México</a>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="image-publication">
+                  <div role="button" tabindex="0" class="image-publication-touch">
+                    <div class="image-publication-content">
+                      <div class="image-publication-view" style="padding-bottom: inherit">
+                        <img alt="Photo Pugstagram" class="img-publication" decoding="auto" style="object-fit: cover;" sizes="614px" src="../images/imagen4.jpg" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <section class="info-publication">
+                    <span class="info-like">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Me gusta" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <span class="none2_">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Comentar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <button class="info-buttom none2_" type="button">
+                      <svg aria-label="Compartir publicación" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                      </svg>
+                    </button>
+                    <span class="info-save">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Guardar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </section>
+                  <section class="info">
+                    <div class="info-likes-people" style="margin-top: -10px;">
+                      <p style="margin-left: 15px;">Les gusta a </p>
+                      <a class="info-likes-people-style" href="https://www.instagram.com/mr_rralonso/">Ricardo Rojas</a>
+                      <p> y 1000 personas más.</p>
+                    </div>
+                  </section>
+                  <div class="info-time">
+                    <a href="" class="info-time-style">
+                      <time class="info-time-text info-time-text-2" datetime="2020-05-25T23:42:24.000Z" title="25 de mayo de 2020">Hace 2 horas</time>
+                    </a>
+                  </div>
+                  <section class="info-comments info-comments-2">
+                    <div>
+                      <form class="info-comments-box" method="POST" action="">
+                        <textarea aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." class="add-comment" autocomplete="off" autocorrect="off" style="height: 18px;"></textarea>
+                        <button class="info-comments-post see-follow-suggest" disabled type="submit">Publicar</button>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </article>
+              <article class="publication-box-1  publication-box-2 publication-box-3 publication-box-4">
+                <header class="publication-box-5">
+                  <div class="profile-redirect-box-5" role="button" tabindex="0">
+                    <canvas class="canvas-class" height="53" width="53" style="position: absolute; top: 185px; left: 10px; width: 42px; height: 42px;"></canvas>
+                    <a class="profile-box-hi" href="https://platzi.com/" target="_blank" style="top: 1px; width: 32px; height: 32px;">
+                      <img src="../images/imagen6.jpg" class="profile-img-class" alt="Foto de perfil sugerencias">
+                      ::after
+                    </a>
+                  </div>
+                  <div class="publication-name-user">
+                    <div>
+                      <div class="publication-name-user-2">
+                        <a class="name-post see-follow-suggest see-follow-suggest-2" style="margin: -25px 0 0 30px;" href="https://platzi.com/">Atarceder - Valle de Cocora</a>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="image-publication">
+                  <div role="button" tabindex="0" class="image-publication-touch">
+                    <div class="image-publication-content">
+                      <div class="image-publication-view" style="padding-bottom: inherit">
+                        <img alt="Photo Pugstagram" class="img-publication" decoding="auto" style="object-fit: cover;" sizes="614px" src="../images/imagen5.jpg" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <section class="info-publication">
+                    <span class="info-like">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Me gusta" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <span class="none2_">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Comentar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <button class="info-buttom none2_" type="button">
+                      <svg aria-label="Compartir publicación" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                      </svg>
+                    </button>
+                    <span class="info-save">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Guardar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </section>
+                  <section class="info">
+                    <div class="info-likes-people" style="margin-top: -12px;">
+                      <p style="margin-left: 15px;">Les gusta a </p>
+                      <a class="info-likes-people-style" href="https://www.instagram.com/mr_rralonso/">Ricardo Rojas</a>
+                      <p> y 1000 personas más.</p>
+                    </div>
+                  </section>
+                  <div class="info-time">
+                    <a href="" class="info-time-style">
+                      <time class="info-time-text info-time-text-2" datetime="2020-05-25T23:42:24.000Z" title="25 de mayo de 2020">Hace 2 horas</time>
+                    </a>
+                  </div>
+                  <section class="info-comments info-comments-2">
+                    <div>
+                      <form class="info-comments-box" method="POST" action="">
+                        <textarea aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." class="add-comment" autocomplete="off" autocorrect="off" style="height: 18px;"></textarea>
+                        <button class="info-comments-post see-follow-suggest" disabled type="submit">Publicar</button>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </article>
+              <article class="publication-box-1  publication-box-2 publication-box-3 publication-box-4">
+                <header class="publication-box-5">
+                  <div class="profile-redirect-box-5" role="button" tabindex="0">
+                    <canvas class="canvas-class" height="53" width="53" style="position: absolute; top: 185px; left: 10px; width: 42px; height: 42px;"></canvas>
+                    <a class="profile-box-hi" href="https://platzi.com/" target="_blank" style="top: 1px; width: 32px; height: 32px;">
+                      <img src="../images/imagen5.jpg" class="profile-img-class" alt="Foto de perfil sugerencias">
+                      ::after
+                    </a>
+                  </div>
+                  <div class="publication-name-user">
+                    <div>
+                      <div class="publication-name-user-2">
+                        <a class="name-post see-follow-suggest see-follow-suggest-2" style="margin: -25px 0 0 30px;" href="https://platzi.com/">Termales - Santa Rosa de Cabal</a>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="image-publication">
+                  <div role="button" tabindex="0" class="image-publication-touch">
+                    <div class="image-publication-content">
+                      <div class="image-publication-view" style="padding-bottom: inherit">
+                        <img alt="Photo Pugstagram" class="img-publication" decoding="auto" style="object-fit: cover;" sizes="614px" src="../images/imagen7.jpg" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <section class="info-publication">
+                    <span class="info-like">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Me gusta" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <span class="none2_">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Comentar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </span>
+                    <button class="info-buttom none2_" type="button">
+                      <svg aria-label="Compartir publicación" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                        <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                      </svg>
+                    </button>
+                    <span class="info-save">
+                      <button class="info-buttom" type="button">
+                        <svg aria-label="Guardar" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                          <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </section>
+                  <section class="info">
+                    <div class="info-likes-people" style="margin-top: -10px;">
+                      <p style="margin-left: 15px;">Les gusta a </p>
+                      <a class="info-likes-people-style" href="https://www.instagram.com/mr_rralonso/">Ricardo Rojas</a>
+                      <p> y 1000 personas más.</p>
+                    </div>
+                  </section>
+                  <div class="info-time">
+                    <a href="" class="info-time-style">
+                      <time class="info-time-text info-time-text-2" datetime="2020-05-25T23:42:24.000Z" title="25 de mayo de 2020">Hace 2 horas</time>
+                    </a>
+                  </div>
+                  <section class="info-comments info-comments-2">
+                    <div>
+                      <form class="info-comments-box" method="POST" action="">
+                        <textarea aria-label="Agrega un comentario..." placeholder="Agrega un comentario..." class="add-comment" autocomplete="off" autocorrect="off" style="height: 18px;"></textarea>
+                        <button class="info-comments-post see-follow-suggest" disabled type="submit">Publicar</button>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </article>
+            </div>
+          </div>
+        <div class="suggestion-main-screen"></div>
+          <div class="second-main-3 second-main-2 second-main-1" style="left: 1000px">
+            <div class="profile-redirect-box profile-redirect-box-2">
+              <div class="profile-redirect-box-3 profile-redirect-box-4">
+                <div class="profile-redirect-box-5" role="button" tabindex="0">
+                  <canvas class="canvas-class" height="66" width="66" style="position: absolute; top: -5px; left: -5px; width: 66px; height: 66px;"></canvas>
+                  <a class="link-profile-1" href="https://www.instagram.com/mr_rralonso/" style="width: 56px; height: 56px;">
+                    <img src="../images/profile.svg" alt="Foto del perfil" class="profile-img-class"/>
+                    ::after
+                  </a>
+                </div>
+                <div class="name-link-profile">
+                  <div class="name-link-profile-2">
+                    <a class="name-link-profile-3" href="https://www.instagram.com/mr_rralonso/" >mr_rralonso</a>
+                  </div>
+                  <div class="name-user-main-screen">Ricardo Andres Rojas Alonso</div>
+                </div>
+              </div>
+            </div>
+            <div class="suggestion-class">
+              <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-6 align-class-7 align-class-8 align-class-9">
+                <div class="align-class align-class-10 align-class-3 align-class-11">
+                  <div class="align-class-13 font-text-class align-class-14 suggestion-end-class">Sugerencias para ti</div>
+                </div>
+                <a class="see-everything see-follow-suggest see-follow-suggest-2" href="https://platzi.com/" target="_blank">
+                  <div class="see-follow see-follow-2 suggestion-end-class">Ver todo</div>
+                </a>
+              </div>
+              <div class="align-class align-class-10 align-class-3 align-class-5 border-suggest-box">
+                <div class="align-class align-class-10 align-class-3 align-class-5 border-suggest">
+                  <div style="height: auto; overflow: hidden auto;">
+                    <div style="flex-direction: column; padding-bottom: 0px; padding-top: 0px;">
+                      <div aria-labelledby="f1524fcb2d2cd1 f1048550c50946c" class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-7 border-suggest">
+                        <div class="align-class align-class-10 align-class-3 align-class-5 align-class-16">
+                          <div class="profile-redirect-box-5" role="button" tabindex="0">
+                            <canvas class="canvas-class" height="53" width="53" style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                            <a class="link-profile-1"" href="https://platzi.com/" target="_blank" style="width: 32px; height: 32px;">
+                              <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                              ::after
+                            </a>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-10 suggest-box-user align-class-11">
+                          <div class="align-class align-class-10 align-class-3 align-class-5">
+                            <div class="align-class-13 see-follow-2 suggest-class-1">
+                              <a title="Platzi Empoderatech" href="https://endeavor.org.co/programas-endeavor/formacion-aceleracion-tech/formacion/" target="_blank">
+                                <div class="align-class align-class-10 align-class-3 align-class-4 align-class-5">
+                                  <div class="align-class-13 see-follow-2 suggest-class-1  ">
+                                    <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5">Platzi Empoderatech</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="align-class align-class-10 align-class-3 align-class-5 suggest-top">
+                            <div class="see-follow align-class-14 suggest-class-1">Te sigue</div>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-2 suggest-box-user align-class-4 align-class-5 margin-text">
+                          <button class="see-everything see-follow-suggest" type="button" style="margin: 0 0 0 190px">Seguir</button>
+                        </div>
+                      </div>
+                      <div aria-labelledby="f1524fcb2d2cd1 f1048550c50946c" class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-7 border-suggest">
+                        <div class="align-class align-class-10 align-class-3 align-class-5 align-class-16">
+                          <div class="profile-redirect-box-5" role="button" tabindex="0">
+                            <canvas class="canvas-class" height="42" width="42" style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                            <a class="link-profile-1"" href="https://www.instagram.com/platzi/?hl=es-la" target="_blank" style="width: 32px; height: 32px;">
+                              <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                              ::after
+                            </a>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-10 suggest-box-user align-class-11">
+                          <div class="align-class align-class-10 align-class-3 align-class-5">
+                            <div class="align-class-13 see-follow-2 suggest-class-1">
+                              <a title="Platzi Empoderatech" href="https://www.instagram.com/platzi/?hl=es-la" target="_blank">
+                                <div class="align-class align-class-10 align-class-3 align-class-4 align-class-5">
+                                  <div class="align-class-13 see-follow-2 suggest-class-1  ">
+                                    <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5">Platzi</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="align-class align-class-10 align-class-3 align-class-5 suggest-top">
+                            <div class="see-follow align-class-14 suggest-class-1">Te sigue</div>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-2 suggest-box-user align-class-4 align-class-5 margin-text">
+                          <button class="see-everything see-follow-suggest" type="button" style="margin: 0 0 0 190px">Seguir</button>
+                        </div>
+                      </div>
+                      <div aria-labelledby="f1524fcb2d2cd1 f1048550c50946c" class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-7 border-suggest">
+                        <div class="align-class align-class-10 align-class-3 align-class-5 align-class-16">
+                          <div class="profile-redirect-box-5" role="button" tabindex="0">
+                            <canvas class="canvas-class" height="42" width="42" style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                            <a class="link-profile-1"" href="https://www.instagram.com/platziteam/?hl=es-la" target="_blank" style="width: 32px; height: 32px;">
+                              <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                              ::after
+                            </a>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-10 suggest-box-user align-class-11">
+                          <div class="align-class align-class-10 align-class-3 align-class-5">
+                            <div class="align-class-13 see-follow-2 suggest-class-1">
+                              <a title="Platzi Empoderatech" href="https://www.instagram.com/platziteam/?hl=es-la" target="_blank">
+                                <div class="align-class align-class-10 align-class-3 align-class-4 align-class-5">
+                                  <div class="align-class-13 see-follow-2 suggest-class-1  ">
+                                    <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5">Platzi Team</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="align-class align-class-10 align-class-3 align-class-5 suggest-top">
+                            <div class="see-follow align-class-14 suggest-class-1">Te sigue</div>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-2 suggest-box-user align-class-4 align-class-5 margin-text">
+                          <button class="see-everything see-follow-suggest" type="button" style="margin: 0 0 0 190px">Seguir</button>
+                        </div>
+                      </div>
+                      <div aria-labelledby="f1524fcb2d2cd1 f1048550c50946c" class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-7 border-suggest">
+                        <div class="align-class align-class-10 align-class-3 align-class-5 align-class-16">
+                          <div class="profile-redirect-box-5" role="button" tabindex="0">
+                            <canvas class="canvas-class" height="42" width="42" style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                            <a class="link-profile-1"" href="https://www.instagram.com/freddiervega/?hl=es-la" target="_blank" style="width: 32px; height: 32px;">
+                              <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                              ::after
+                            </a>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-10 suggest-box-user align-class-11">
+                          <div class="align-class align-class-10 align-class-3 align-class-5">
+                            <div class="align-class-13 see-follow-2 suggest-class-1">
+                              <a title="Platzi Empoderatech" href="https://www.instagram.com/freddiervega/?hl=es-la" target="_blank">
+                                <div class="align-class align-class-10 align-class-3 align-class-4 align-class-5">
+                                  <div class="align-class-13 see-follow-2 suggest-class-1  ">
+                                    <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5">freddiervega</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="align-class align-class-10 align-class-3 align-class-5 suggest-top">
+                            <div class="see-follow align-class-14 suggest-class-1">Te sigue</div>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-2 suggest-box-user align-class-4 align-class-5 margin-text">
+                          <button class="see-everything see-follow-suggest" type="button" style="margin: 0 0 0 190px">Seguir</button>
+                        </div>
+                      </div>
+                      <div aria-labelledby="f1524fcb2d2cd1 f1048550c50946c" class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-7 border-suggest">
+                        <div class="align-class align-class-10 align-class-3 align-class-5 align-class-16">
+                          <div class="profile-redirect-box-5" role="button" tabindex="0">
+                            <canvas class="canvas-class" height="42" width="42" style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                            <a class="link-profile-1"" href="https://www.instagram.com/gndx/?hl=es-la/" target="_blank" style="width: 32px; height: 32px;">
+                              <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                              ::after
+                            </a>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-10 suggest-box-user align-class-11">
+                          <div class="align-class align-class-10 align-class-3 align-class-5">
+                            <div class="align-class-13 see-follow-2 suggest-class-1">
+                              <a title="Platzi Empoderatech" href="https://www.instagram.com/gndx/?hl=es-la/" target="_blank">
+                                <div class="align-class align-class-10 align-class-3 align-class-4 align-class-5">
+                                  <div class="align-class-13 see-follow-2 suggest-class-1  ">
+                                    <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5">gndx</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="align-class align-class-10 align-class-3 align-class-5 suggest-top">
+                            <div class="see-follow align-class-14 suggest-class-1">Te sigue</div>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-2 suggest-box-user align-class-4 align-class-5 margin-text">
+                          <button class="see-everything see-follow-suggest" type="button" style="margin: 0 0 0 190px">Seguir</button>
+                        </div>
+                      </div>
+                      <div aria-labelledby="f1524fcb2d2cd1 f1048550c50946c" class="align-class align-class-2 align-class-3 align-class-4 align-class-5 align-class-7 border-suggest">
+                        <div class="align-class align-class-10 align-class-3 align-class-5 align-class-16">
+                          <div class="profile-redirect-box-5" role="button" tabindex="0">
+                            <canvas class="canvas-class" height="42" width="42" style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                            <a class="link-profile-1"" href="https://www.instagram.com/djokernole/?hl=es-la" target="_blank" style="width: 32px; height: 32px;">
+                              <img src="../images/platzi.png" class="profile-img-class" alt="Foto de perfil sugerencias">
+                              ::after
+                            </a>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-10 suggest-box-user align-class-11">
+                          <div class="align-class align-class-10 align-class-3 align-class-5">
+                            <div class="align-class-13 see-follow-2 suggest-class-1">
+                              <a title="Platzi Empoderatech" href="https://www.instagram.com/djokernole/?hl=es-la" target="_blank">
+                                <div class="align-class align-class-10 align-class-3 align-class-4 align-class-5">
+                                  <div class="align-class-13 see-follow-2 suggest-class-1  ">
+                                    <div class="align-class align-class-2 align-class-3 align-class-4 align-class-5">djokernole</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="align-class align-class-10 align-class-3 align-class-5 suggest-top">
+                            <div class="see-follow align-class-14 suggest-class-1">Te sigue</div>
+                          </div>
+                        </div>
+                        <div class="align-class align-class-2 suggest-box-user align-class-4 align-class-5 margin-text">
+                          <button class="see-everything see-follow-suggest" type="button" style="margin: 0 0 0 190px">Seguir</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
 </html>
