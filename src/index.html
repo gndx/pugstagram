@@ -1,32 +1,517 @@
 <!DOCTYPE html>
 <html lang="es">
-
+  <link href="styles/main.css" rel="stylesheet">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="https://arepa.s3.amazonaws.com/favicon.png">
   <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
+  <meta name="Description" content="Un espacio para los fanaticos de los Pugs">
+    
 </head>
-
 <body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
+  <div class="Header svelte-fv7hvc">
+    <div class="Header-container svelte-fv7hvc">
+      <div class="Header-content svelte-fv7hvc">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <h1 class="svelte-fv7hvc">Pugstagram</h1>
         </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+         <div class="Header-nav">
+           <ul class="svelte-fv7hvc">
+             <li class="svelte-fv7hvc"></li>
+               <i class="fas fa-heart svelte-fv7hvc" aria-hidden="true"></i>  
+               <li class="svelte-fv7hvc"></li>
+                 <i class="fas fa-user-alt svelte-fv7hvc" aria-hidden="true"></i>
+           </ul>
         </div>
       </div>
+   </div>
+  </div>
+
+  <div class="Header-container svelte-fv7hvc">
+    <div class="Header-content svelte-fv7hvc">
+      <!-- <div class="Header-logo">
+        <h1 class="svelte-fv7hvc">Pugstagram</h1> -->
+      </div> 
+      <!-- <div class="Header-nav">
+        <ul class="svelte-fv7hvc">
+          <li class="svelte-fv7hvc">
+            <i class="fas fa-heart svelte-fv7hvc" aria-hidden="true"></i> 
+          </li> 
+          <li class="svelte-fv7hvc">
+            <i class="fas fa-user-alt svelte-fv7hvc" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div> -->
     </div>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
+  </div>
+
+  <div class="Header-content svelte-fv7hvc">
+    <!-- <div class="Header-logo">
+      <h1 class="svelte-fv7hvc">Pugstagram</h1>
+    </div> -->
+     <!-- <div class="Header-nav">
+       <ul class="svelte-fv7hvc">
+         <li class="svelte-fv7hvc">
+           <i class="fas fa-heart svelte-fv7hvc" aria-hidden="true"></i> 
+         </li> 
+          <li class="svelte-fv7hvc">
+            <i class="fas fa-user-alt svelte-fv7hvc" aria-hidden="true"></i>
+          </li>
+        </ul>
+    </div> -->
+  </div>
+
+
+  <section class="Main svelte-xjneym">
+    <div class="Main-container svelte-xjneym">
+      <div class="TimeLine svelte-1rnklec">
+        <div class="TimeLine-container">
+          <div class="Card svelte-4ntd8">
+             <div class="Card-container">
+               <div class="Card-Header svelte-4ntd8">
+                 <div class="Card-user svelte-4ntd8">
+                   <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+                   <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+                  </div> 
+                  <div class="Card-settings svelte-4ntd8">
+                    <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+                  </div>
+                </div> 
+                <div class="Card-photo svelte-4ntd8">
+                  <figure class="svelte-4ntd8">
+                    <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+                  </figure>
+                </div> 
+                <div class="Card-icons svelte-4ntd8">
+                  <div class="Card-icons-first">
+                    <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+                  </div> 
+                  <div class="Card-icons-second">
+                    <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                  </div>
+                </div>
+                 <div class="Card-description svelte-4ntd8">
+                   <h3 class="svelte-4ntd8">Elmo.pug</h3> 
+                   <span class="svelte-4ntd8">Disfrutando de mi piscina</span>
+                  </div>
+                   <div class="Comments svelte-pm02oc">
+                     <div class="Comments-content svelte-pm02oc">
+                       <div class="Comments-users svelte-pm02oc">
+                         <h3 class="svelte-pm02oc">Crispeta</h3> 
+                         <span class="svelte-pm02oc">Hola Elmo</span>
+                         </div>
+                         <div class="Comments-users svelte-pm02oc">
+                           <h3 class="svelte-pm02oc">Dollarsin</h3>
+                            <span class="svelte-pm02oc">¡Hola!</span>
+                           </div>
+                          </div>
+                           <div class="Comments-add svelte-pm02oc">
+                             <form class="svelte-pm02oc">
+                               <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+         <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div>
+         <div class="Card-photo svelte-4ntd8">
+           <figure class="svelte-4ntd8">
+             <img src="https://arepa.s3.amazonaws.com/elmo001.jpeg" alt="Elmo.pug" class="svelte-4ntd8">
+            </figure>
+          </div>
+           <div class="Card-icons svelte-4ntd8">
+             <div class="Card-icons-first">
+               <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+              </div>
+               <div class="Card-icons-second">
+                 <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                </div>
+              </div>
+               <div class="Card-description svelte-4ntd8">
+                 <h3 class="svelte-4ntd8">Elmo.pug</h3> 
+                 <span class="svelte-4ntd8">Hola...</span>
+                </div>
+                 <div class="Comments svelte-pm02oc">
+                   <div class="Comments-content svelte-pm02oc">
+                     <div class="Comments-users svelte-pm02oc">
+                       <h3 class="svelte-pm02oc">gndx</h3>
+                        <span class="svelte-pm02oc">Elmito</span>
+                       </div>
+                      </div>
+                       <div class="Comments-add svelte-pm02oc">
+                         <form class="svelte-pm02oc">
+                           <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+                       </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+         <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div>
+         <div class="Card-photo svelte-4ntd8">
+           <figure class="svelte-4ntd8">
+             <img src="https://arepa.s3.amazonaws.com/elmo003.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+            </figure>
+          </div>
+           <div class="Card-icons svelte-4ntd8">
+             <div class="Card-icons-first">
+               <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+              </div>
+               <div class="Card-icons-second">
+                 <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                </div>
+              </div>
+               <div class="Card-description svelte-4ntd8">
+                 <h3 class="svelte-4ntd8">Elmo.pug</h3>
+                  <span class="svelte-4ntd8">Un dia feliz</span>
+                </div>
+                 <div class="Comments svelte-pm02oc">
+                   <div class="Comments-content svelte-pm02oc">
+                   </div> 
+                   <div class="Comments-add svelte-pm02oc">
+                     <form class="svelte-pm02oc">
+                       <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+         <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div>
+         <div class="Card-photo svelte-4ntd8">
+           <figure class="svelte-4ntd8">
+             <img src="https://arepa.s3.amazonaws.com/elmo004.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+            </figure>
+          </div>
+           <div class="Card-icons svelte-4ntd8">
+             <div class="Card-icons-first">
+               <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+              </div>
+               <div class="Card-icons-second">
+                 <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                </div>
+              </div> 
+              <div class="Card-description svelte-4ntd8">
+                <h3 class="svelte-4ntd8">Elmo.pug</h3> 
+                <span class="svelte-4ntd8">Un hueso para la dieta</span>
+              </div>
+               <div class="Comments svelte-pm02oc">
+                 <div class="Comments-content svelte-pm02oc">
+                 </div>
+                  <div class="Comments-add svelte-pm02oc">
+                    <form class="svelte-pm02oc">
+                      <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+         <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span>
+        </h2>
+      </div>
+       <div class="Card-settings svelte-4ntd8">
+         <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+        </div>
+      </div> 
+      <div class="Card-photo svelte-4ntd8">
+        <figure class="svelte-4ntd8">
+          <img src="https://arepa.s3.amazonaws.com/elmo005.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+        </figure>
+      </div>
+       <div class="Card-icons svelte-4ntd8">
+         <div class="Card-icons-first">
+           <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+            <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+           <div class="Card-icons-second">
+             <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+            </div>
+          </div>
+           <div class="Card-description svelte-4ntd8">
+             <h3 class="svelte-4ntd8">Elmo.pug</h3>
+              <span class="svelte-4ntd8">Conociendo el vencindario</span>
+            </div>
+             <div class="Comments svelte-pm02oc">
+               <div class="Comments-content svelte-pm02oc">
+               </div>
+                <div class="Comments-add svelte-pm02oc">
+                  <form class="svelte-pm02oc">
+                    <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+         <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div> 
+        <div class="Card-photo svelte-4ntd8">
+          <figure class="svelte-4ntd8">
+            <img src="https://arepa.s3.amazonaws.com/elmo006.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+          </figure>
+        </div>
+         <div class="Card-icons svelte-4ntd8">
+           <div class="Card-icons-first">
+             <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+              <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+            </div>
+             <div class="Card-icons-second">
+               <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+              </div>
+            </div>
+             <div class="Card-description svelte-4ntd8">
+               <h3 class="svelte-4ntd8">Elmo.pug</h3>
+                <span class="svelte-4ntd8">I Love JS</span>
+              </div>
+               <div class="Comments svelte-pm02oc">
+                 <div class="Comments-content svelte-pm02oc">
+                 </div>
+                  <div class="Comments-add svelte-pm02oc">
+                    <form class="svelte-pm02oc">
+                      <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+          <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div>
+         <div class="Card-photo svelte-4ntd8">
+           <figure class="svelte-4ntd8">
+             <img src="https://arepa.s3.amazonaws.com/elmo007.png" alt="Elmo.pug" class="svelte-4ntd8"></figure>
+            </div>
+             <div class="Card-icons svelte-4ntd8">
+               <div class="Card-icons-first">
+                 <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                  <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+                </div>
+                 <div class="Card-icons-second">
+                   <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                  </div>
+                </div>
+                 <div class="Card-description svelte-4ntd8">
+                   <h3 class="svelte-4ntd8">Elmo.pug</h3>
+                    <span class="svelte-4ntd8">A dormir</span>
+                  </div>
+                   <div class="Comments svelte-pm02oc">
+                     <div class="Comments-content svelte-pm02oc">
+                     </div>
+                      <div class="Comments-add svelte-pm02oc">
+                        <form class="svelte-pm02oc">
+                          <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8"> 
+         <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div>
+         <div class="Card-photo svelte-4ntd8">
+           <figure class="svelte-4ntd8">
+             <img src="https://arepa.s3.amazonaws.com/elmo008.png" alt="Elmo.pug" class="svelte-4ntd8">
+            </figure>
+          </div>
+           <div class="Card-icons svelte-4ntd8">
+             <div class="Card-icons-first">
+               <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+              </div>
+               <div class="Card-icons-second">
+                 <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                </div>
+              </div>
+               <div class="Card-description svelte-4ntd8">
+                 <h3 class="svelte-4ntd8">Elmo.pug</h3>
+                  <span class="svelte-4ntd8">Hola, ¿Cómo te llamas?</span>
+                </div>
+                 <div class="Comments svelte-pm02oc">
+                   <div class="Comments-content svelte-pm02oc">
+                   </div>
+                    <div class="Comments-add svelte-pm02oc">
+                      <form class="svelte-pm02oc">
+                        <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="Card svelte-4ntd8">
+   <div class="Card-container">
+     <div class="Card-Header svelte-4ntd8">
+       <div class="Card-user svelte-4ntd8">
+         <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="svelte-4ntd8">
+          <h2 class="svelte-4ntd8">Elmo.pug <span class="svelte-4ntd8">Bogotá, Colombia</span></h2>
+        </div>
+         <div class="Card-settings svelte-4ntd8">
+           <i class="fas fa-ellipsis-h svelte-4ntd8" aria-hidden="true"></i>
+          </div>
+        </div>
+         <div class="Card-photo svelte-4ntd8">
+           <figure class="svelte-4ntd8">
+             <img src="https://arepa.s3.amazonaws.com/elmo009.png" alt="Elmo.pug" class="svelte-4ntd8">
+            </figure>
+          </div>
+           <div class="Card-icons svelte-4ntd8">
+             <div class="Card-icons-first">
+               <i class="fas fa-heart svelte-4ntd8" aria-hidden="true"></i>
+                <i class="fas fa-paper-plane svelte-4ntd8" aria-hidden="true"></i>
+              </div>
+               <div class="Card-icons-second">
+                 <i class="fas fa-bookmark svelte-4ntd8" aria-hidden="true"></i>
+                </div>
+              </div> 
+              <div class="Card-description svelte-4ntd8">
+                <h3 class="svelte-4ntd8">Elmo.pug</h3>
+                 <span class="svelte-4ntd8">Dia de fogata</span>
+                </div>
+                 <div class="Comments svelte-pm02oc">
+                   <div class="Comments-content svelte-pm02oc">
+                   </div>
+                    <div class="Comments-add svelte-pm02oc">
+                      <form class="svelte-pm02oc">
+                        <label for="text" class="svelte-pm02oc">Comments</label> 
+    <input class="Commets-input svelte-pm02oc" type="text" placeholder="Agregar comentario..." id="text"> 
+    <button type="submit" class="svelte-pm02oc">Post</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+<div class="Sidebar svelte-1qo3yk8">
+  <div class="Sidebar-container svelte-1qo3yk8">
+    <div class="Profile">
+      <div class="Profile-content svelte-14okdlf">
+        <div class="Profile-avatar svelte-14okdlf">
+          <img src="https://arepa.s3.amazonaws.com/oscar.png" alt="" class="svelte-14okdlf">
+        </div> 
+        <div class="Profile-info svelte-14okdlf">
+          <h2 class="svelte-14okdlf">gndx</h2>
+           <span class="svelte-14okdlf">Oscar Barajas</span>
+          </div>
+        </div>
+      </div>
+       <div class="Stories svelte-1uqui3g">
+         <div class="Stories-container">
+           <div class="Stories-head svelte-1uqui3g">
+             <h2 class="svelte-1uqui3g">Stories</h2> 
+    <span class="svelte-1uqui3g">Ver todas</span>
+  </div> 
+  <div class="Stories-items svelte-1uqui3g">
+    <div class="Stories-item svelte-1uqui3g">
+      <div class="Stories-item-box svelte-1uqui3g">
+        <img src="https://arepa.s3.amazonaws.com/oscar.png" alt="" class="svelte-1uqui3g"></div> 
+      <h2 class="svelte-1uqui3g">Nickname<span class="svelte-1uqui3g">10 horas antes</span></h2>
+    </div> 
+    <div class="Stories-item svelte-1uqui3g">
+      <div class="Stories-item-box svelte-1uqui3g">
+        <img src="https://arepa.s3.amazonaws.com/oscar.png" alt="" class="svelte-1uqui3g">
+      </div> 
+      <h2 class="svelte-1uqui3g">Nickname<span class="svelte-1uqui3g">10 horas antes</span></h2>
+    </div> 
+    <div class="Stories-item svelte-1uqui3g">
+      <div class="Stories-item-box svelte-1uqui3g">
+        <img src="https://arepa.s3.amazonaws.com/oscar.png" alt="" class="svelte-1uqui3g">
+      </div> 
+      <h2 class="svelte-1uqui3g">Nickname<span class="svelte-1uqui3g">10 horas antes</span></h2>
+    </div>
+  </div>
+</div>
+</div>
+ <div class="Footer svelte-kbe64f">
+   <div class="Footer-container">
+     <div class="Footer-copy">© 2020 PUGSTAGRAM FROM PLATZI</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+ 
+
+  
 </body>
 
 </html>
