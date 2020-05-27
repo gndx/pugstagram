@@ -1,44 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap");
+
 body {
   background-color: #fafafa;
   color: rgba(38,38,38,0.7);
+  /* border-bottom: 1px solid rgba(38, 38, 38, 0.4); */
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+
+
+.Header.svelte-fv7hvc.svelte-fv7hvc{
+  background-color:white;
+  position:fixed;
+  width:100%
 }
 
-.Header {
-  background-color: white;
+.Header-container.svelte-fv7hvc.svelte-fv7hvc{
+  grid-template-columns:minmax(auto, 936px);
+  display:grid;
+  justify-content:center;
+  background-color:white;
+  border-bottom:1px solid rgba(38, 38, 38, 0.4)}
+
+.Header-content.svelte-fv7hvc.svelte-fv7hvc{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.5em;
 }
 
-.Header-container {
+.Header.svelte-fv7hvc ul.svelte-fv7hvc{
+  list-style:none;
+}
+
+.Header.svelte-fv7hvc li.svelte-fv7hvc{
+  display:inline-block;
+  margin:0 0 0 1em;
+}
+
+.Header.svelte-fv7hvc i.svelte-fv7hvc{
+  font-size:16px;color:rgba(38, 38, 38, 0.7)
+  ;cursor:pointer;
+}
+
+h1.svelte-fv7hvc.svelte-fv7hvc{
+  padding:0;
+  margin:0;
+  font-size:28px;color:black;
+  font-family:"Pacifico", cursive;
+  cursor:pointer;
+  position:relative;
+  background:#fff;
+  mix-blend-mode:multiply;
+  display:inline-block;
+}
+
+h1.svelte-fv7hvc.svelte-fv7hvc:before{
+  content:"";
+  display:block;
+  width:100%;
+  height:100%;
+  background:radial-gradient(circle at top left, #f09433, #bc1888);mix-blend-mode:screen;
+  position:absolute;top:0;left:0
+}
+
+.Main.svelte-xjneym {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  background-color: #fafafa;
 }
 
-.Header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
+
+.Main-container.svelte-xjneym{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+  padding: 2em 0;
 }
 
-.Header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.Sidebar.svelte-1qo3yk8{
+  position:relative;
+  padding:4.5em 0 0 0;
 }
 
-.Header li {
-  display: inline-block;
-  margin: 0 0 0 1em;
+.Sidebar-container.svelte-1qo3yk8{
+  position:fixed;
 }
 
-.Header h1 {
-  color: black;
+.Profile-content.svelte-14okdlf.svelte-14okdlf{
+  display:flex;
+  align-items:center;
+}
+
+.Profile-avatar.svelte-14okdlf img.svelte-14okdlf{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+}
+
+.Profile-info.svelte-14okdlf.svelte-14okdlf{
+  margin:0 0 0 0.5em;
+}
+
+.Profile-info.svelte-14okdlf h2.svelte-14okdlf{
+  font-size:14px;
+  color:black;
+  margin:0;
+  padding:0;
+}
+
+.Profile-info.svelte-14okdlf span.svelte-14okdlf{
+  font-size:12px;
+  font-weight:normal;
+}
+
+
+.Footer.svelte-kbe64f{
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #c7c7c7;
+}
+
+.Card.svelte-4ntd8.svelte-4ntd8{
+  border:1px solid rgba(219, 219, 219, 1);
+  border-radius:4px;
+  background-color:white;
+  margin:0 0 2em 0;
+}
+
+.Card-Header.svelte-4ntd8.svelte-4ntd8{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1em;
+}
+
+.Card-user.svelte-4ntd8.svelte-4ntd8{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+.Card-user.svelte-4ntd8 img.svelte-4ntd8{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+}
+
+.Card-user.svelte-4ntd8 h2.svelte-4ntd8{
+  margin:0;
+  padding:0;
+  font-size:14px;
+  font-weight:600;
+  margin:0 0 0 1em;
+  color:black;
+}
+
+.Card-user.svelte-4ntd8 h2 span.svelte-4ntd8{
+  display:block;
+  font-size:12px;
+  font-weight:normal;
+  color:rgba(38, 38, 38, 0.7);
+}
+
+.Card-photo.svelte-4ntd8.svelte-4ntd8{
+  padding:0;
+  margin:0;
+}
+
+.Card-photo.svelte-4ntd8 img.svelte-4ntd8{
+  width:100%;
+  height:auto;
+}
+
+.Card-photo.svelte-4ntd8 figure.svelte-4ntd8{
+  margin:0; 
+  padding:0;
+  cursor:pointer;
+}
+
+.Card-settings.svelte-4ntd8 i.svelte-4ntd8{
+  cursor:pointer;
+}
+
+.Card-icons.svelte-4ntd8.svelte-4ntd8{
+  padding:1em;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.Card-icons.svelte-4ntd8 i.svelte-4ntd8{
+  margin:0 1em 0 0;
+  cursor:pointer;
+  font-size:20px;
+}
+
+.Card-icons.svelte-4ntd8 i.svelte-4ntd8:last-child{
+  margin:0;
+}
+
+.Card-description.svelte-4ntd8.svelte-4ntd8{
+  padding:0 1em 1em 1em;
+}
+
+.Card-description.svelte-4ntd8 h3.svelte-4ntd8{
+  font-size:14px;
+  font-weight:bold;
+  color:black;
+}
+
+.Card-description.svelte-4ntd8 span.svelte-4ntd8{
+  font-size:14px;
+}
+
+.active-like.svelte-4ntd8.svelte-4ntd8{
+  color:#bc1888;
+  animation:svelte-4ntd8-bounce linear 0.8s;
+  animation-iteration-count:1;
+  transform-origin:20% 20%;
+}
+
+.active-bookmark.svelte-4ntd8.svelte-4ntd8{
+  color:#f09433
+}
+  
+@keyframes
+  svelte-4ntd8-bounce{
+  0%{transform:translate(0px, 0px)
+}
+    15%{transform:translate(0px, -25px)}
+    30%{transform:translate(0px, 0px)}
+    45%{transform:translate(0px, -15px)}
+    60%{transform:translate(0px, 0px)}
+    75%{transform:translate(0px, -5px)}
+    100%{transform:translate(0px, 0px)}}
+
+.Comments.svelte-pm02oc h3.svelte-pm02oc{
+  font-size:14px;
+  color:black;
+  font-weight:bold;
+  margin:0;padding:0;
+    }
+
+.Comments.svelte-pm02oc span.svelte-pm02oc{
+  font-size:14px;
+  margin:0 0 0 0.5em;
+  font-weight:normal;
+  color:rgba(black, 0.9);
+}
+
+.Comments-add.svelte-pm02oc.svelte-pm02oc{
+  padding:1em 1em 1em 1em;
+  border-top:1px solid rgba(219, 219, 219, 0.8);
+}
+
+.Comments-add.svelte-pm02oc form.svelte-pm02oc{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.Comments-content.svelte-pm02oc.svelte-pm02oc{
+  padding:0 1em 0.5em 1em
+}
+
+.Comments-users.svelte-pm02oc.svelte-pm02oc{
+  margin:0 0 0.5em 0;display:flex
+}
+
+input.svelte-pm02oc.svelte-pm02oc{
+  border:solid 1px #e9e9e9;
+  border-radius:5px;
+  color:#696969;
+  border:1px solid transparent;
+  font-size:12px;
+  outline:none;width:100%;
+  display:flex
+
+}
+
+button.svelte-pm02oc.svelte-pm02oc{
+  border:none;
+  color:#3897f0;
+  font-size:12px;
+  outline:none;cursor:pointer;
+}
+
+label.svelte-pm02oc.svelte-pm02oc{
+  display:none;
+
 }
