@@ -1,9 +1,12 @@
 body {
   background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif
+  color: rgba(var(--i1d,38,38,38),1);
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
+
 
 h1 {
   margin: 0;
@@ -18,7 +21,8 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  padding: -10  px;
+   outline: solid 0.5px rgba(var(--b6a,219,219,219),1);
 }
 
 .Header-content {
@@ -26,6 +30,38 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 1em;
+}
+
+.container-buscar  {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 50px;
+    width: 150px;
+    margin:0px;
+}
+.content-buscar{
+
+    background: #fafafa;
+    background: rgba(var(--b3f,250,250,250),1);
+    border: solid 1px #dbdbdb;
+    border: solid 1px rgba(var(--b6a,219,219,219),1);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  
+}
+
+.button-buscar{
+
+      background: rgba(var(--b3f,250,250,250),1);
+      border-radius:4px;
+      font-size: 16px;
+      border: solid 1px rgba(var(--b6a,219,219,219),1);
+       border: solid 1px #dbdbdb;
+    text-align: center
 }
 
 .Header ul {
@@ -41,4 +77,175 @@ h1 {
 
 .Header h1 {
   color: black;
+}
+
+
+.feed{
+display: flex;
+justify-content: center;
+
+}
+
+
+.container-photo{
+
+margin: 20px  100px;
+height: 500px;
+width: 450px;
+display: grid;
+grid-template-columns: minmax(auto, 936px); 
+outline: solid 1px rgba(var(--b6a,219,219,219),1);
+display: flex;
+flex-direction: column;
+flex-shrink: 0;
+
+}
+
+
+.content-photo-profile {
+margin: 0;
+height: 85px;
+width: inherit;
+outline: solid 1px rgba(var(--b6a,219,219,219),1);
+align-self: center;
+display: flex;
+align-items: center;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.circles{
+
+  font-size: 5px;
+  margin-right: 15px;
+  color: black;
+}
+
+.datos{
+  
+  display: flex;
+  align-items: center;
+ 
+}
+.userpick {
+width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px 16px 5px 15px;
+    cursor: pointer;
+}
+
+.perfil.user{
+
+width: 258px;
+margin: 300px 0;
+padding: 0 0 0 40px;
+
+}
+
+.userpick2{
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  margin:  5px 16px 5px 0px;
+  cursor: pointer;
+}
+
+.content-photo {
+
+margin: 0;
+height: 350px;
+width: 350px;
+background-image: url('/src/img/pugstagram.ico');
+background-repeat: no-repeat  ;
+background-position: right;
+
+}
+
+.comentarios{
+
+height: 105px;
+width: initial;
+outline: solid 1px rgba(var(--b6a,219,219,219),1);
+padding: 5px;
+
+
+
+
+}
+
+.comentarios p {
+
+ margin:5px;
+ font-size: 20px;
+
+}
+
+.comentar{
+
+vertical-align: baseline;
+    border-top: 1px solid rgba(201, 200, 200, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.form{
+  vertical-align: baseline;
+  outline: solid 1px rgba(var(--b6a,219,219,219),1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+  
+}
+.agregar{
+  height: 20px; 
+  width: inherit;
+  border: none;
+  resize: none;
+  margin:0px;
+  paddin:0px;
+}
+
+.btn_publicar{
+  
+  
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: black;
+}
+
+.publicar{
+
+ width: inherit;
+  font-size: 20px;
+  outline: solid 0.5px rgba(var(--b6a,219,219,219),1);
+  text-align: left;
+  height: 20px;
+}
+
+.content-photo-profile i {
+  height: 0.5px;
+  
+  display: inline-block;
+  margin: 0 0 0 0.2em;
+
+}
+
+.footer{
+
+margin: 35px 0 0 0;
+    color back;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px
+
+
 }
