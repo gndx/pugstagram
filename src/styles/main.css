@@ -3,20 +3,61 @@ body {
   color: rgba(38,38,38,0.7);
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+  font-family: 'Pacifico', cursive;
+  mix-blend-mode: initial;
+  font-size: 28px;
+}
+h1::before {
+  content: "";
+  width: 160px;
+  height: 55px;
+  mix-blend-mode: screen;
+  position: absolute;
+  background: radial-gradient(circle at top left, #f09433, #bc1888);
+}
+h2, h3, h4,h5{
+  margin: 0;
+  padding: 0;
+}
+h2, h3, h4{
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+  padding: 7em 0;
+}
+.container {
+  /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  grid-template-columns: minmax(auto, 936px);
 }
 
 .Header {
   background-color: white;
+  position: fixed;
+  width: 100%;
 }
+
 
 .Header-container {
   display: grid;
-  grid-template-columns: minmax(auto, 936px);
+  grid-template-columns: minmax(auto, 1000px);
   justify-content: center;
   border-bottom: 1px solid rgba(38,38,38,0.7);
 }
@@ -25,13 +66,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .Header ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .Header li {
@@ -41,4 +83,109 @@ h1 {
 
 .Header h1 {
   color: black;
+}
+.card{
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  border: 1px rgb(212, 209, 209) solid;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+.card-user-login{
+  display: flex;
+  align-items:  center;
+}
+.card-user{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+
+}
+.card-coments{
+  padding: 0 20px;
+}
+
+.profile img{
+  margin: 10px 10px 10px 0;
+  width: 32px;
+  border-radius: 50%;
+
+}
+.card-photo img{
+  width: 100%;
+  height: auto;
+}
+.card-copy{
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-copy i{
+  margin: 0 0.7em 0 0;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 5px 0;
+}
+.favorite{
+  
+}
+.card-coments-friends-one{
+  display: flex;
+}
+.card-coments-friends-one h3{
+  font-size: 16px;
+  margin: 0 10px 10px 0;
+}
+.new-coment{
+  border: rgb(212, 209, 209)  solid 1px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+}
+.new-coment input{
+border: white solid 1px;
+width: 100%;
+height: 47px;
+color: gray;
+}
+.new-coment input:focus{
+  border: transparent 1px solid;
+  outline: transparent;
+}
+.new-coment a{
+  text-decoration: none;
+}
+
+.contacts{
+  /* background-color: greenyellow; */
+}
+.contacts-fixed{
+  position: fixed;
+  width: 13%;
+
+}
+.stories{
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  padding: 5px 10px;
+  border: rgb(212, 209, 209)  solid 1px;
+
+
+}
+.stories-all{
+  display: flex;
+  justify-content: space-between;
+}
+.card-user-storie{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
