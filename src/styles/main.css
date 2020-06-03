@@ -1,6 +1,7 @@
 body {
   background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  /* background-color: crimson; */
+  color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
 }
@@ -18,7 +19,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(38, 38, 38, 0.7);
 }
 
 .Header-content {
@@ -41,4 +42,113 @@ h1 {
 
 .Header h1 {
   color: black;
+}
+
+/* main content and stories */
+main {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Posts */
+.posts-container {
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* post-header */
+.post-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header .post-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-header .post-user-info img {
+  margin-right: 10px;
+}
+
+.post-header .user-info-text {
+  display: inline;
+}
+
+.post-user-info .post-user-name {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 10px;
+}
+
+.post-user-info .post-location {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+.post-separator {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+aside {
+  width: 30%;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+.post-img img {
+  width: 100%;
+}
+
+.post-actions {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+
+.post-actions .fa-paper-plane {
+  margin-left: 15px;
+}
+
+/* Post comments */
+
+.post-comments {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.post-comment .comment-user-name {
+  color: black;
+}
+
+.post-comment .comment-text {
+  color: black;
+  font-size: 0.7em;
+}
+
+/* avatares */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
