@@ -47,11 +47,10 @@ h1 {
 /* main content and stories */
 main {
   width: 60%;
-  margin: 0 auto;
   display: flex;
   /* flex-wrap: wrap; */
   align-items: flex-start;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 /* Posts */
@@ -111,7 +110,7 @@ main {
 aside {
   width: 30%;
   margin-left: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .post-img img {
@@ -144,6 +143,75 @@ aside {
 .post-comment .comment-text {
   color: black;
   font-size: 0.7em;
+}
+
+/* user info */
+.user-info {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-info-text {
+  margin-left: 10px;
+  margin-top: -2px;
+}
+
+.user-info .user-nick {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 10px;
+}
+
+.user-info .user-name {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+/* stories */
+.stories-container {
+  background-color: #fff;
+}
+
+.stories-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.stories-container-header h4 {
+  font-size: 0.8em;
+}
+
+.stories-container-header span {
+  font-size: 0.7em;
+}
+
+.storie {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.storie img {
+  margin-right: 10px;
+}
+
+.storie-nick-and-time .nick {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 10px;
+}
+
+.storie-nick-and-time .time {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 0;
 }
 
 /* avatares */
