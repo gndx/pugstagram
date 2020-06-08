@@ -41,4 +41,195 @@ h1 {
 
 .Header h1 {
   color: black;
+  font-family: "Pacifico";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.feed {
+  margin: 50px;
+  box-shadow: 0 0 2px rgba(38,38,38,0.7);
+  width: 600px;
+}
+
+.feed-account {
+  height: 60px;
+  display: flex;
+  align-items: stretch;
+}
+
+.feed-account div h4 {
+  margin-top: 13px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.feed-account div p {
+margin-top: -10px;
+margin-left: 2px;
+font-family: sans-serif;
+color: black;
+font-size: 13px;
+}
+
+.feed-option {
+  flex-grow: 8;
+}
+
+.feed-option  a {
+  position: absolute;
+  right: 550px;
+  margin: 19px 10px;
+  font-size: 20px;
+}
+
+.image-account {
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  margin: 5px 10px;
+}
+
+.image {
+  width: 600px;
+}
+
+.feed-interaction {
+  padding: 1em;
+  display: flex;
+  align-items: stretch;
+  height: 70px;;
+}
+
+.like-post {
+  font-size: 20px;
+}
+
+.send-post {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.save-post {
+  position: absolute;
+  right: 550px;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+.feed-interaction div p {
+  margin-top: 5px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.feed-post {
+  width: 600px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 10px 10px -15px rgba(38,38,38,0.7);
+}
+
+.sinborde {
+  border: 0;
+  width: 500px;
+  height: 35px;
+  background: #fafafa;
+}
+
+.button {
+  border: 0;
+  width: 92px;
+  height: 35px;
+  background: #fafafa;
+  color: #3fa5e4;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: end;
+}
+
+.comment-post ::placeholder {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+.stories {
+  margin: 50px 20px;
+  width: 230px;
+  height: 290px;  
+}
+
+.stories-account {
+  width: 230px;
+  height: 70px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: stretch;
+}
+
+.container-stories {
+  box-shadow: 0 0 2px rgba(38,38,38,0.7);
+  width: 230px;
+  height: 260px;
+  background-color: white;
+}
+
+.option {
+  width: 230px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option li {
+  display: inline-block;
+  margin: 0 2.5em  0 1em;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #3fa5e4;
+}
+
+.stories-account div h4 {
+  margin-top: 13px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.stories-account div p {
+  margin-top: -15px;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.stories-followers {
+  display: flex;
+  align-items: stretch;
+  background-color: white;
+}
+
+.stories-followers div h4 {
+  margin-top: 13px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.stories-followers div p {
+  margin-top: -15px;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 15px;
 }

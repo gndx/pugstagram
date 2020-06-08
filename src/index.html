@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Pugstagram</title>
+  <title>Gamestagram</title>
   <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/bootstrap.css" rel="stylesheet">
+  <link href="styles/bootstrap-grid.css" rel="stylesheet">  
+  <link href="styles/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Pacifico&amp;family=Source+Serif+Pro&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,19 +16,110 @@
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <h1>Gamestagram</h1>
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><i class="fas fa-heart"></i></li>
+            <li><i class="fas fa-user"></i></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
-  </main>
+  <section class="container">
+    <section class="feed">
+      <article>
+        <header class="feed-account">
+          <img class="image-account" src="https://cdn.pixabay.com/photo/2018/08/25/18/07/gamepad-3630565_960_720.png" alt="icono">
+          <div>
+            <h4>
+              Jorge
+            </h4>
+            <p>Popayan - Colombia</p>
+          </div>
+          <div class="feed-option">
+            <a>
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </div>
+        </header>
+        </div>
+        <div class="feed-images">
+          <img class="image" src="https://live.staticflickr.com/4708/26285317178_930be7d68f_b.jpg" alt="imagen">
+        </div>
+        <article class="feed-interaction">
+          <div>
+            <a class="like-post">
+              <i class="far fa-heart"></i></i>
+            </a>
+            <a class="send-post">
+              <i class="far fa-paper-plane"></i>
+            </a>
+            <a class="save-post">
+              <i class="far fa-bookmark"></i>
+            </a>
+            <p> <strong>Jorge</strong> Excelente Juego</p>
+            <p> <strong>Lorena</strong> Lo mejor de lo mejor!!</p>
+          </div>
+        </article>
+        <div class="feed-post">
+          <form class="comment-post">
+              <input type="text" class="sinborde" placeholder="Add comment...">
+              <input type="submit" class="button" value="Post">
+          </form>
+        </div>
+      </article>
+    </section>
+    <section class="stories">
+      <article>
+        <div class="stories-account">
+          <img class="image-account" src="https://cdn.pixabay.com/photo/2018/08/25/18/07/gamepad-3630565_960_720.png" alt="icono">
+          <div>
+            <h4>
+              Jorge
+            </h4>
+            <p>Gutierrez</p>
+          </div>
+        </div>
+        <div class="container-stories">
+          <div class="option">
+            <ul>
+              <li>Stories</li>
+              <li>View all</li>
+            </ul>
+          </div>
+            <div class="stories-followers">
+              <img class="image-account" src="https://pngimg.com/uploads/demon/demon_PNG42.png" alt="iconoJuan">
+              <div>
+                <h4>
+                  Juan
+                </h4>
+                <p>Two hours ago</p>
+              </div>
+            </div>
+            <div class="stories-followers">
+              <img class="image-account" src="https://vignette.wikia.nocookie.net/geometry-dash/images/3/36/Extreme_Demon.png/revision/latest?cb=20170320215952&path-prefix=es" alt="iconoCamilo">
+              <div>
+                <h4>
+                  Camilo
+                </h4>
+                <p>Ten hours ago</p>
+              </div>
+            </div>
+            <div class="stories-followers">
+              <img class="image-account" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Face-glasses.svg/480px-Face-glasses.svg.png" alt="iconoCamila">
+              <div>
+                <h4>
+                  Camila
+                </h4>
+                <p>One hours ago</p>
+              </div>
+        </div>
+          </div>
+      </article>
+    </section>
+  </section>
   <footer>
   </footer>
 </body>
