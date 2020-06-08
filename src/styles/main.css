@@ -3,11 +3,17 @@ body {
   color: rgba(38,38,38,0.7);
   margin: 0;
   padding: 0;
+  font-family: "Lato",sans-serif;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+}
+
+ul,ol{
+
+  list-style: none;
 }
 
 .Header {
@@ -39,6 +45,128 @@ h1 {
   margin: 0 0 0 1em;
 }
 
-.Header h1 {
-  color: black;
+.Header img{
+
+  width: 20px;
+  height: 20px;
 }
+
+.Header h1 {
+  color: crimson;
+  font-family: "Pacifico";
+}
+
+.principal{
+
+    
+
+    width: 940px;
+    height: 800px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.elmo{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.radius img.elmito{
+
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin:10px 10px;
+  
+  
+}
+
+.texto{
+
+  
+  width: 120px;
+ 
+}
+
+.elmo{
+
+  width: 700px;
+  border: 1px solid gray;
+  margin-top: 30px;
+  background-color: white;
+
+}
+
+.elmo img{
+
+  width: 700px;
+}
+
+
+.details{
+
+  width: 700px;
+}
+
+
+
+.iconos img{
+
+  width: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
+
+.mensaje{
+
+  
+  margin: 10px 10px;
+}
+
+form{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em 1em 1em;
+}
+
+ input{
+
+  
+  outline: none;
+  border: 0;
+  
+
+}
+
+button{
+
+  border: 0;
+  color: cadetblue;
+  outline: none;
+}
+
+
+
+
+
+.slide{
+
+  border: 1px solid gray;
+  width: 200px;
+  margin-left: 30px;
+  height: 300px;
+  
+}
+
+
+
