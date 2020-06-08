@@ -41,6 +41,7 @@ h1 {
 
 .Header h1 {
   color: black;
+  font-family: "Pacifico";
 }
 
 .container {
@@ -67,7 +68,7 @@ h1 {
 }
 
 .feed-account div p {
-margin-top: -20px;
+margin-top: -10px;
 margin-left: 2px;
 font-family: sans-serif;
 color: black;
@@ -208,7 +209,7 @@ font-size: 13px;
 }
 
 .stories-account div p {
-  margin-top: -20px;
+  margin-top: -15px;
   color: gray;
   font-family: sans-serif;
   font-size: 15px;
@@ -227,7 +228,7 @@ font-size: 13px;
 }
 
 .stories-followers div p {
-  margin-top: -20px;
+  margin-top: -15px;
   color: gray;
   font-family: sans-serif;
   font-size: 15px;
