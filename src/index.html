@@ -1,32 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pugstagram</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link href="styles/main.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Pugstagram</title>
-  <link href="styles/main.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="Header">
-    <div class="Header-container">
-      <div class="Header-content">
-        <div class="Header-logo">
-          <h1>Pugstagram</h1>
-        </div>
-        <div class="Header-nav">
-          <ul>
-            <li>Likes</li>
-            <li>Profile</li>
-          </ul>
+  <body>
+    <header class="Header">
+      <div class="Header-container">
+        <div class="Header-content">
+          <div class="Header-logo">
+            <h1>Pugstagram</h1>
+          </div>
+          <div class="Header-nav">
+            <ul>
+              <li>Likes</li>
+              <li>Profile</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
-</body>
+    </header>
+    <main>
+      <section class="posts-container">
+        <article class="post">
+          <div class="post-header">
+            <div class="post-user-info">
+              <img
+                class="avatar"
+                src="https://cdn.pixabay.com/photo/2016/09/22/16/38/avatar-1687700_960_720.jpg"
+                alt=""
+              />
+              <div class="user-info-text">
+                <h2 class="post-user-name">Elmo.pug</h2>
+                <span class="post-location">Bogotá, Colombia</span>
+              </div>
+            </div>
+            <div class="post-options"><i class="fa fa-ellipsis-h"></i></div>
+          </div>
+          <div class="post-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/02/19/11/53/pug-1210025_960_720.jpg"
+              alt="img"
+            />
+          </div>
+          <div class="post-actions">
+            <div class="left-post-actions">
+              <i class="fa fa-heart fa-1x"></i>
+              <i class="fa fa-paper-plane fa-1x"></i>
+            </div>
+            <div class="right-post-actions">
+              <i class="fa fa-bookmark fa-1x"></i>
+            </div>
+          </div>
+          <div class="post-comments">
+            <div class="post-comment">
+              <p class="comment-text">
+                <strong class="comment-user-name">Elmo.pug</strong> Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Aperiam neque id
+                ex tempore similique ut earum dolorem vel reprehenderit
+                voluptatum rem nobis provident tenetur sit, praesentium aliquid
+                totam voluptatibus excepturi?
+              </p>
+              <p class="comment-text">
+                <strong class="comment-user-name">Elmo.pug</strong> Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Aperiam neque id
+                ex tempore similique ut earum dolorem vel reprehenderit
+                voluptatum rem nobis provident tenetur sit, praesentium aliquid
+                totam voluptatibus excepturi?
+              </p>
+            </div>
+          </div>
+          <div class="comment__form">
+            <input type="text" class="comment__input" placeholder="Agregar comentario"/>
+            <button class="comment__add-button">Post</button>
+          </div>
+        </article>
+      </section>
+      <aside class="">
+        <div class="user-info">
+          <img
+            class="avatar"
+            src="https://cdn.pixabay.com/photo/2016/09/22/16/38/avatar-1687700_960_720.jpg"
+            alt=""
+          />
+          <div class="user-info-text">
+            <h2 class="user-nick">Elmo.pug</h2>
+            <span class="user-name">Bogotá, Colombia</span>
+          </div>
+        </div>
+        <div class="stories-container">
+          <div class="stories-container-header">
+            <h4>Stories</h4>
+            <span>Ver todos</span>
+          </div>
+          <!-- Storie -->
+          <div class="storie">
+            <img
+              class="avatar"
+              src="https://cdn.pixabay.com/photo/2016/09/22/16/38/avatar-1687700_960_720.jpg"
+              alt=""
+            />
+            <div class="storie-nick-and-time">
+              <h3 class="nick">ZebCode</h3>
+              <span class="time">Hace 24 minutos</span>
+            </div>
+          </div>
 
+          <!-- Storie -->
+          <div class="storie">
+            <img
+              class="avatar"
+              src="https://cdn.pixabay.com/photo/2016/09/22/16/38/avatar-1687700_960_720.jpg"
+              alt=""
+            />
+            <div class="storie-nick-and-time">
+              <h3 class="nick">ZebCode</h3>
+              <span class="time">Hace 24 minutos</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>

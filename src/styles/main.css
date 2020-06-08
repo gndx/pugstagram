@@ -1,6 +1,7 @@
 body {
   background-color: #fafafa;
-  color: rgba(38,38,38,0.7);
+  /* background-color: crimson; */
+  color: rgba(38, 38, 38, 0.7);
   margin: 0;
   padding: 0;
 }
@@ -18,7 +19,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(auto, 936px);
   justify-content: center;
-  border-bottom: 1px solid rgba(38,38,38,0.7);
+  border-bottom: 1px solid rgba(38, 38, 38, 0.7);
 }
 
 .Header-content {
@@ -41,4 +42,209 @@ h1 {
 
 .Header h1 {
   color: black;
+}
+
+/* main content and stories */
+main {
+  width: 60%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  margin: 20px auto;
+}
+
+/* Posts */
+.posts-container {
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* post-header */
+.post-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header .post-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-header .post-user-info img {
+  margin-right: 10px;
+}
+
+.post-header .user-info-text {
+  display: inline;
+}
+
+.post-user-info .post-user-name {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 10px;
+}
+
+.post-user-info .post-location {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+.post-separator {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+aside {
+  width: 30%;
+  margin-left: 10px;
+  /* background-color: #fff; */
+}
+
+.post-img img {
+  width: 100%;
+}
+
+.post-actions {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+
+.post-actions .fa-paper-plane {
+  margin-left: 15px;
+}
+
+/* Post comments */
+
+.post-comments {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.post-comment .comment-user-name {
+  color: black;
+}
+
+.post-comment .comment-text {
+  color: black;
+  font-size: 0.7em;
+}
+
+/* post comment form */
+.comment__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.comment__input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+}
+
+.comment__add-button {
+  width: 10%;
+  border-radius: 0px;
+  background-color: inherit;
+  color: blue;
+  border: none;
+  text-align: right;
+}
+
+.comment__add-button:hover {
+  cursor: pointer;
+}
+
+/* user info */
+.user-info {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-info-text {
+  margin-left: 10px;
+  margin-top: -2px;
+}
+
+.user-info .user-nick {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 10px;
+}
+
+.user-info .user-name {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+/* stories */
+.stories-container {
+  background-color: #fff;
+}
+
+.stories-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.stories-container-header h4 {
+  font-size: 0.8em;
+}
+
+.stories-container-header span {
+  font-size: 0.7em;
+}
+
+.storie {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.storie img {
+  margin-right: 10px;
+}
+
+.storie-nick-and-time .nick {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 10px;
+}
+
+.storie-nick-and-time .time {
+  color: gray;
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+/* avatares */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
