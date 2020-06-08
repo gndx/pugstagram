@@ -145,6 +145,34 @@ aside {
   font-size: 0.7em;
 }
 
+/* post comment form */
+.comment__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+
+.comment__input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+}
+
+.comment__add-button {
+  width: 10%;
+  border-radius: 0px;
+  background-color: inherit;
+  color: blue;
+  border: none;
+  text-align: right;
+}
+
+.comment__add-button:hover {
+  cursor: pointer;
+}
+
 /* user info */
 .user-info {
   padding: 10px;
