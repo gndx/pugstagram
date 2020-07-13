@@ -122,6 +122,7 @@ ul,ol{
   width: 20px;
   margin-left: 10px;
   margin-top: 10px;
+  cursor: pointer;
   
 }
 
@@ -130,6 +131,113 @@ ul,ol{
   
   margin: 10px 10px;
 }
+
+
+.slide{
+
+  border: 1px solid gray;
+  width: 200px;
+  margin-left: 30px;
+  height: 300px;
+  
+}
+
+
+.lateral{
+  position:fixed;
+  margin-left: 720px;
+  margin-top: -145px;
+  height: 600px;
+  width: 350px;
+}
+
+.usuario{
+  height: 120px;
+}
+
+.usuario img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin:10px 10px;
+ 
+}
+
+.misVistas{
+  
+  height: 90px;
+  margin-top: 10px;
+}
+
+
+.historias{
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 360px;
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  
+}
+
+
+.historias img{
+  height:80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin:5px 10px;
+ 
+}
+
+.text-lateral-1{
+  width: 120px;
+  position: relative;
+  margin-left: 100px;
+  margin-top: -60px;
+  font-weight:600;
+  font-size: 15px;
+  
+}
+
+.text-lateral-2{
+  width: 120px;
+  position: relative;
+  margin-left: 100px;
+  margin-top: -60px;
+  font-size:20px;
+  font-weight: bold;
+  color: black;
+}
+
+#text-historia{
+  margin-left: 10px;
+  font-weight: bold;
+  width: 60px;
+  position: relative;
+  
+}
+
+#verTodas{
+  width: 100px;
+  position: relative;
+  margin-left: 220px;
+  margin-top: -35px;
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+}
+
+.registro{
+  
+  width: 300px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
 
 form{
 
@@ -153,20 +261,11 @@ button{
   border: 0;
   color: cadetblue;
   outline: none;
+  cursor: pointer;
 }
 
 
 
-
-
-.slide{
-
-  border: 1px solid gray;
-  width: 200px;
-  margin-left: 30px;
-  height: 300px;
-  
-}
 
 
 
