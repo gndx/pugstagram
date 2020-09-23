@@ -1,0 +1,19 @@
+{
+  "name": "curso-nodejs",
+  "version": "0.1.0",
+  "description": "Un chat como telegram, pero mucho mejor",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "telegram",
+    "server"
+  ],
+  "author": "Ana Mongui",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
