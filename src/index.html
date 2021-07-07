@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Pugstagram</title>
+  <title>Panchogram</title>
+  <link rel="icon" type="image/png" href="../images/favicon.png"/>
+  <script src="https://kit.fontawesome.com/39adf2e06a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
 </head>
 
@@ -12,18 +15,60 @@
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <h1>Panchogram</h1>
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><i class="fas fa-heart"></i></li>
+            <li><i class="fas fa-user"></i></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
+    <div class="main-container">
+      <div class="main-content">
+        <figure class="image-profile">
+          <img class="pancho-profile" src="../images/pancho-profile.png" align=left width="35" height="35"> <p><strong>Pancho.W</strong><br/>Bogotá, Colombia</p>
+        </figure>
+        <img class="image-1" src="../images/pancho1.jpg" alt="Image 1" width="700" height="450"/>
+        <div class="reactions-container">
+          <div class="reactions">
+            <ul>
+              <li><i class="fas fa-heart"></i> <i class="fas fa-paper-plane"></i></li>
+              <li><i class="fas fa-bookmark"></i></li>
+            </ul>
+            <p><strong>Pancho.W</strong><br/>En la sesión de fotos para Panchogram !</p>
+            <p><strong>Elmo:</strong> Hola Pancho :)</p>
+            <div class="comments">
+              <form class="comments-form" action="" >
+                <input type="text" placeholder="Agregar comentario" type="button" placeholder="Post">
+                <button>Post</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <figure class="image-profile">
+          <img class="camiverry-profile" src="../images/camiverry-profile.png" align=left width="45" height="45"> <p><strong>camiverry</strong><br/>Camilo Echeverry</p>
+        </figure>
+        <div class="sidebox-container">
+          <div class="sidebox-nav">
+            <p>stories</p>
+            <p>ver todas</p>
+          </div>
+          <div class="sidebox">
+            <figure class="image-stories">
+              <img class="camiverry-stories" src="../images/camiverry-stories.png" align=left width="35" height="35"> <p><strong>Nickname</strong><br/>10 horas antes</p>
+              <img class="camiverry-stories" src="../images/camiverry-stories.png" align=left width="35" height="35"> <p><strong>Nickname</strong><br/>10 horas antes</p>
+              <img class="camiverry-stories" src="../images/camiverry-stories.png" align=left width="35" height="35"> <p><strong>Nickname</strong><br/>10 horas antes</p>
+            </figure>
+        </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
   </footer>

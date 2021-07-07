@@ -28,10 +28,17 @@ h1 {
   padding: 1em;
 }
 
+.Header h1 {
+  color: black;
+  font-family: 'Pacifico';
+  font-weight: 500;
+}
+
 .Header ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: x-large;
 }
 
 .Header li {
@@ -39,6 +46,98 @@ h1 {
   margin: 0 0 0 1em;
 }
 
-.Header h1 {
-  color: black;
+.main-container {
+  width: 1000px;
+  margin: auto;
+  font-family: 'Roboto';
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
 }
+
+.main-content {
+  font-family: 'Roboto';
+  font-size: small;
+  width: 700px;
+  margin: auto;
+  border: 0.5px solid rgba(219, 219, 219, 1);
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.image-profile p {
+  padding-left: 30px;
+}
+
+.main-content strong {
+  font-weight: 700;
+}
+
+.main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 0px 15px ;
+}
+
+.main p {
+  margin: 10px 15px 15px;
+}
+
+.reactions i.fas.fa-paper-plane {
+  padding-left: 20px;
+}
+
+.comments {
+  border: 1px solid rgba(219, 219, 219, 0.8);
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.comments-form input {
+  width: 615px;
+  height: 20px;
+  padding: 10px;
+/*   margin-left: 50px; */
+  border: none;
+}
+
+.comments button {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  color: #3897f0;
+}
+
+.sidebar {
+  width: 215px;
+  font-size: smaller;
+  margin-top: 50px;
+}
+
+.sidebox-container {
+  border: 0.5px solid rgba(219, 219, 219, 1);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.sidebox-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-stories p {
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+
+/* Header li i {
+  font-size: x-large; */
+}
+
+/* <i class="fas fa-heart"></i> */
