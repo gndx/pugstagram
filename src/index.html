@@ -3,8 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="pugstagram a simple html site">
+  <link rel="icon" type="image/png" href="https://arepa.s3.amazonaws.com/favicon.png">
   <title>Pugstagram</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -12,18 +20,495 @@
     <div class="Header-container">
       <div class="Header-content">
         <div class="Header-logo">
-          <h1>Pugstagram</h1>
+          <h1 class="Header-element">Pugstagram</h1>
         </div>
         <div class="Header-nav">
           <ul>
-            <li>Likes</li>
-            <li>Profile</li>
+            <li><i class="fas fa-heart Header-element"></i></li>
+            <li><i class="fas fa-user-alt Header-element"></i></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
   <main>
+    <div class="Main-container">
+      <div class="Timeline">
+         <div class="Timeline-container">
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Elmo.pug
+                          <span class="Card-profile">Bogotá, Colombia</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="fas fa-ellipsis-h Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="Elmo.pug" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Elmo.pug</h3>
+                    <span class="Card-profile">Disfrutando de mi piscina</span>
+                 </div>
+                 <div class="Comments">
+                    <div id="commentsContent1" class="Comments-content">
+                       <div class="Comments-users">
+                          <h3 class="Card-footer">Crispeta</h3>
+                          <span class="Card-footer">Hola Elmo</span>
+                       </div>
+                       <div class="Comments-users">
+                          <h3 class="Card-footer">Dollarsin</h3>
+                          <span class="Card-footer">¡Hola!</span>
+                       </div>
+                    </div>
+                    <div class="Comments-add">
+                       <form id="addingCommentsForm1" class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment-1">
+                          <button id="btnSubmitForm1" class="Card-footer" type="button">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="https://arepa.s3.amazonaws.com/elmo.jpg" alt="Elmo.pug" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Elmo.pug
+                          <span class="Card-profile">Bogotá, Colombia</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="https://arepa.s3.amazonaws.com/elmo001.jpeg" alt="Elmo.pug" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Elmo.pug</h3>
+                    <span class="Card-profile">Hola...</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                       <div class="Comments-users">
+                          <h3 class="Card-footer">gndx</h3>
+                          <span class="Card-footer">Elmito</span>
+                       </div>
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/img/strange.jpg" alt="Strange" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Strange
+                          <span class="Card-profile">World citizen</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/dados.jpg" alt="Dados" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Strange</h3>
+                    <span class="Card-profile">Do you want to bet?</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/captain_america_320x240.jpg" alt="Captain America" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Captain America
+                          <span class="Card-profile">Brooklyn, New York</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/iron_man_helmet-wallpaper-320x240.jpg" alt="Iron Man" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Captain America</h3>
+                    <span class="Card-profile">He's my hero buddy R.I.P. :(</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/hawkeye_320x240.jpg" alt="Hawkeye" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Hawkeye
+                          <span class="Card-profile">Waverly, Iowa</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/blackwidow_320x240.jpg" alt="Black Widow" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Hawkeye</h3>
+                    <span class="Card-profile">We always remember you, Natasha</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/spiderman_320x240_2282.jpg" alt="Spider Man" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Spider Man
+                          <span class="Card-profile">Queens, New York</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/Guardians-of-the-Galaxy_320x240.jpg" alt="Guardians of the Galaxy" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Spider Man</h3>
+                    <span class="Card-profile">These guys still look amazing since our last battle against Thanos!!! :O</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/winter-soldier_320x240.jpg" alt="Winter Soldier" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Winter Soldier
+                          <span class="Card-profile">Wakanda Kingdom</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/black-panther_320x240.jpg" alt="Black Panther" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Winter Soldier</h3>
+                    <span class="Card-profile">Thank you so much for saving my life even after Civil War, T'challa King</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/ant-man_320x240.jpg" alt="Ant-Man" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Ant-Man
+                          <span class="Card-profile">Coral Gables, Florida</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/the_wasp_320x240.png" alt="The Wasp" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Ant-Man</h3>
+                    <span class="Card-profile">My sexy partner as a cartoon hero :P</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="Card">
+              <div class="Card-container">
+                 <div class="Card-header">
+                    <div class="Card-user">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/scarlet_witch_320x240.jpe" alt="Scarlet Witch" class="Card-profile">
+                       <h2 class="Card-profile">
+                          Scarlet Witch
+                          <span class="Card-profile">Avengers Headquarters</span>
+                       </h2>
+                    </div>
+                    <div class="Card-settings">
+                       <i class="Card-profile">...</i>
+                    </div>
+                 </div>
+                 <div class="Card-photo">
+                    <figure class="Card-profile">
+                       <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/vision_320x240.jpg" alt="Vision" class="Card-profile">
+                    </figure>
+                 </div>
+                 <div class="Card-icons">
+                    <div class="Card-icons-first">
+                       <i class="fas fa-heart Card-profile"></i>
+                       <i class="fas fa-paper-plane Card-profile"></i>
+                    </div>
+                    <div class="Card-icons-second">
+                       <i class="fas fa-bookmark Card-profile"></i>
+                    </div>
+                 </div>
+                 <div class="Card-description">
+                    <h3 class="Card-profile">Scarlet Witch</h3>
+                    <span class="Card-profile">I miss him so much!</span>
+                 </div>
+                 <div class="Comments">
+                    <div class="Comments-content">
+                    </div>
+                    <div class="Comments-add">
+                       <form class="Card-footer">
+                          <input class="Card-footer" type="text" placeholder="Agregar comentario..." id="new-comment">
+                          <button class="Card-footer" type="submit">Post</button>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+         </div>
+      </div>
+      <div class="Sidebar">
+         <div class="Sidebar-container">
+            <div class="Profile">
+               <div class="Profile-content">
+                  <div class="Profile-avatar">
+                     <img src="https://arepa.s3.amazonaws.com/oscar.png" alt="gndx" class="Profile-element">
+                  </div>
+                  <div class="Profile-info">
+                     <h2 class="Profile-element">gndx</h2>
+                     <span class="Profile-element">Oscar Barajas</span>
+                  </div>
+               </div>
+            </div>
+            <div class="Stories">
+               <div class="Stories-container">
+                  <div class="Stories-head">
+                     <h2 class="Stories-element">Stories</h2>
+                     <span class="Stories-element">Ver todas</span>
+                  </div>
+                  <div class="Stories-items">
+                     <div class="Stories-item">
+                        <div class="Stories-item-box">
+                           <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/foto.jpg" alt="pochito427" class="Stories-element">
+                        </div>
+                        <h2 class="Stories-element">
+                          pochito427
+                          <span class="Stories-element">
+                             10 horas antes
+                          </span>
+                        </h2>
+                     </div>
+                     <div class="Stories-item">
+                        <div class="Stories-item-box">
+                           <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/img/logo_javeriana.jpg" alt="unijaveriana" class="Stories-element">
+                        </div>
+                        <h2 class="Stories-element">
+                          unijaveriana
+                          <span class="Stories-element">
+                             10 horas antes
+                          </span>
+                        </h2>
+                     </div>
+                     <div class="Stories-item">
+                        <div class="Stories-item-box">
+                           <img src="http://alfonsojimenezdeveloper.ml.s3-website-us-east-1.amazonaws.com/00-HTML-CSS-basics/images/falcon_320x240.jpg" alt="falcon" class="Stories-element">
+                        </div>
+                        <h2 class="Stories-element">
+                          phalcon
+                          <span class="Stories-element">
+                             10 horas antes
+                          </span>
+                        </h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="Sidebar-footer">
+               <div class="Sidebar-footer-container">
+                  <div class="Sidebar-footer-copy">© 2020 PUGSTAGRAM FROM PLATZI</div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
   </main>
   <footer>
   </footer>

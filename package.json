@@ -4,12 +4,16 @@
   "description": "pugstagram a simple html site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "html",
     "css"
   ],
   "author": "Oscar Barajas <oscar@platzi.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://pochito427.github.io/pugstagram",
+  "dependencies": {
+    "gh-pages": "^3.0.0"
+  }
 }
